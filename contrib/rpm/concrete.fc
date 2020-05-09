@@ -1,0 +1,8 @@
+/usr/bin/concrete-cli		--	gen_context(system_u:object_r:concrete_exec_t,s0)
+/usr/sbin/concreted		--	gen_context(system_u:object_r:concrete_exec_t,s0)
+/usr/lib(64)?/concrete/concreted		--	gen_context(system_u:object_r:concrete_exec_t,s0)
+
+/etc/concrete(/.*)?		gen_context(system_u:object_r:concrete_conf_t,s0)
+/var/lib/concrete(/.*)?		gen_context(system_u:object_r:concrete_var_lib_t,s0)
+
+(/var)?/run/concreted(/.*)?   gen_context(system_u:object_r:concrete_var_run_t,s0)

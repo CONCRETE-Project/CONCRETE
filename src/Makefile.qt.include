@@ -1,0 +1,807 @@
+# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+bin_PROGRAMS += qt/concrete-qt
+EXTRA_LIBRARIES += qt/libbitcoinqt.a
+
+# concrete qt core #
+include Makefile.qt_locale.include
+
+QT_FORMS_UI = \
+  qt/forms/addressbookpage.ui \
+  qt/forms/askpassphrasedialog.ui \
+  qt/forms/coincontroldialog.ui \
+  qt/forms/editaddressdialog.ui \
+  qt/forms/helpmessagedialog.ui \
+  qt/forms/intro.ui \
+  qt/forms/openuridialog.ui \
+  qt/forms/optionsdialog.ui \
+  qt/forms/rpcconsole.ui \
+  qt/concrete/forms/loadingdialog.ui \
+  qt/forms/zcctcontroldialog.ui \
+  qt/concrete/forms/snackbar.ui \
+  qt/concrete/forms/navmenuwidget.ui \
+  qt/concrete/forms/lockunlock.ui \
+  qt/concrete/forms/expandablebutton.ui \
+  qt/concrete/forms/receivedialog.ui \
+  qt/concrete/forms/topbar.ui \
+  qt/concrete/forms/txrow.ui \
+  qt/concrete/forms/dashboardwidget.ui \
+  qt/concrete/forms/addresslabelrow.ui \
+  qt/concrete/forms/contactdropdownrow.ui \
+  qt/concrete/forms/mninfodialog.ui \
+  qt/concrete/forms/optionbutton.ui \
+  qt/concrete/forms/masternodewizarddialog.ui \
+  qt/concrete/forms/mnrow.ui \
+  qt/concrete/forms/masternodeswidget.ui \
+  qt/concrete/forms/myaddressrow.ui \
+  qt/concrete/forms/csrow.ui \
+  qt/concrete/forms/sendchangeaddressdialog.ui \
+  qt/concrete/forms/sendconfirmdialog.ui \
+  qt/concrete/forms/sendcustomfeedialog.ui \
+  qt/concrete/forms/sendchangeaddressdialog.ui \
+  qt/concrete/forms/sendmultirow.ui \
+  qt/concrete/forms/send.ui \
+  qt/concrete/forms/addnewaddressdialog.ui \
+  qt/concrete/forms/addnewcontactdialog.ui \
+  qt/concrete/forms/requestdialog.ui \
+  qt/concrete/forms/receivewidget.ui \
+  qt/concrete/forms/tooltipmenu.ui \
+  qt/concrete/forms/addresseswidget.ui \
+  qt/concrete/forms/defaultdialog.ui \
+  qt/concrete/forms/privacywidget.ui \
+  qt/concrete/forms/coldstakingwidget.ui \
+  qt/concrete/settings/forms/settingsbackupwallet.ui \
+  qt/concrete/settings/forms/settingsexportcsv.ui \
+  qt/concrete/settings/forms/settingsbittoolwidget.ui \
+  qt/concrete/settings/forms/settingsconsolewidget.ui \
+  qt/concrete/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/concrete/settings/forms/settingsfaqwidget.ui \
+  qt/concrete/settings/forms/settingsinformationwidget.ui \
+  qt/concrete/settings/forms/settingsmainoptionswidget.ui \
+  qt/concrete/settings/forms/settingsmultisenddialog.ui \
+  qt/concrete/settings/forms/settingsmultisendwidget.ui \
+  qt/concrete/settings/forms/settingssignmessagewidgets.ui \
+  qt/concrete/settings/forms/settingswalletoptionswidget.ui \
+  qt/concrete/settings/forms/settingswalletrepairwidget.ui \
+  qt/concrete/settings/forms/settingswidget.ui \
+  qt/concrete/forms/welcomecontentwidget.ui \
+  qt/concrete/forms/splash.ui
+
+QT_MOC_CPP = \
+  qt/moc_addressbookpage.cpp \
+  qt/moc_addresstablemodel.cpp \
+  qt/moc_askpassphrasedialog.cpp \
+  qt/moc_bantablemodel.cpp \
+  qt/moc_bitcoinaddressvalidator.cpp \
+  qt/moc_bitcoinamountfield.cpp \
+  qt/concrete/moc_concretegui.cpp \
+  qt/moc_bitcoinunits.cpp \
+  qt/moc_clientmodel.cpp \
+  qt/moc_coincontroldialog.cpp \
+  qt/moc_coincontroltreewidget.cpp \
+  qt/moc_csvmodelwriter.cpp \
+  qt/moc_editaddressdialog.cpp \
+  qt/moc_guiutil.cpp \
+  qt/moc_intro.cpp \
+  qt/moc_macdockiconhandler.cpp \
+  qt/moc_macnotificationhandler.cpp \
+  qt/moc_notificator.cpp \
+  qt/moc_openuridialog.cpp \
+  qt/moc_optionsdialog.cpp \
+  qt/moc_optionsmodel.cpp \
+  qt/moc_peertablemodel.cpp \
+  qt/moc_paymentserver.cpp \
+  qt/moc_qvalidatedlineedit.cpp \
+  qt/moc_qvaluecombobox.cpp \
+  qt/moc_recentrequeststablemodel.cpp \
+  qt/moc_rpcconsole.cpp \
+  qt/moc_splashscreen.cpp \
+  qt/moc_trafficgraphwidget.cpp \
+  qt/moc_transactiondesc.cpp \
+  qt/moc_transactionfilterproxy.cpp \
+  qt/moc_transactiontablemodel.cpp \
+  qt/moc_utilitydialog.cpp \
+  qt/moc_walletmodel.cpp \
+  qt/concrete/moc_loadingdialog.cpp \
+  qt/moc_zcctcontroldialog.cpp \
+  qt/concrete/moc_pwidget.cpp \
+  qt/concrete/moc_snackbar.cpp \
+  qt/concrete/moc_navmenuwidget.cpp \
+  qt/concrete/moc_lockunlock.cpp \
+  qt/concrete/moc_expandablebutton.cpp \
+  qt/concrete/moc_furabstractlistitemdelegate.cpp \
+  qt/concrete/moc_receivedialog.cpp \
+  qt/concrete/moc_pfborderimage.cpp \
+  qt/concrete/moc_topbar.cpp \
+  qt/concrete/moc_txrow.cpp \
+  qt/concrete/moc_dashboardwidget.cpp \
+  qt/concrete/moc_addresslabelrow.cpp \
+  qt/concrete/moc_contactdropdownrow.cpp \
+  qt/concrete/moc_mninfodialog.cpp \
+  qt/concrete/moc_optionbutton.cpp \
+  qt/concrete/moc_coldstakingmodel.cpp \
+  qt/concrete/moc_mnmodel.cpp \
+  qt/concrete/moc_masternodewizarddialog.cpp \
+  qt/concrete/moc_mnrow.cpp \
+  qt/concrete/moc_masternodeswidget.cpp \
+  qt/concrete/moc_myaddressrow.cpp \
+  qt/concrete/moc_csrow.cpp \
+  qt/concrete/moc_contactsdropdown.cpp \
+  qt/concrete/moc_sendchangeaddressdialog.cpp \
+  qt/concrete/moc_sendconfirmdialog.cpp \
+  qt/concrete/moc_sendcustomfeedialog.cpp \
+  qt/concrete/moc_sendchangeaddressdialog.cpp \
+  qt/concrete/moc_sendmultirow.cpp \
+  qt/concrete/moc_send.cpp \
+  qt/concrete/moc_addnewaddressdialog.cpp \
+  qt/concrete/moc_addnewcontactdialog.cpp \
+  qt/concrete/moc_requestdialog.cpp \
+  qt/concrete/moc_receivewidget.cpp \
+  qt/concrete/moc_tooltipmenu.cpp \
+  qt/concrete/moc_addresseswidget.cpp \
+  qt/concrete/moc_defaultdialog.cpp \
+  qt/concrete/moc_privacywidget.cpp \
+  qt/concrete/moc_coldstakingwidget.cpp \
+  qt/concrete/settings/moc_settingsbackupwallet.cpp \
+  qt/concrete/settings/moc_settingsexportcsv.cpp \
+  qt/concrete/settings/moc_settingsbittoolwidget.cpp \
+  qt/concrete/settings/moc_settingsconsolewidget.cpp \
+  qt/concrete/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/concrete/settings/moc_settingsfaqwidget.cpp \
+  qt/concrete/settings/moc_settingsinformationwidget.cpp \
+  qt/concrete/settings/moc_settingsmainoptionswidget.cpp \
+  qt/concrete/settings/moc_settingsmultisenddialog.cpp \
+  qt/concrete/settings/moc_settingsmultisendwidget.cpp \
+  qt/concrete/settings/moc_settingssignmessagewidgets.cpp \
+  qt/concrete/settings/moc_settingswalletoptionswidget.cpp \
+  qt/concrete/settings/moc_settingswalletrepairwidget.cpp \
+  qt/concrete/settings/moc_settingswidget.cpp \
+  qt/concrete/moc_welcomecontentwidget.cpp \
+  qt/concrete/moc_splash.cpp
+
+BITCOIN_MM = \
+  qt/macdockiconhandler.mm \
+  qt/macnotificationhandler.mm
+
+QT_MOC = \
+  qt/concrete.moc \
+  qt/bitcoinamountfield.moc \
+  qt/intro.moc \
+  qt/rpcconsole.moc \
+  qt/concrete/settings/moc_settingsconsolewidget.cpp
+
+QT_QRC_CPP = qt/qrc_concrete.cpp
+QT_QRC = qt/concrete.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_concrete_locale.cpp
+QT_QRC_LOCALE = qt/concrete_locale.qrc
+
+PROTOBUF_CC = qt/paymentrequest.pb.cc
+PROTOBUF_H = qt/paymentrequest.pb.h
+PROTOBUF_PROTO = qt/paymentrequest.proto
+
+BITCOIN_QT_H = \
+  qt/addressbookpage.h \
+  qt/addresstablemodel.h \
+  qt/askpassphrasedialog.h \
+  qt/bantablemodel.h \
+  qt/bitcoinaddressvalidator.h \
+  qt/bitcoinamountfield.h \
+  qt/concrete/concretegui.h \
+  qt/bitcoinunits.h \
+  qt/clientmodel.h \
+  qt/coincontroldialog.h \
+  qt/coincontroltreewidget.h \
+  qt/csvmodelwriter.h \
+  qt/editaddressdialog.h \
+  qt/guiconstants.h \
+  qt/guiutil.h \
+  qt/intro.h \
+  qt/macdockiconhandler.h \
+  qt/macnotificationhandler.h \
+  qt/networkstyle.h \
+  qt/notificator.h \
+  qt/openuridialog.h \
+  qt/optionsdialog.h \
+  qt/optionsmodel.h \
+  qt/paymentrequestplus.h \
+  qt/paymentserver.h \
+  qt/peertablemodel.h \
+  qt/platformstyle.h \
+  qt/qvalidatedlineedit.h \
+  qt/qvaluecombobox.h \
+  qt/recentrequeststablemodel.h \
+  qt/rpcconsole.h \
+  qt/splashscreen.h \
+  qt/trafficgraphwidget.h \
+  qt/transactiondesc.h \
+  qt/transactionfilterproxy.h \
+  qt/transactionrecord.h \
+  qt/transactiontablemodel.h \
+  qt/utilitydialog.h \
+  qt/walletmodel.h \
+  qt/walletmodeltransaction.h \
+  qt/concrete/prunnable.h \
+  qt/concrete/pfborderimage.h \
+  qt/concrete/loadingdialog.h \
+  qt/winshutdownmonitor.h \
+  qt/zcctcontroldialog.h \
+  qt/concrete/pwidget.h \
+  qt/concrete/guitransactionsutils.h \
+  qt/concrete/snackbar.h \
+  qt/concrete/navmenuwidget.h \
+  qt/concrete/lockunlock.h \
+  qt/concrete/receivedialog.h \
+  qt/concrete/furlistrow.h \
+  qt/concrete/furabstractlistitemdelegate.h \
+  qt/concrete/txviewholder.h \
+  qt/concrete/qtutils.h \
+  qt/concrete/expandablebutton.h \
+  qt/concrete/topbar.h \
+  qt/concrete/txrow.h \
+  qt/concrete/addressholder.h \
+  qt/concrete/addressfilterproxymodel.h \
+  qt/concrete/dashboardwidget.h \
+  qt/concrete/addresslabelrow.h \
+  qt/concrete/contactdropdownrow.h \
+  qt/concrete/mninfodialog.h \
+  qt/concrete/optionbutton.h \
+  qt/concrete/coldstakingmodel.h \
+  qt/concrete/mnmodel.h \
+  qt/concrete/masternodewizarddialog.h \
+  qt/concrete/mnrow.h \
+  qt/concrete/masternodeswidget.h \
+  qt/concrete/myaddressrow.h \
+  qt/concrete/csrow.h \
+  qt/concrete/contactsdropdown.h \
+  qt/concrete/sendchangeaddressdialog.h \
+  qt/concrete/sendconfirmdialog.h \
+  qt/concrete/sendcustomfeedialog.h \
+  qt/concrete/sendchangeaddressdialog.h \
+  qt/concrete/sendmultirow.h \
+  qt/concrete/send.h \
+  qt/concrete/addnewaddressdialog.h \
+  qt/concrete/addnewcontactdialog.h \
+  qt/concrete/requestdialog.h \
+  qt/concrete/receivewidget.h \
+  qt/concrete/tooltipmenu.h \
+  qt/concrete/addresseswidget.h \
+  qt/concrete/defaultdialog.h \
+  qt/concrete/privacywidget.h \
+  qt/concrete/coldstakingwidget.h \
+  qt/concrete/settings/settingsbackupwallet.h \
+  qt/concrete/settings/settingsexportcsv.h \
+  qt/concrete/settings/settingsbittoolwidget.h \
+  qt/concrete/settings/settingsconsolewidget.h \
+  qt/concrete/settings/settingsdisplayoptionswidget.h \
+  qt/concrete/settings/settingsfaqwidget.h \
+  qt/concrete/settings/settingsinformationwidget.h \
+  qt/concrete/settings/settingsmainoptionswidget.h \
+  qt/concrete/settings/settingsmultisenddialog.h \
+  qt/concrete/settings/settingsmultisendwidget.h \
+  qt/concrete/settings/settingssignmessagewidgets.h \
+  qt/concrete/settings/settingswalletoptionswidget.h \
+  qt/concrete/settings/settingswalletrepairwidget.h \
+  qt/concrete/settings/settingswidget.h \
+  qt/concrete/welcomecontentwidget.h \
+  qt/concrete/splash.h
+
+RES_ICONS = \
+  qt/res/icons/add.png \
+  qt/res/icons/address-book.png \
+  qt/res/icons/bitcoin.ico \
+  qt/res/icons/bitcoin.png \
+  qt/res/icons/bitcoin_testnet.ico \
+  qt/res/icons/bitcoin_testnet.png \
+  qt/res/icons/bitcoin_regtest.png \
+  qt/res/icons/browse.png \
+  qt/res/icons/clock1.png \
+  qt/res/icons/clock2.png \
+  qt/res/icons/clock3.png \
+  qt/res/icons/clock4.png \
+  qt/res/icons/clock5.png \
+  qt/res/icons/configure.png \
+  qt/res/icons/connect0_16.png \
+  qt/res/icons/connect1_16.png \
+  qt/res/icons/connect2_16.png \
+  qt/res/icons/connect3_16.png \
+  qt/res/icons/connect4_16.png \
+  qt/res/icons/debugwindow.png \
+  qt/res/icons/edit.png \
+  qt/res/icons/editcopy.png \
+  qt/res/icons/editpaste.png \
+  qt/res/icons/explorer.png \
+  qt/res/icons/export.png \
+  qt/res/icons/eye.png \
+  qt/res/icons/eye_minus.png \
+  qt/res/icons/eye_plus.png \
+  qt/res/icons/filesave.png \
+  qt/res/icons/history.png \
+  qt/res/icons/key.png \
+  qt/res/icons/lock_closed.png \
+  qt/res/icons/lock_open.png \
+  qt/res/icons/masternodes.png \
+  qt/res/icons/onion.png \
+  qt/res/icons/overview.png \
+  qt/res/icons/qrcode.png \
+  qt/res/icons/quit.png \
+  qt/res/icons/receive.png \
+  qt/res/icons/receive_dark.png \
+  qt/res/icons/privacy.png \
+  qt/res/icons/remove.png \
+  qt/res/icons/send.png \
+  qt/res/icons/send_dark.png \
+  qt/res/icons/governance.png \
+  qt/res/icons/governance_dark.png \
+  qt/res/icons/staking_active.png \
+  qt/res/icons/staking_inactive.png \
+  qt/res/icons/synced.png \
+  qt/res/icons/trade.png \
+  qt/res/icons/transaction0.png \
+  qt/res/icons/transaction2.png \
+  qt/res/icons/transaction_conflicted.png \
+  qt/res/icons/tx_inout.png \
+  qt/res/icons/tx_input.png \
+  qt/res/icons/tx_output.png \
+  qt/res/icons/tx_mined.png \
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
+  qt/res/icons/unit_concrete.png \
+  qt/res/icons/unit_mconcrete.png \
+  qt/res/icons/unit_uconcrete.png \
+  qt/res/icons/unit_tconcrete.png \
+  qt/res/icons/unit_tmconcrete.png \
+  qt/res/icons/unit_tuconcrete.png \
+  qt/res/icons/yesvote.png \
+  qt/res/icons/novote.png \
+  qt/res/icons/abstainvote.png \
+  qt/concrete/res/img/bg-dashboard-banner.png \
+  qt/concrete/res/img/bg-multi-number-dark.svg \
+  qt/concrete/res/img/ic-check-locked.svg \
+  qt/concrete/res/img/ic-nav-address.svg \
+  qt/concrete/res/img/ic-update.svg \
+  qt/concrete/res/img/bg-multi-number.svg \
+  qt/concrete/res/img/ic-check-mint-off.svg \
+  qt/concrete/res/img/ic-nav-cold-staking.svg \
+  qt/concrete/res/img/ic-nav-cold-staking-active.svg \
+  qt/concrete/res/img/ic-nav-dashboard-active.svg \
+  qt/concrete/res/img/ic-wallet-status-locked.svg \
+  qt/concrete/res/img/bg-splash.svg \
+  qt/concrete/res/img/bg-splash.png \
+  qt/concrete/res/img/ic-check-mint.svg \
+  qt/concrete/res/img/ic-nav-dashboard-hover.svg \
+  qt/concrete/res/img/ic-wallet-status-staking.svg \
+  qt/concrete/res/img/ic-check-peers-off.svg \
+  qt/concrete/res/img/ic-nav-dashboard.svg \
+  qt/concrete/res/img/ic-wallet-status-unlocked.svg \
+  qt/concrete/res/img/ic-check-peers.svg \
+  qt/concrete/res/img/ic-nav-master-active.svg \
+  qt/concrete/res/img/ic-watch-password-white.svg \
+  qt/concrete/res/img/bg-welcome-container.jpg \
+  qt/concrete/res/img/bg-welcome-container.png \
+  qt/concrete/res/img/bg-welcome-container.svg \
+  qt/concrete/res/img/bg-welcome-container@2x.png \
+  qt/concrete/res/img/bg-welcome-container@3x.png \
+  qt/concrete/res/img/ic-check-staking-off.svg \
+  qt/concrete/res/img/ic-nav-master-hover.svg \
+  qt/concrete/res/img/ic-watch-password.svg \
+  qt/concrete/res/img/bg-welcome.jpg \
+  qt/concrete/res/img/bg-welcome.svg \
+  qt/concrete/res/img/bg-welcome@2x.jpg \
+  qt/concrete/res/img/bg-welcome@3x.jpg \
+  qt/concrete/res/img/bg-welcome.png \
+  qt/concrete/res/img/ic-check-staking.svg \
+  qt/concrete/res/img/ic-nav-master.svg \
+  qt/concrete/res/img/img-dashboard-banner.jpg \
+  qt/concrete/res/img/btn-radio-active.svg \
+  qt/concrete/res/img/ic-check-sync-off.svg \
+  qt/concrete/res/img/ic-nav-privacy-active.svg \
+  qt/concrete/res/img/img-empty-contacts.svg \
+  qt/concrete/res/img/btn-radio-off.svg \
+  qt/concrete/res/img/ic-check-sync.png \
+  qt/concrete/res/img/ic-nav-privacy-hover.svg \
+  qt/concrete/res/img/img-empty-dark-contacts.svg \
+  qt/concrete/res/img/ic-contact-arrow-down.svg \
+  qt/concrete/res/img/ic-contact-arrow-down-white.svg \
+  qt/concrete/res/img/ic-check-sync.svg \
+  qt/concrete/res/img/ic-check-faq.svg \
+  qt/concrete/res/img/ic-nav-privacy.svg \
+  qt/concrete/res/img/img-empty-dark-error.svg \
+  qt/concrete/res/img/ic-add-label.svg \
+  qt/concrete/res/img/ic-pending.svg \
+  qt/concrete/res/img/ic-check-theme-dark.svg \
+  qt/concrete/res/img/ic-nav-receive-active.svg \
+  qt/concrete/res/img/img-empty-dark-masternode.svg \
+  qt/concrete/res/img/ic-add-liliac.svg \
+  qt/concrete/res/img/ic-check-theme-light.svg \
+  qt/concrete/res/img/ic-nav-receive-hover.svg \
+  qt/concrete/res/img/img-empty-dark-multisend.svg \
+  qt/concrete/res/img/ic-add-purple.svg \
+  qt/concrete/res/img/ic-check-white.svg \
+  qt/concrete/res/img/ic-nav-receive.svg \
+  qt/concrete/res/img/img-empty-dark-peers.svg \
+  qt/concrete/res/img/ic-add.svg \
+  qt/concrete/res/img/ic-check.svg \
+  qt/concrete/res/img/ic-nav-send-active.svg \
+  qt/concrete/res/img/img-empty-dark-staking-off.svg \
+  qt/concrete/res/img/img-empty-dark-staking-on.svg \
+  qt/concrete/res/img/ic-address-book-grey.svg \
+  qt/concrete/res/img/ic-chevron-left.svg \
+  qt/concrete/res/img/ic-nav-send-hover.svg \
+  qt/concrete/res/img/img-empty-dark-transactions.svg \
+  qt/concrete/res/img/ic-address-book-white.svg \
+  qt/concrete/res/img/ic-chevron-right.svg \
+  qt/concrete/res/img/ic-nav-send.svg \
+  qt/concrete/res/img/img-empty-error.svg \
+  qt/concrete/res/img/ic-address-book.svg \
+  qt/concrete/res/img/ic-clear-liliac.svg \
+  qt/concrete/res/img/ic-nav-settings-active.svg \
+  qt/concrete/res/img/img-empty-masternode.svg \
+  qt/concrete/res/img/ic-address-send-white.svg \
+  qt/concrete/res/img/ic-clear-purple.svg \
+  qt/concrete/res/img/ic-nav-settings-hover.svg \
+  qt/concrete/res/img/img-empty-multisend.svg \
+  qt/concrete/res/img/ic-address-send.svg \
+  qt/concrete/res/img/ic-close-white.svg \
+  qt/concrete/res/img/ic-nav-settings.svg \
+  qt/concrete/res/img/img-empty-peers.svg \
+  qt/concrete/res/img/img-empty-privacy.svg \
+  qt/concrete/res/img/img-empty-privacy-dark.svg \
+  qt/concrete/res/img/ic-arrow-drop-down-white.svg \
+  qt/concrete/res/img/ic-close.svg \
+  qt/concrete/res/img/ic-radio-liliac-on.svg \
+  qt/concrete/res/img/img-empty-staking-off.svg \
+  qt/concrete/res/img/ic-arrow-drop-down.svg \
+  qt/concrete/res/img/ic-coin-cct.svg \
+  qt/concrete/res/img/ic-receive-off.svg \
+  qt/concrete/res/img/img-empty-staking-on.svg \
+  qt/concrete/res/img/ic-arrow-drop-up-white.svg \
+  qt/concrete/res/img/ic-coin-zcct.png \
+  qt/concrete/res/img/ic-receive-on.svg \
+  qt/concrete/res/img/img-empty-transactions.svg \
+  qt/concrete/res/img/ic-arrow-drop-up.svg \
+  qt/concrete/res/img/ic-coin-zcct.svg \
+  qt/concrete/res/img/ic-received.svg \
+  qt/concrete/res/img/img-logo-concrete.png \
+  qt/concrete/res/img/ic-arrow-drop-white-down.svg \
+  qt/concrete/res/img/ic-combo-box.svg \
+  qt/concrete/res/img/ic-send.svg \
+  qt/concrete/res/img/img-logo-concrete@2x.png \
+  qt/concrete/res/img/ic-arrow-purple-down.svg \
+  qt/concrete/res/img/ic-connect.svg \
+  qt/concrete/res/img/ic-submenu-lock.svg \
+  qt/concrete/res/img/img-logo-concrete@3x.png \
+  qt/concrete/res/img/img-logo-concrete.svg \
+  qt/concrete/res/img/ic-arrow-right-white.svg \
+  qt/concrete/res/img/ic-arrow-left-white.svg \
+  qt/concrete/res/img/ic-arrow-left.svg \
+  qt/concrete/res/img/ic-copy-liliac.svg \
+  qt/concrete/res/img/ic-submenu-staking.svg \
+  qt/concrete/res/img/img-nav-logo-concrete.png \
+  qt/concrete/res/img/ic-arrow-right.svg \
+  qt/concrete/res/img/ic-copy.svg \
+  qt/concrete/res/img/ic-copy-big.svg \
+  qt/concrete/res/img/ic-copy-big-white.svg \
+  qt/concrete/res/img/ic-submenu-unlock.svg \
+  qt/concrete/res/img/img-nav-logo.png \
+  qt/concrete/res/img/ic-arrow-white-left.svg \
+  qt/concrete/res/img/ic-exit.svg \
+  qt/concrete/res/img/ic-switch-liliac-on.svg \
+  qt/concrete/res/img/img-nav-logo.svg \
+  qt/concrete/res/img/ic-arrow-white-right.svg \
+  qt/concrete/res/img/ic-expand.svg \
+  qt/concrete/res/img/ic-switch-off.svg \
+  qt/concrete/res/img/img-qr-test-big.png \
+  qt/concrete/res/img/ic-check-active.svg \
+  qt/concrete/res/img/ic-folder.svg \
+  qt/concrete/res/img/ic-switch-on.svg \
+  qt/concrete/res/img/img-qr-test.png \
+  qt/concrete/res/img/ic-check-box.svg \
+  qt/concrete/res/img/ic-check-box-dark-active.svg \
+  qt/concrete/res/img/ic-check-box-indeterminate.svg \
+  qt/concrete/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/concrete/res/img/ic-label-liliac.svg \
+  qt/concrete/res/img/ic-transaction-warning.svg \
+  qt/concrete/res/img/ic-transaction-mint.svg \
+  qt/concrete/res/img/ic-transaction-mint-inactive.svg \
+  qt/concrete/res/img/ic-check-cold-staking.svg \
+  qt/concrete/res/img/ic-check-cold-staking-off.svg \
+  qt/concrete/res/img/ic-check-cold-staking-enabled.svg \
+  qt/concrete/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/concrete/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/concrete/res/img/img-qr.svg \
+  qt/concrete/res/img/ic-check-connect-off.svg \
+  qt/concrete/res/img/ic-check-tor-off.svg \
+  qt/concrete/res/img/ic-check-tor.svg \
+  qt/concrete/res/img/ic-label.svg \
+  qt/concrete/res/img/ic-transaction-received.svg \
+  qt/concrete/res/img/dark/ic-transaction-received.svg \
+  qt/concrete/res/img/dark/ic-transaction-warning.svg \
+  qt/concrete/res/img/dark/ic-transaction-mint.svg \
+  qt/concrete/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/concrete/res/img/ic-transaction-received-inactive.svg \
+  qt/concrete/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/concrete/res/img/img-welcome-step1.png \
+  qt/concrete/res/img/ic-check-connect.svg \
+  qt/concrete/res/img/ic-menu-hover.svg \
+  qt/concrete/res/img/ic-transaction-sent.svg \
+  qt/concrete/res/img/ic-transaction-sent-inactive.svg \
+  qt/concrete/res/img/dark/ic-transaction-sent.svg \
+  qt/concrete/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/concrete/res/img/img-welcome-step2.png \
+  qt/concrete/res/img/ic-check-dark.svg \
+  qt/concrete/res/img/ic-mint.svg \
+  qt/concrete/res/img/ic-transaction-staked.svg \
+  qt/concrete/res/img/ic-transaction-staked-inactive.svg \
+  qt/concrete/res/img/dark/ic-transaction-staked.svg \
+  qt/concrete/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/concrete/res/img/img-welcome-step3.png \
+  qt/concrete/res/img/ic-check-liliac-on.svg \
+  qt/concrete/res/img/ic-nav-address-active.svg \
+  qt/concrete/res/img/ic-unlock-staking.svg \
+  qt/concrete/res/img/img-welcome-step4.png \
+  qt/concrete/res/img/ic-check-locked-off.svg \
+  qt/concrete/res/img/ic-nav-address-hover.svg \
+  qt/concrete/res/img/ic-update-liliac.svg \
+  qt/concrete/res/img/ic-arrow-drop-down-purple.svg \
+  qt/concrete/res/img/ic-arrow-drop-up-purple.svg \
+  qt/concrete/res/img/ic-check-liliac-indeterminate.svg \
+  qt/concrete/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/concrete/res/img/ic-transaction-stake-delegated.svg \
+  qt/concrete/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/concrete/res/img/ic-transaction-stake-hot.svg \
+  qt/concrete/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/concrete/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/concrete/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/concrete/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/concrete/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/concrete/res/img/ic-transaction-cs-contract.svg \
+  qt/concrete/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/concrete/res/img/ic-check-box-indeterminate.svg \
+  qt/concrete/res/img/ani-loading-dark.gif \
+  qt/concrete/res/img/ani-loading.gif
+
+
+
+BITCOIN_QT_BASE_CPP = \
+  qt/bantablemodel.cpp \
+  qt/bitcoinaddressvalidator.cpp \
+  qt/bitcoinamountfield.cpp \
+  qt/concrete/concretegui.cpp \
+  qt/bitcoinunits.cpp \
+  qt/clientmodel.cpp \
+  qt/csvmodelwriter.cpp \
+  qt/guiutil.cpp \
+  qt/intro.cpp \
+  qt/networkstyle.cpp \
+  qt/notificator.cpp \
+  qt/optionsdialog.cpp \
+  qt/optionsmodel.cpp \
+  qt/peertablemodel.cpp \
+  qt/platformstyle.cpp \
+  qt/qvalidatedlineedit.cpp \
+  qt/qvaluecombobox.cpp \
+  qt/rpcconsole.cpp \
+  qt/splashscreen.cpp \
+  qt/trafficgraphwidget.cpp \
+  qt/utilitydialog.cpp
+
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+
+BITCOIN_QT_WALLET_CPP = \
+  qt/addressbookpage.cpp \
+  qt/addresstablemodel.cpp \
+  qt/askpassphrasedialog.cpp \
+  qt/coincontroldialog.cpp \
+  qt/coincontroltreewidget.cpp \
+  qt/editaddressdialog.cpp \
+  qt/openuridialog.cpp \
+  qt/paymentrequestplus.cpp \
+  qt/paymentserver.cpp \
+  qt/recentrequeststablemodel.cpp \
+  qt/transactiondesc.cpp \
+  qt/transactionfilterproxy.cpp \
+  qt/transactionrecord.cpp \
+  qt/transactiontablemodel.cpp \
+  qt/walletmodel.cpp \
+  qt/walletmodeltransaction.cpp \
+  qt/concrete/loadingdialog.cpp \
+  qt/zcctcontroldialog.cpp \
+  qt/concrete/pwidget.cpp \
+  qt/concrete/guitransactionsutils.cpp \
+  qt/concrete/snackbar.cpp \
+  qt/concrete/navmenuwidget.cpp \
+  qt/concrete/lockunlock.cpp \
+  qt/concrete/receivedialog.cpp \
+  qt/concrete/furabstractlistitemdelegate.cpp \
+  qt/concrete/txviewholder.cpp \
+  qt/concrete/qtutils.cpp \
+  qt/concrete/expandablebutton.cpp \
+  qt/concrete/topbar.cpp \
+  qt/concrete/txrow.cpp \
+  qt/concrete/addressholder.cpp \
+  qt/concrete/addressfilterproxymodel.cpp \
+  qt/concrete/dashboardwidget.cpp \
+  qt/concrete/addresslabelrow.cpp \
+  qt/concrete/contactdropdownrow.cpp \
+  qt/concrete/contactsdropdown.cpp \
+  qt/concrete/optionbutton.cpp \
+  qt/concrete/mninfodialog.cpp \
+  qt/concrete/coldstakingmodel.cpp \
+  qt/concrete/mnmodel.cpp \
+  qt/concrete/masternodewizarddialog.cpp \
+  qt/concrete/mnrow.cpp \
+  qt/concrete/masternodeswidget.cpp \
+  qt/concrete/myaddressrow.cpp \
+  qt/concrete/csrow.cpp \
+  qt/concrete/sendchangeaddressdialog.cpp \
+  qt/concrete/sendconfirmdialog.cpp \
+  qt/concrete/sendcustomfeedialog.cpp \
+  qt/concrete/sendchangeaddressdialog.cpp \
+  qt/concrete/sendmultirow.cpp \
+  qt/concrete/send.cpp \
+  qt/concrete/addnewaddressdialog.cpp \
+  qt/concrete/addnewcontactdialog.cpp \
+  qt/concrete/requestdialog.cpp \
+  qt/concrete/receivewidget.cpp \
+  qt/concrete/tooltipmenu.cpp \
+  qt/concrete/addresseswidget.cpp \
+  qt/concrete/defaultdialog.cpp \
+  qt/concrete/privacywidget.cpp \
+  qt/concrete/coldstakingwidget.cpp \
+  qt/concrete/settings/settingsbackupwallet.cpp \
+  qt/concrete/settings/settingsexportcsv.cpp \
+  qt/concrete/settings/settingsbittoolwidget.cpp \
+  qt/concrete/settings/settingsconsolewidget.cpp \
+  qt/concrete/settings/settingsdisplayoptionswidget.cpp \
+  qt/concrete/settings/settingsfaqwidget.cpp \
+  qt/concrete/settings/settingsinformationwidget.cpp \
+  qt/concrete/settings/settingsmainoptionswidget.cpp \
+  qt/concrete/settings/settingsmultisenddialog.cpp \
+  qt/concrete/settings/settingsmultisendwidget.cpp \
+  qt/concrete/settings/settingssignmessagewidgets.cpp \
+  qt/concrete/settings/settingswalletoptionswidget.cpp \
+  qt/concrete/settings/settingswalletrepairwidget.cpp \
+  qt/concrete/settings/settingswidget.cpp \
+  qt/concrete/welcomecontentwidget.cpp \
+  qt/concrete/splash.cpp
+
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
+endif
+
+RES_IMAGES = \
+  qt/res/images/about.png \
+  qt/res/images/splash.png \
+  qt/res/images/splash_testnet.png \
+  qt/res/images/splash_regtest.png \
+  qt/res/images/concrete_logo_horizontal.png \
+  qt/res/images/downArrow_dark.png \
+  qt/res/images/downArrow_small_dark.png \
+  qt/res/images/downArrow_small.png \
+  qt/res/images/upArrow_small_dark.png \
+  qt/res/images/upArrow_small.png \
+  qt/res/images/leftArrow_small_dark.png \
+  qt/res/images/rightArrow_small_dark.png \
+  qt/res/images/qtreeview_selected.png
+
+RES_CSS = \
+  qt/res/css/default.css \
+  qt/concrete/res/css/style_dark.css \
+  qt/concrete/res/css/style_light.css
+
+RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+
+BITCOIN_RC = qt/res/concrete-qt-res.rc
+
+BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
+
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
+
+nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
+  $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
+
+# forms/foo.h -> forms/ui_foo.h
+QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
+
+# Most files will depend on the forms and moc files as includes. Generate them
+# before anything else.
+$(QT_MOC): $(QT_FORMS_H)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_concrete_qt_OBJECTS) : | $(QT_MOC)
+
+#Generating these with a half-written protobuf header leads to wacky results.
+#This makes sure it's done.
+$(QT_MOC): $(PROTOBUF_H)
+$(QT_MOC_CPP): $(PROTOBUF_H)
+
+# concrete-qt binary #
+qt_concrete_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_concrete_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+
+qt_concrete_qt_SOURCES = qt/concrete.cpp
+if TARGET_DARWIN
+  qt_concrete_qt_SOURCES += $(BITCOIN_MM)
+endif
+if TARGET_WINDOWS
+  qt_concrete_qt_SOURCES += $(BITCOIN_RC)
+endif
+qt_concrete_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+if ENABLE_WALLET
+qt_concrete_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+endif
+if ENABLE_ZMQ
+qt_concrete_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+endif
+qt_concrete_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+  $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+qt_concrete_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_concrete_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+
+#locale/foo.ts -> locale/foo.qm
+QT_QM=$(QT_TS:.ts=.qm)
+
+SECONDARY: $(QT_QM)
+
+$(srcdir)/qt/concretestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
+
+translate: $(srcdir)/qt/concretestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/concrete.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/concrete_en.ts
+
+$(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
+	@test -f $(RCC)
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name concrete_locale $(@D)/temp_$(<F) | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
+
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
+	@test -f $(RCC)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name concrete $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_concrete_locale.qrc
+
+CLEANFILES += $(CLEAN_QT)
+
+concrete_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_concrete_qt_OBJECTS) qt/concrete-qt$(EXEEXT) $(LIBBITCOINQT)
+
+concrete_qt : qt/concrete-qt$(EXEEXT)
+
+ui_%.h: %.ui
+	@test -f $(UIC)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
+
+%.moc: %.cpp
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+moc_%.cpp: %.h
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+
+%.qm: %.ts
+	@test -f $(LRELEASE)
+	@$(MKDIR_P) $(@D)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@

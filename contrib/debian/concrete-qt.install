@@ -1,0 +1,6 @@
+usr/local/bin/concrete-qt usr/bin
+share/pixmaps/concrete32.xpm usr/share/pixmaps
+share/pixmaps/concrete16.xpm usr/share/pixmaps
+share/pixmaps/concrete128.png usr/share/pixmaps
+debian/concrete-qt.desktop usr/share/applications
+debian/concrete-qt.protocol usr/share/kde4/services/

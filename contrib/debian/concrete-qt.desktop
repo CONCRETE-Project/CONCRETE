@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=CONCRETE Core
+Comment=CONCRETE P2P Cryptocurrency
+Comment[fr]=CONCRETE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CONCRETE, eşten eşe kriptografik sanal para birimi
+Exec=concrete-qt %u
+Terminal=false
+Type=Application
+Icon=concrete128
+MimeType=x-scheme-handler/concrete;
+Categories=Office;Finance;
+StartupWMClass=Concrete-qt
