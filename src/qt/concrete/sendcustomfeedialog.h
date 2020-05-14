@@ -1,12 +1,12 @@
-// Copyright (c) 2019 The PIVX Core Developers
+// Copyright (c) 2019-2020 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SENDCUSTOMFEEDIALOG_H
 #define SENDCUSTOMFEEDIALOG_H
 
-#include <QDialog>
 #include "amount.h"
+#include "qt/concrete/focuseddialog.h"
 #include "qt/concrete/snackbar.h"
 
 class CONCRETEGUI;
@@ -16,7 +16,7 @@ namespace Ui {
 class SendCustomFeeDialog;
 }
 
-class SendCustomFeeDialog : public QDialog
+class SendCustomFeeDialog : public FocusedDialog
 {
     Q_OBJECT
 

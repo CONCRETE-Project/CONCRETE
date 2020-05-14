@@ -1,11 +1,11 @@
-// Copyright (c) 2019 The PIVX Core Developers
+// Copyright (c) 2019-2020 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef SENDCHANGEADDRESSDIALOG_H
 #define SENDCHANGEADDRESSDIALOG_H
 
-#include <QDialog>
+#include "qt/concrete/focuseddialog.h"
 #include "qt/concrete/snackbar.h"
 
 class WalletModel;
@@ -14,7 +14,7 @@ namespace Ui {
 class SendChangeAddressDialog;
 }
 
-class SendChangeAddressDialog : public QDialog
+class SendChangeAddressDialog : public FocusedDialog
 {
     Q_OBJECT
 
@@ -35,7 +35,7 @@ private:
 
 private Q_SLOTS:
     void reset();
-    void save();
+    void accept() override;
 };
 
 #endif // SENDCHANGEADDRESSDIALOG_H
