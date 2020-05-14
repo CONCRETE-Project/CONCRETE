@@ -62,8 +62,8 @@ DashboardWidget::DashboardWidget(CONCRETEGUI* parent) :
     fontBold.setWeight(QFont::Bold);
 
     setCssProperty(ui->labelChart, "legend-chart");
-    setCssProperty(ui->labelAmountPiv, "text-stake-cct-disable");
-    setCssProperty(ui->labelAmountZpiv, "text-stake-zcct-disable");
+    setCssProperty(ui->labelAmountCct, "text-stake-cct-disable");
+    setCssProperty(ui->labelAmountZcct, "text-stake-zcct-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
     setCssProperty({ui->comboBoxMonths,  ui->comboBoxYears}, "btn-combo-chart-selected");
