@@ -53,27 +53,23 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
     setCssProperty(ui->labelTitle3, "text-title-dialog");
     setCssProperty(ui->labelMessage3, "text-main-grey");
 
-    ui->lineEditName->setPlaceholderText(tr("e.g user_masternode"));
     initCssEditLine(ui->lineEditName);
     // MN alias must not contain spaces or "#" character
     QRegularExpression rx("^(?:(?![\\#\\s]).)*");
     ui->lineEditName->setValidator(new QRegularExpressionValidator(rx, ui->lineEditName));
 
     // Frame 4
+    setCssProperty(ui->labelTitle4, "text-title-dialog");
     setCssProperty({ui->labelSubtitleIp, ui->labelSubtitlePort}, "text-title");
     setCssSubtitleScreen(ui->labelSubtitleAddressIp);
 
-    ui->lineEditIpAddress->setPlaceholderText("e.g 18.255.255.255");
-    ui->lineEditPort->setPlaceholderText("e.g 32812");
     initCssEditLine(ui->lineEditIpAddress);
     initCssEditLine(ui->lineEditPort);
     ui->stackedWidget->setCurrentIndex(pos);
     ui->lineEditPort->setEnabled(false);    // use default port number
     if (walletModel->isRegTestNetwork()) {
-        ui->lineEditPort->setEnabled(false);
         ui->lineEditPort->setText("32816");
     } else if (walletModel->isTestNetwork()) {
-        ui->lineEditPort->setEnabled(false);
         ui->lineEditPort->setText("32814");
     } else {
         ui->lineEditPort->setText("32812");
@@ -88,10 +84,8 @@ MasterNodeWizardDialog::MasterNodeWizardDialog(WalletModel *model, QWidget *pare
 
     // Connect btns
     setCssBtnPrimary(ui->btnNext);
-    ui->btnNext->setText(tr("NEXT"));
     setCssProperty(ui->btnBack , "btn-dialog-cancel");
     ui->btnBack->setVisible(false);
-    ui->btnBack->setText(tr("BACK"));
     setCssProperty(ui->pushButtonSkip, "ic-close");
 
     connect(ui->pushButtonSkip, &QPushButton::clicked, this, &MasterNodeWizardDialog::close);
@@ -217,7 +211,7 @@ bool MasterNodeWizardDialog::createMN()
         // no coincontrol, no P2CS delegations
         prepareStatus = walletModel->prepareTransaction(currentTransaction, nullptr, false);
 
-        QString returnMsg = "Unknown error";
+        QString returnMsg = tr("Unknown error");
         // process prepareStatus and on error generate message shown to user
         CClientUIInterface::MessageBoxFlags informType;
         returnMsg = GuiTransactionsUtils::ProcessSendCoinsReturn(
@@ -346,7 +340,7 @@ bool MasterNodeWizardDialog::createMN()
 
                 returnStr = tr("Master node created! Wait %1 confirmations before starting it.").arg(MASTERNODE_MIN_CONFIRMATIONS);
                 return true;
-            } else{
+            } else {
                 returnStr = tr("masternode.conf file doesn't exists");
             }
         } else {

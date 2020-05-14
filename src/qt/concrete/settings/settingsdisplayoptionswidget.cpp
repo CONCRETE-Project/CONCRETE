@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The PIVX Core Developers
+// Copyright (c) 2019-2020 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,30 +25,19 @@ SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(CONCRETEGUI* _window,
     ui->left->setProperty("cssClass", "container");
     ui->left->setContentsMargins(10,10,10,10);
 
-    // Title
-    ui->labelTitle->setText(tr("Display"));
+    // Title - Subtitle
     setCssTitleScreen(ui->labelTitle);
-
-    // Subtitle
-    ui->labelSubtitle1->setText(tr("Customize the display view options"));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
-    ui->labelTitleLanguage->setText(tr("Language"));
     ui->labelTitleLanguage->setProperty("cssClass", "text-main-settings");
-
-    ui->labelTitleUnit->setText(tr("Unit to show amount"));
     ui->labelTitleUnit->setProperty("cssClass", "text-main-settings");
-
-    ui->labelTitleDigits->setText(tr("Decimal digits"));
     ui->labelTitleDigits->setProperty("cssClass", "text-main-settings");
-
-    ui->labelTitleUrl->setText(tr("Third party transactions URLs"));
     ui->labelTitleUrl->setProperty("cssClass", "text-main-settings");
+
     // TODO: Reconnect this option to an action. Hide it for now
     ui->labelTitleUrl->hide();
 
-    // Switch (hide for now)
-    ui->pushButtonSwitchBalance->setText(tr("Hide empty balances"));
+    // Switch Balance (hide for now)
     ui->pushButtonSwitchBalance->setProperty("cssClass", "btn-switch");
     ui->pushButtonSwitchBalance->setVisible(false);
 
@@ -144,7 +133,7 @@ void SettingsDisplayOptionsWidget::onResetClicked()
 void SettingsDisplayOptionsWidget::setMapper(QDataWidgetMapper *mapper)
 {
     mapper->addMapping(ui->comboBoxDigits, OptionsModel::Digits);
-    mapper->addMapping(ui->comboBoxLanguage, OptionsModel::Language);
+    mapper->addMapping(ui->comboBoxLanguage, OptionsModel::Language, "currentData");
     mapper->addMapping(ui->comboBoxUnit, OptionsModel::DisplayUnit);
     mapper->addMapping(ui->pushButtonSwitchBalance, OptionsModel::HideZeroBalances);
 #ifdef USE_QTCHARTS
