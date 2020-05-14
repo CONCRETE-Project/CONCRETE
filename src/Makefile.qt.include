@@ -107,6 +107,7 @@ QT_MOC_CPP = \
   qt/concrete/moc_loadingdialog.cpp \
   qt/moc_zcctcontroldialog.cpp \
   qt/concrete/moc_pwidget.cpp \
+  qt/concrete/moc_focuseddialog.cpp \
   qt/concrete/moc_snackbar.cpp \
   qt/concrete/moc_navmenuwidget.cpp \
   qt/concrete/moc_lockunlock.cpp \
@@ -228,6 +229,7 @@ BITCOIN_QT_H = \
   qt/winshutdownmonitor.h \
   qt/zcctcontroldialog.h \
   qt/concrete/pwidget.h \
+  qt/concrete/focuseddialog.h \
   qt/concrete/guitransactionsutils.h \
   qt/concrete/snackbar.h \
   qt/concrete/navmenuwidget.h \
@@ -553,6 +555,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/concrete/loadingdialog.cpp \
   qt/zcctcontroldialog.cpp \
   qt/concrete/pwidget.cpp \
+  qt/concrete/focuseddialog.cpp \
   qt/concrete/guitransactionsutils.cpp \
   qt/concrete/snackbar.cpp \
   qt/concrete/navmenuwidget.cpp \
