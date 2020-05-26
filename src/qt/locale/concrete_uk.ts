@@ -172,16 +172,16 @@
         <translation>Підтвердження шифрування гаманця</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші CCT'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші CCE'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ви впевнені, що хочете зашифрувати Ваш гаманець?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші CCT'и&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші CCE'и&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -208,7 +208,7 @@
     </message>
     </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Label</source>
         <translation>Мітка</translation>
@@ -438,7 +438,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     </context>
 <context>
     <name>concrete-core</name>

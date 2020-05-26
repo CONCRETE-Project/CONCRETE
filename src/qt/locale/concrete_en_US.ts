@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1544,32 +1544,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCT</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 CCT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CCE</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 CCE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CCT</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 CCT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CCE</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 CCE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCT to anonymize 10000 CCT</source>
-        <translation>This option is the quickest and will cost about ~0.025 CCT to anonymize 10000 CCT</translation>
+        <source>This option is the quickest and will cost about ~0.025 CCE to anonymize 10000 CCE</source>
+        <translation>This option is the quickest and will cost about ~0.025 CCE to anonymize 10000 CCE</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CCT to anonymize 10000 CCT</source>
-        <translation>This option is moderately fast and will cost about 0.05 CCT to anonymize 10000 CCT</translation>
+        <source>This option is moderately fast and will cost about 0.05 CCE to anonymize 10000 CCE</source>
+        <translation>This option is moderately fast and will cost about 0.05 CCE to anonymize 10000 CCE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 CCT per 10000 CCT you anonymize.</source>
-        <translation>0.1 CCT per 10000 CCT you anonymize.</translation>
+        <source>0.1 CCE per 10000 CCE you anonymize.</source>
+        <translation>0.1 CCE per 10000 CCE you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 CCT / 0 Rounds</source>
-        <translation>0 CCT / 0 Rounds</translation>
+        <source>0 CCE / 0 Rounds</source>
+        <translation>0 CCE / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2792,8 +2792,8 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 CCT</source>
-        <translation>0 CCT</translation>
+        <source>0 CCE</source>
+        <translation>0 CCE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2840,12 +2840,12 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCTs in fee,&lt;br /&gt;while "at least" pays 1000 uCCTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uCCTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCTs in fee,&lt;br /&gt;while "at least" pays 1000 uCCTs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCCEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCEs in fee,&lt;br /&gt;while "at least" pays 1000 uCCEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uCCEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCEs in fee,&lt;br /&gt;while "at least" pays 1000 uCCEs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uCCTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCTs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uCCTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCTs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCTs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCCEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCEs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uCCEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCCEs in fee,&lt;br /&gt;while "total at least" pays 1000 uCCEs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CONCRETE transactions than the network can process.</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</translation>
     </message>
 </context>
 <context>
@@ -3974,12 +3974,12 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4114,12 +4114,12 @@ for example: alertnotify=echo %%s | mail -s "CONCRETE Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4406,8 +4406,8 @@ for example: alertnotify=echo %%s | mail -s "CONCRETE Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in CCT/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in CCE/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4578,8 +4578,8 @@ for example: alertnotify=echo %%s | mail -s "CONCRETE Alert" admin@foo.com
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N CCT anonymized (default: %u)</source>
-        <translation>Keep N CCT anonymized (default: %u)</translation>
+        <source>Keep N CCE anonymized (default: %u)</source>
+        <translation>Keep N CCE anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

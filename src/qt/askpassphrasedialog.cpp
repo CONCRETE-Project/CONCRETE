@@ -185,7 +185,7 @@ void AskPassphraseDialog::accept()
         bool ret = openStandardDialog(
                 tr("Confirm wallet encryption"),
                 "<b>" + tr("WARNING") + ":</b> " + tr("If you encrypt your wallet and lose your passphrase, you will") +
-                " <b>" + tr("LOSE ALL OF YOUR CCT") + "</b>!<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+                " <b>" + tr("LOSE ALL OF YOUR CCE") + "</b>!<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
                 tr("ENCRYPT"), tr("CANCEL")
         );
         if (ret) {
@@ -349,7 +349,7 @@ void AskPassphraseDialog::warningMessage()
             "<qt>" +
             tr("CONCRETE will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
-               "your CCTs from being stolen by malware infecting your computer.") +
+               "your CCEs from being stolen by malware infecting your computer.") +
             "<br><br><b>" +
             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                "should be replaced with the newly generated, encrypted wallet file. "

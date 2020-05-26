@@ -196,7 +196,7 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
         <translation>CONCRETE сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия CONCRETE от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
@@ -204,8 +204,8 @@
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -507,8 +507,8 @@
         <translation>Етикета става червен, когато получателя ще получи сума по-малка от %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Може да има разлика от +/- %1 ucct на вх.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Може да има разлика от +/- %1 ucce на вх.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -524,10 +524,10 @@
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -611,8 +611,8 @@
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>All</source>
@@ -1098,28 +1098,28 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Включи автоматичното емитиране на CCT единици в zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Включи автоматичното емитиране на CCE единици в zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Включи Автоматично емитиране на zCCT</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Включи Автоматично емитиране на zCCE</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите CCT, който автоматично да се конвертира в zCCT посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите CCE, който автоматично да се конвертира в zCCE посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Процент автоматично сечени zCCT</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Процент автоматично сечени zCCE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zCCT докато не се съберат достатъчно CCT за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zCCE докато не се съберат достатъчно CCE за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zCCT</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zCCE</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1714,8 +1714,8 @@ Address: %4
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>Персонализиран zCCT резервен път:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>Персонализиран zCCE резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1998,12 +1998,12 @@ Address: %4
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>В момента zCCT е в ремонт.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>В момента zCCE е в ремонт.</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zCCT изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zCCE изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2752,12 +2752,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получен посредством обфускация</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT Stake</translation>
+        <source>CCE Stake</source>
+        <translation>CCE Stake</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT Stake</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2776,24 +2776,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>Конвертиран CCT във zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>Конвертиран CCE във zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>Похарчени zCCT</translation>
+        <source>Spent zCCE</source>
+        <translation>Похарчени zCCE</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>Получен CCT от zCCT</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>Получен CCE от zCCE</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>Исечено ресто като zCCT от похарчените zCCT</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>Исечено ресто като zCCE от похарчените zCCE</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>Конвертиран zCCT във CCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>Конвертиран zCCE във CCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2889,8 +2889,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 CCT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 CCE.</translation>
     </message>
 </context>
 <context>
@@ -2912,18 +2912,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>Изберете zCCT за Изпращане</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>Изберете zCCE за Изпращане</translation>
     </message>
     <message>
         <source>Coin Control</source>
         <translation>Монетен контрол...</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCCT</translation>
+        <source>zCce</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2997,16 +2997,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Включи автоматичните бекъпи на портфейла след всяко zCCT емитиране (0-1, по подразбиране: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Включи автоматичните бекъпи на портфейла след всяко zCCE емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за CCT входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за CCE входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zCCT входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zCCE входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3041,12 +3041,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в CCT/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в CCE/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в CCT/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в CCE/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3149,12 +3149,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3421,8 +3421,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неуспешно четене на блок</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в CCT/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в CCE/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3521,8 +3521,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>Индексирай наново CCT и zCCT данните по наличности</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>Индексирай наново CCE и zCCE данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3597,8 +3597,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zCCT. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zCCE. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4001,8 +4001,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>Синхронизиране на zCCT портфейла ...</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>Синхронизиране на zCCE портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4109,8 +4109,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

@@ -8,7 +8,7 @@
 #include "consensus/consensus.h"
 #include "main.h"
 #include "script/interpreter.h"
-#include "zcctchain.h"
+#include "zccechain.h"
 
 /** Context-independent validity checks */
 bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidationState& state, bool fFakeSerialAttack = false);
@@ -20,7 +20,7 @@ int CurrentPublicCoinSpendVersion();
 bool CheckPublicCoinSpendVersion(int version);
 bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::CoinSpend* spend, int nHeight, const uint256& hashBlock);
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, int nHeight, const uint256& hashBlock);
-bool RecalculateCCTSupply(int nHeightStart, bool fSkipZcct = true);
+bool RecalculateCCESupply(int nHeightStart, bool fSkipZcce = true);
 CAmount GetInvalidUTXOValue();
 
 #endif //CONCRETE_CONSENSUS_ZEROCOIN_VERIFY_H

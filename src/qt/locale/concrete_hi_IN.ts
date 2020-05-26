@@ -96,7 +96,7 @@
     </message>
     </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Quantity:</source>
         <translation>मात्रा:</translation>
@@ -398,7 +398,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
         <source>Quantity:</source>
         <translation>मात्रा:</translation>

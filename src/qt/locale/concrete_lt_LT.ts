@@ -196,16 +196,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar CONCRETE išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų CCT nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar CONCRETE išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų CCE nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -499,8 +499,8 @@
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Gali skirtis +/- %1 ucct kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Gali skirtis +/- %1 ucce kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -516,10 +516,10 @@
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -599,8 +599,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>All</source>
@@ -1022,24 +1022,24 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Įgalinti automatinį konvertavimą iš CCT į zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Įgalinti automatinį konvertavimą iš CCE į zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Įgalinti zCCT Automatinį nukaldinima</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Įgalinti zCCE Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto CCT, kuris automatiškai bus konvertuotas į zCCT naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto CCE, kuris automatiškai bus konvertuotas į zCCE naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Automatiškai sukurtų zCCT procentas</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Automatiškai sukurtų zCCE procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Pageidautinas zCCT Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Pageidautinas zCCE Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the CONCRETE network through a SOCKS5 proxy.</source>
@@ -2052,7 +2052,7 @@ Adresas: %4
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
         <source>Coin Control</source>
         <translation>Monetų Kontrolė</translation>

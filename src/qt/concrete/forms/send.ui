@@ -81,7 +81,7 @@
             <item>
              <widget class="QLabel" name="labelSubtitle1">
               <property name="text">
-               <string>You can transfer public coins (CCT) or private coins (zCCT)</string>
+               <string>You can transfer public coins (CCE) or private coins (zCCE)</string>
               </property>
              </widget>
             </item>
@@ -147,7 +147,7 @@
                   <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="text">
-                  <string>CCT</string>
+                  <string>CCE</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -175,7 +175,7 @@
                   <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="text">
-                  <string>zCCT</string>
+                  <string>zCCE</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -567,7 +567,7 @@
                      <item>
                       <widget class="QLabel" name="labelAmountSend">
                        <property name="text">
-                        <string notr="true">0.00 CCT</string>
+                        <string notr="true">0.00 CCE</string>
                        </property>
                       </widget>
                      </item>

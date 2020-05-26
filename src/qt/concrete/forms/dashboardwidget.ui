@@ -454,7 +454,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>How to get CCT</string>
+            <string>How to get CCE</string>
            </property>
           </widget>
          </item>
@@ -519,7 +519,7 @@
             <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
-               <string>Amount of CCT and zCCT staked.</string>
+               <string>Amount of CCE and zCCE staked.</string>
               </property>
              </widget>
             </item>
@@ -565,9 +565,9 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="labelAmountCct">
+           <widget class="QLabel" name="labelAmountCce">
             <property name="text">
-             <string notr="true">0 CCT</string>
+             <string notr="true">0 CCE</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -575,9 +575,9 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="labelAmountZcct">
+           <widget class="QLabel" name="labelAmountZcce">
             <property name="text">
-             <string notr="true">0 zCCT</string>
+             <string notr="true">0 zCCE</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -673,7 +673,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquareCct">
+                 <widget class="QLabel" name="labelSquareCce">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -692,9 +692,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelCct">
+                 <widget class="QLabel" name="labelCce">
                   <property name="text">
-                   <string notr="true">CCT</string>
+                   <string notr="true">CCE</string>
                   </property>
                  </widget>
                 </item>
@@ -715,7 +715,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelSquarezCct">
+                 <widget class="QLabel" name="labelSquarezCce">
                   <property name="minimumSize">
                    <size>
                     <width>14</width>
@@ -734,9 +734,9 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelZcct">
+                 <widget class="QLabel" name="labelZcce">
                   <property name="text">
-                   <string notr="true">zCCT</string>
+                   <string notr="true">zCCE</string>
                   </property>
                  </widget>
                 </item>

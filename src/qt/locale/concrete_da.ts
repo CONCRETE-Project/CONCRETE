@@ -359,7 +359,7 @@ For Staking</translation>
         <translation>Afslut</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
         <translation>CONCRETE vil lukke ned for at færdiggøre kryptograferingsprocesserne. Husk at kryptering alene ikke sikrer mod tyveri af mønterne fra malware eller virus på computeren.</translation>
     </message>
     <message>
@@ -367,8 +367,8 @@ For Staking</translation>
         <translation>Er du sikker på, at du vil kryptere din tegnebog?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE CCT&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Advarsel! Hvis du krypterer din tegnebog og mister dit password vil du &lt;b&gt;MISTE ALLE DINE CCE&lt;/b&gt;. Passworded kan ikke genskabes.</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -526,8 +526,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -702,8 +702,8 @@ For Staking</translation>
         <translation>Denne tekstmarkør bliver rød, hvis en modtageradresse modtager et beløb mindre end %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Kan variere +/- %1 occt pr input.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Kan variere +/- %1 occe pr input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -719,7 +719,7 @@ For Staking</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -733,8 +733,8 @@ For Staking</translation>
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -866,12 +866,12 @@ For Staking</translation>
         <translation>Opbevarings statistik </translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Days</source>
@@ -890,8 +890,8 @@ For Staking</translation>
         <translation>Du kan se din konto historik</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>Mængden af CCT og zCCT opbevaret</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>Mængden af CCE og zCCE opbevaret</translation>
     </message>
     <message>
         <source>All</source>
@@ -930,8 +930,8 @@ For Staking</translation>
         <translation>Ingen transaktioner endnu</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>Hvordan man får CCT eller zCCT</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>Hvordan man får CCE eller zCCE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1503,28 +1503,28 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Aktivér automatisk mintning af CCT-enheder til zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Aktivér automatisk mintning af CCE-enheder til zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Aktivér zCCT Automint</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Aktivér zCCE Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende CCT, som automatisk konverteres til zCCT via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende CCE, som automatisk konverteres til zCCE via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Procentdel af automatiseret zCCT</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Procentdel af automatiseret zCCE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok CCT til denne betegnelse er tilgængelig</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>Vent med automatisk konvertering til Zerocoin, indtil nok CCE til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Foretrukket Automint zCCT Denomination</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Foretrukket Automint zCCE Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ Adresse: %4
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>Brugerdefineret zCCT Backup-sti:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>Brugerdefineret zCCE Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2399,8 +2399,8 @@ Adresse: %4
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2491,12 +2491,12 @@ Adresse: %4
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT er i øjeblikket under opretholdelse.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zCCT kræver et sikkerhedsniveau på 100 til succes.</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zCCE kræver et sikkerhedsniveau på 100 til succes.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3334,12 +3334,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtaget via tilsløring</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT Stake</translation>
+        <source>CCE Stake</source>
+        <translation>CCE Stake</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT Stake</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3358,24 +3358,24 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>Konverteret CCT til zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>Konverteret CCE til zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>Brugt zCct</translation>
+        <source>Spent zCCE</source>
+        <translation>Brugt zCce</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>Modtaget Cct fra zCct</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>Modtaget Cce fra zCce</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>Minted Change som zCCT fra zCCT Spend</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>Minted Change som zCCE fra zCCE Spend</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>Konverteret CCT til zCCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>Konverteret CCE til zCCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3483,8 +3483,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1CCT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1CCE.</translation>
     </message>
 </context>
 <context>
@@ -3530,10 +3530,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>Vælg zCCT for at bruge</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>Vælg zCCE for at bruge</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3544,8 +3544,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Tryk på Knappen</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCct</translation>
+        <source>zCce</source>
+        <translation>zCce</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3620,16 +3620,16 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zCct-mintning (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zCce-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for CCT-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for CCE-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zCCT-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zCCE-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3664,12 +3664,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in CCT/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in CCE/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in CCT/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in CCE/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3772,12 +3772,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4052,8 +4052,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Læsning af blokken mislykkedes</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i CCT/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i CCE/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4152,8 +4152,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>Reindex CCT og zCCT pengemængde statistikker</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>Reindex CCE og zCCE pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4228,8 +4228,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zCCT-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zCCE-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4632,8 +4632,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>Syncing zCCT wallet ..</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>Syncing zCCE wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4740,8 +4740,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

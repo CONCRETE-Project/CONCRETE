@@ -80,10 +80,10 @@ public:
 
     QMap<int, std::pair<qint64, qint64>> amountsByCache;
     qreal maxValue = 0;
-    qint64 totalCct = 0;
-    qint64 totalZcct = 0;
-    QList<qreal> valuesCct;
-    QList<qreal> valueszCct;
+    qint64 totalCce = 0;
+    qint64 totalZcce = 0;
+    QList<qreal> valuesCce;
+    QList<qreal> valueszCce;
     QStringList xLabels;
 };
 
@@ -163,7 +163,7 @@ private:
     int yearFilter = 0;
     int monthFilter = 0;
     int dayStart = 1;
-    bool hasZcctStakes = false;
+    bool hasZcceStakes = false;
 
     ChartData* chartData = nullptr;
     bool hasStakes = false;

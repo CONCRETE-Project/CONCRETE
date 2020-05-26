@@ -2,28 +2,28 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zcctcontroldialog.h"
-#include "ui_zcctcontroldialog.h"
+#include "zccecontroldialog.h"
+#include "ui_zccecontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 
 
-std::set<std::string> ZCctControlDialog::setSelectedMints;
-std::set<CMintMeta> ZCctControlDialog::setMints;
+std::set<std::string> ZCceControlDialog::setSelectedMints;
+std::set<CMintMeta> ZCceControlDialog::setMints;
 
-bool CZCctControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
+bool CZCceControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
     int column = treeWidget()->sortColumn();
-    if (column == ZCctControlDialog::COLUMN_DENOMINATION || column == ZCctControlDialog::COLUMN_VERSION || column == ZCctControlDialog::COLUMN_CONFIRMATIONS)
+    if (column == ZCceControlDialog::COLUMN_DENOMINATION || column == ZCceControlDialog::COLUMN_VERSION || column == ZCceControlDialog::COLUMN_CONFIRMATIONS)
         return data(column, Qt::UserRole).toLongLong() < other.data(column, Qt::UserRole).toLongLong();
     return QTreeWidgetItem::operator<(other);
 }
 
 
-ZCctControlDialog::ZCctControlDialog(QWidget *parent) :
+ZCceControlDialog::ZCceControlDialog(QWidget *parent) :
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
-    ui(new Ui::ZCctControlDialog),
+    ui(new Ui::ZCceControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -35,13 +35,13 @@ ZCctControlDialog::ZCctControlDialog(QWidget *parent) :
     ui->frame->setProperty("cssClass", "container-dialog");
 
     // Title
-    ui->labelTitle->setText(tr("Select zCCT Denominations to Spend"));
+    ui->labelTitle->setText(tr("Select zCCE Denominations to Spend"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
 
     // Label Style
-    ui->labelZCct->setProperty("cssClass", "text-main-purple");
-    ui->labelZCct_int->setProperty("cssClass", "text-main-purple");
+    ui->labelZCce->setProperty("cssClass", "text-main-purple");
+    ui->labelZCce_int->setProperty("cssClass", "text-main-purple");
     ui->labelQuantity->setProperty("cssClass", "text-main-purple");
     ui->labelQuantity_int->setProperty("cssClass", "text-main-purple");
 
@@ -55,17 +55,17 @@ ZCctControlDialog::ZCctControlDialog(QWidget *parent) :
     ui->pushButtonAll->setProperty("cssClass", "btn-check");
 
     // click on checkbox
-    connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &ZCctControlDialog::updateSelection);
+    connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &ZCceControlDialog::updateSelection);
     // push select/deselect all button
-    connect(ui->pushButtonAll, &QPushButton::clicked, this, &ZCctControlDialog::ButtonAllClicked);
+    connect(ui->pushButtonAll, &QPushButton::clicked, this, &ZCceControlDialog::ButtonAllClicked);
 }
 
-ZCctControlDialog::~ZCctControlDialog()
+ZCceControlDialog::~ZCceControlDialog()
 {
     delete ui;
 }
 
-void ZCctControlDialog::setModel(WalletModel *model)
+void ZCceControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
@@ -73,7 +73,7 @@ void ZCctControlDialog::setModel(WalletModel *model)
 
 
 //Update the tree widget
-void ZCctControlDialog::updateList()
+void ZCceControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -83,7 +83,7 @@ void ZCctControlDialog::updateList()
     QFlags<Qt::ItemFlag> flgTristate = Qt::ItemIsEnabled | Qt::ItemIsUserCheckable | Qt::ItemIsTristate;
     std::map<libzerocoin::CoinDenomination, int> mapDenomPosition;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        CZCctControlWidgetItem* itemDenom(new CZCctControlWidgetItem);
+        CZCceControlWidgetItem* itemDenom(new CZCceControlWidgetItem);
         ui->treeWidget->addTopLevelItem(itemDenom);
 
         //keep track of where this is positioned in tree widget
@@ -104,7 +104,7 @@ void ZCctControlDialog::updateList()
     for (const CMintMeta& mint : setMints) {
         // assign this mint to the correct denomination in the tree view
         libzerocoin::CoinDenomination denom = mint.denom;
-        CZCctControlWidgetItem *itemMint = new CZCctControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
+        CZCceControlWidgetItem *itemMint = new CZCceControlWidgetItem(ui->treeWidget->topLevelItem(mapDenomPosition.at(denom)));
 
         // if the mint is already selected, then it needs to have the checkbox checked
         std::string strPubCoinHash = mint.hashPubcoin.GetHex();
@@ -150,9 +150,9 @@ void ZCctControlDialog::updateList()
             if(nConfirmations < nRequiredConfs)
                 strReason = strprintf("Needs %d more confirmations", nRequiredConfs - nConfirmations);
             else if (model->getEncryptionStatus() == WalletModel::EncryptionStatus::Locked)
-                strReason = "Your wallet is locked. Impossible to spend zCCT.";
+                strReason = "Your wallet is locked. Impossible to spend zCCE.";
             else if (!mint.isSeedCorrect)
-                strReason = "The zCCT seed used to mint this zCCT is not the same as currently hold in the wallet";
+                strReason = "The zCCE seed used to mint this zCCE is not the same as currently hold in the wallet";
             else
                 strReason = "Needs 1 more mint added to network";
 
@@ -167,7 +167,7 @@ void ZCctControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZCctControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZCceControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -189,7 +189,7 @@ void ZCctControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZCctControlDialog::updateLabels()
+void ZCceControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -198,14 +198,14 @@ void ZCctControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZCct_int->setText(QString::number(nAmount));
+    ui->labelZCce_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(setSelectedMints.size()));
 
     //update PrivacyDialog labels
-    //privacyDialog->setZCctControlLabels(nAmount, setSelectedMints.size());
+    //privacyDialog->setZCceControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> ZCctControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZCceControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -217,7 +217,7 @@ std::vector<CMintMeta> ZCctControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZCctControlDialog::ButtonAllClicked()
+void ZCceControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

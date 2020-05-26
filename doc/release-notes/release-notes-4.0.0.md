@@ -67,7 +67,7 @@ Multi-Split Stake Splitting
 
 Stake splitting has received a makeover and now supports splitting to more than two (2) outputs. [PR #968](https://github.com/CONCRETE-Project/CONCRETE/pull/968) introduced the change, which is controlled by the wallet's `stakesplitthreshold` setting.
 
-The default split threshold remains at 2000 CCT, and can be adjusted in the GUI's Settings page, or via the RPC `setstakesplitthreshold` command.
+The default split threshold remains at 2000 CCE, and can be adjusted in the GUI's Settings page, or via the RPC `setstakesplitthreshold` command.
 
 For a real example, with a stake split threshold of 1500, and a UTXO of 4708.1557; the current stake split algorithm would break that into two outputs of approximately 2355.07785. With this new logic; it will be broken into 3 outputs instead of two; each sized 1570.0519 (4708.1557 input + 2 stake = 4710.1557 / 3 outputs = 1570.0519.
 
@@ -78,11 +78,11 @@ New Consensus Rules
 
 The following consensus rule changes will be enforced on or shortly after block `2153200`. Note that **Upgrade Enforcement** (mentioned above) will occur prior to this block height.
 
-### V1 zCCT Spending (Public Spends Version 4)
+### V1 zCCE Spending (Public Spends Version 4)
 
-Since the discovery of a critical exploit within the libzerocoin library in early 2019, remaining legacy v1 zCCT have been un-spendable. We're happy to say that, once the new consensus rules are in effect, users will once again be able to spend their v1 zCCT with public spends version 4 ([PR #936](https://github.com/CONCRETE-Project/CONCRETE/pull/936)).
+Since the discovery of a critical exploit within the libzerocoin library in early 2019, remaining legacy v1 zCCE have been un-spendable. We're happy to say that, once the new consensus rules are in effect, users will once again be able to spend their v1 zCCE with public spends version 4 ([PR #936](https://github.com/CONCRETE-Project/CONCRETE/pull/936)).
 
-As with the previous version 3 public spends introduced in core wallet version 3.3.0 (enabling the spending of v2 zCCT), version 4 spends will also be public. A full technical writeup is available on the [CONCRETE Wiki](https://github.com/CONCRETE-Project/CONCRETE/wiki/CoinRandomnessSchnorrSignature).
+As with the previous version 3 public spends introduced in core wallet version 3.3.0 (enabling the spending of v2 zCCE), version 4 spends will also be public. A full technical writeup is available on the [CONCRETE Wiki](https://github.com/CONCRETE-Project/CONCRETE/wiki/CoinRandomnessSchnorrSignature).
 
 ### OP_CHECKCOLDSTAKEVERIFY and P2CS
 
@@ -116,7 +116,7 @@ Layer 2 network messages (MN, Budget, Spork, etc) are now signed based on the ha
 Two new SPORKS are introduced, `SPORK_17` ([#PR975](https://github.com/CONCRETE-Project/CONCRETE/pull/975)) and `SPORK_18` ([#PR995](https://github.com/CONCRETE-Project/CONCRETE/pull/995)).<br>
 `SPORK_17` (off by default) is used to activate the [Cold Staking](#cold-staking) protocol. When this spork is off, no cold-staked block is accepted by the network and new delegations are rejected, but coin-owners are still able to spend previously created pay-to-cold-stake delegations.
 
-`SPORK_18` (off by default) is used to switch between Version 3 and [Version 4 Public Spends](#v1-zcct-spending-public-spends-version-4). When this spork is active, only version 4 spends are accepted by the network. When it's not, only version 3 spends are accepted.
+`SPORK_18` (off by default) is used to switch between Version 3 and [Version 4 Public Spends](#v1-zcce-spending-public-spends-version-4). When this spork is active, only version 4 spends are accepted by the network. When it's not, only version 3 spends are accepted.
 
 RPC Changes
 --------------
@@ -136,8 +136,8 @@ Additionally, a new (optional) argument, `includeCold`, has been added to the `l
 The `validateaddress` command now includes an additional response field, `isstaking`, to indicate wither or not the specified address is a cold staking address.
 
 The `getwalletinfo` command now includes two additional response fields:
-- `delegated_balance` - CCT balance held in P2CS contracts (delegated amount total).
-- `cold_staking_balance` - CCT balance held in cold staking addresses.
+- `delegated_balance` - CCE balance held in P2CS contracts (delegated amount total).
+- `cold_staking_balance` - CCE balance held in cold staking addresses.
 
 ### Newly introduced commands
 
@@ -177,7 +177,7 @@ Requires wallet passphrase to be set with walletpassphrase call.
 
 Arguments:
 1. "stakingaddress"      (string, required) The concrete staking address to delegate.
-2. "amount"              (numeric, required) The amount in CCT to delegate for staking. eg 100
+2. "amount"              (numeric, required) The amount in CCE to delegate for staking. eg 100
 3. "owneraddress"        (string, optional) The concrete address corresponding to the key that will be able to spend the stake.
                                If not provided, or empty string, a new wallet address is generated.
 4. "fExternalOwner"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.
@@ -203,7 +203,7 @@ Requires wallet passphrase to be set with walletpassphrase call.
 
 Arguments:
 1. "stakingaddress"      (string, required) The concrete staking address to delegate.
-2. "amount"              (numeric, required) The amount in CCT to delegate for staking. eg 100
+2. "amount"              (numeric, required) The amount in CCE to delegate for staking. eg 100
 3. "owneraddress"        (string, optional) The concrete address corresponding to the key that will be able to spend the stake.
                                If not provided, or empty string, a new wallet address is generated.
 4. "fExternalOwner"      (boolean, optional, default = false) use the provided 'owneraddress' anyway, even if not present in this wallet.
@@ -262,7 +262,7 @@ Arguments:
 1. "account"      (string, optional) The selected account, or "*" for entire wallet. It may be the default account using "".
 
 Result:
-amount              (numeric) The total amount in CCT received for this account in P2CS contracts.
+amount              (numeric) The total amount in CCE received for this account in P2CS contracts.
 ```
 
 `delegatoradd` whitelists a delegated owner address for cold staking:
@@ -381,7 +381,7 @@ Detailed release notes follow. For convenience in locating the code changes and 
 
 ### Core
 - #643 `469d974519` [Crypto] Use stronger rand for key generation (warrows)
-- #936 `12a6b704b6` [zCCT] PublicCoinSpend v4 - Coin Randomness Schnorr Signature (random-zebra)
+- #936 `12a6b704b6` [zCCE] PublicCoinSpend v4 - Coin Randomness Schnorr Signature (random-zebra)
 - #955 `008b7938db` [Core][Script][Wallet][RPC][Tests] Cold Staking (random-zebra)
 - #989 `6f645ce457` [DB] Db runtime error cleaning the variable that needs to be logged (furszy)
 - #1000 `34e11dd5fa` [Core] Spork code overhaul (random-zebra)

@@ -4,7 +4,7 @@
 
 #include "blocksignature.h"
 #include "main.h"
-#include "zcctchain.h"
+#include "zccechain.h"
 
 bool SignBlockWithKey(CBlock& block, const CKey& key)
 {
@@ -47,13 +47,13 @@ bool CheckBlockSignature(const CBlock& block)
     if (block.vchBlockSig.empty())
         return error("%s: vchBlockSig is empty!", __func__);
 
-    /** Each block is signed by the private key of the input that is staked. This can be either zCCT or normal UTXO
-     *  zCCT: Each zCCT has a keypair associated with it. The serial number is a hash of the public key.
+    /** Each block is signed by the private key of the input that is staked. This can be either zCCE or normal UTXO
+     *  zCCE: Each zCCE has a keypair associated with it. The serial number is a hash of the public key.
      *  UTXO: The public key that signs must match the public key associated with the first utxo of the coinstake tx.
      */
     CPubKey pubkey;
-    bool fzCCTStake = block.vtx[1].vin[0].IsZerocoinSpend();
-    if (fzCCTStake) {
+    bool fzCCEStake = block.vtx[1].vin[0].IsZerocoinSpend();
+    if (fzCCEStake) {
         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(block.vtx[1].vin[0]);
         pubkey = spend.getPubKey();
     } else {

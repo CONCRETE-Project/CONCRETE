@@ -108,7 +108,7 @@ class WalletTest(ConcreteTestFramework):
         assert_equal(node_2_bal, node_2_expected_bal)
         assert_equal(self.nodes[2].getbalance("from1"), node_2_expected_bal)
 
-        # Send 10 CCT normal
+        # Send 10 CCE normal
         address = self.nodes[0].getnewaddress("test")
         self.nodes[2].settxfee(float(fee_per_kbyte))
         txid = self.nodes[2].sendtoaddress(address, 10, "", "")
@@ -120,7 +120,7 @@ class WalletTest(ConcreteTestFramework):
         node_0_bal = self.nodes[0].getbalance()
         assert_equal(node_0_bal, Decimal('10'))
 
-        # Sendmany 10 CCT
+        # Sendmany 10 CCE
         txid = self.nodes[2].sendmany('from1', {address: 10}, 0, "")
         fee = self.nodes[2].gettransaction(txid)["fee"]
         self.nodes[2].generate(1)

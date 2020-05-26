@@ -19,7 +19,7 @@ QT_FORMS_UI = \
   qt/forms/optionsdialog.ui \
   qt/forms/rpcconsole.ui \
   qt/concrete/forms/loadingdialog.ui \
-  qt/forms/zcctcontroldialog.ui \
+  qt/forms/zccecontroldialog.ui \
   qt/concrete/forms/snackbar.ui \
   qt/concrete/forms/navmenuwidget.ui \
   qt/concrete/forms/lockunlock.ui \
@@ -105,7 +105,7 @@ QT_MOC_CPP = \
   qt/moc_utilitydialog.cpp \
   qt/moc_walletmodel.cpp \
   qt/concrete/moc_loadingdialog.cpp \
-  qt/moc_zcctcontroldialog.cpp \
+  qt/moc_zccecontroldialog.cpp \
   qt/concrete/moc_pwidget.cpp \
   qt/concrete/moc_focuseddialog.cpp \
   qt/concrete/moc_snackbar.cpp \
@@ -227,7 +227,7 @@ BITCOIN_QT_H = \
   qt/concrete/pfborderimage.h \
   qt/concrete/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zcctcontroldialog.h \
+  qt/zccecontroldialog.h \
   qt/concrete/pwidget.h \
   qt/concrete/focuseddialog.h \
   qt/concrete/guitransactionsutils.h \
@@ -399,15 +399,15 @@ RES_ICONS = \
   qt/concrete/res/img/ic-radio-liliac-on.svg \
   qt/concrete/res/img/img-empty-staking-off.svg \
   qt/concrete/res/img/ic-arrow-drop-down.svg \
-  qt/concrete/res/img/ic-coin-cct.svg \
+  qt/concrete/res/img/ic-coin-cce.svg \
   qt/concrete/res/img/ic-receive-off.svg \
   qt/concrete/res/img/img-empty-staking-on.svg \
   qt/concrete/res/img/ic-arrow-drop-up-white.svg \
-  qt/concrete/res/img/ic-coin-zcct.png \
+  qt/concrete/res/img/ic-coin-zcce.png \
   qt/concrete/res/img/ic-receive-on.svg \
   qt/concrete/res/img/img-empty-transactions.svg \
   qt/concrete/res/img/ic-arrow-drop-up.svg \
-  qt/concrete/res/img/ic-coin-zcct.svg \
+  qt/concrete/res/img/ic-coin-zcce.svg \
   qt/concrete/res/img/ic-received.svg \
   qt/concrete/res/img/img-logo-concrete.png \
   qt/concrete/res/img/ic-arrow-drop-white-down.svg \
@@ -553,7 +553,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/concrete/loadingdialog.cpp \
-  qt/zcctcontroldialog.cpp \
+  qt/zccecontroldialog.cpp \
   qt/concrete/pwidget.cpp \
   qt/concrete/focuseddialog.cpp \
   qt/concrete/guitransactionsutils.cpp \

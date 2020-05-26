@@ -40,7 +40,7 @@ private Q_SLOTS:
     void onCoinControlClicked();
     void onRescanMintsClicked();
     void onResetZeroClicked();
-    void onTotalZcctClicked();
+    void onTotalZcceClicked();
     void updateDisplayUnit();
     void showList();
     void onSendClicked();

@@ -14,7 +14,7 @@
 #include "qt/concrete/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zcctcontroldialog.h"
+#include "zccecontroldialog.h"
 #include "qt/concrete/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
@@ -60,7 +60,7 @@ protected:
     void showEvent(QShowEvent *event) override;
 
 private Q_SLOTS:
-    void onCCTSelected(bool _isCCT);
+    void onCCESelected(bool _isCCE);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -93,12 +93,12 @@ private:
     // Current focus entry
     SendMultiRow* focusedEntry = nullptr;
 
-    bool isCCT = true;
+    bool isCCE = true;
     void resizeMenu();
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZcct(QList<SendCoinsRecipient> recipients);
+    bool sendZcce(QList<SendCoinsRecipient> recipients);
     void setFocusOnLastEntry();
     void showHideCheckBoxDelegations();
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);

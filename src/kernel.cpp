@@ -13,8 +13,8 @@
 #include "util.h"
 #include "stakeinput.h"
 #include "utilmoneystr.h"
-#include "zcctchain.h"
-#include "zcct/zpos.h"
+#include "zccechain.h"
+#include "zcce/zpos.h"
 
 #include <boost/assign/list_of.hpp>
 
@@ -107,8 +107,8 @@ bool LoadStakeInput(const CBlock& block, const CBlockIndex* pindexPrev, std::uni
     // Construct the stakeinput object
     const CTxIn& txin = block.vtx[1].vin[0];
     stake = txin.IsZerocoinSpend() ?
-            std::unique_ptr<CStakeInput>(new CLegacyZCctStake()) :
-            std::unique_ptr<CStakeInput>(new CCctStake());
+            std::unique_ptr<CStakeInput>(new CLegacyZCceStake()) :
+            std::unique_ptr<CStakeInput>(new CCceStake());
 
     return stake->InitFromTxIn(txin);
 }
@@ -172,7 +172,7 @@ bool CheckProofOfStake(const CBlock& block, std::string& strError, const CBlockI
     }
 
     // zPoS disabled (ContextCheck) before blocks V7, and the tx input signature is in CoinSpend
-    if (stakeInput->IsZCCT()) return true;
+    if (stakeInput->IsZCCE()) return true;
 
     // Verify tx input signature
     CTxOut stakePrevout;

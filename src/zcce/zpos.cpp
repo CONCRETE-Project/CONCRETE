@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zcct/zpos.h"
-#include "zcctchain.h"
+#include "zcce/zpos.h"
+#include "zccechain.h"
 
 
 /*
@@ -20,28 +20,28 @@ uint32_t ParseAccChecksum(uint256 nCheckpoint, const libzerocoin::CoinDenominati
     return nCheckpoint.Get32();
 }
 
-bool CLegacyZCctStake::InitFromTxIn(const CTxIn& txin)
+bool CLegacyZCceStake::InitFromTxIn(const CTxIn& txin)
 {
     // Construct the stakeinput object
     if (!txin.IsZerocoinSpend())
-        return error("%s: unable to initialize CLegacyZCctStake from non zc-spend");
+        return error("%s: unable to initialize CLegacyZCceStake from non zc-spend");
 
     // Check spend type
     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txin);
     if (spend.getSpendType() != libzerocoin::SpendType::STAKE)
         return error("%s : spend is using the wrong SpendType (%d)", __func__, (int)spend.getSpendType());
 
-    *this = CLegacyZCctStake(spend);
+    *this = CLegacyZCceStake(spend);
 
     // Find the pindex with the accumulator checksum
     if (!GetIndexFrom())
-        return error("%s : Failed to find the block index for zcct stake origin", __func__);
+        return error("%s : Failed to find the block index for zcce stake origin", __func__);
 
     // All good
     return true;
 }
 
-CLegacyZCctStake::CLegacyZCctStake(const libzerocoin::CoinSpend& spend)
+CLegacyZCceStake::CLegacyZCceStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -49,7 +49,7 @@ CLegacyZCctStake::CLegacyZCctStake(const libzerocoin::CoinSpend& spend)
     this->hashSerial = Hash(nSerial.begin(), nSerial.end());
 }
 
-CBlockIndex* CLegacyZCctStake::GetIndexFrom()
+CBlockIndex* CLegacyZCceStake::GetIndexFrom()
 {
     // First look in the legacy database
     int nHeightChecksum = 0;
@@ -77,12 +77,12 @@ CBlockIndex* CLegacyZCctStake::GetIndexFrom()
     return nullptr;
 }
 
-CAmount CLegacyZCctStake::GetValue() const
+CAmount CLegacyZCceStake::GetValue() const
 {
     return denom * COIN;
 }
 
-CDataStream CLegacyZCctStake::GetUniqueness() const
+CDataStream CLegacyZCceStake::GetUniqueness() const
 {
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
@@ -90,11 +90,11 @@ CDataStream CLegacyZCctStake::GetUniqueness() const
 }
 
 // Verify stake contextual checks
-bool CLegacyZCctStake::ContextCheck(int nHeight, uint32_t nTime)
+bool CLegacyZCceStake::ContextCheck(int nHeight, uint32_t nTime)
 {
     const Consensus::Params& consensus = Params().GetConsensus();
     if (nHeight < consensus.height_start_ZC_SerialsV2 || nHeight >= consensus.height_last_ZC_AccumCheckpoint)
-        return error("%s : zCCT stake block: height %d outside range", __func__, nHeight);
+        return error("%s : zCCE stake block: height %d outside range", __func__, nHeight);
 
     // The checkpoint needs to be from 200 blocks ago
     const int cpHeight = nHeight - 1 - consensus.ZC_MinStakeDepth;

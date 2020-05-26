@@ -352,16 +352,16 @@ for staking</source>
         <translation>취소</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 CCTs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 CCEs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 CCT를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 CCE를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -519,8 +519,8 @@ for staking</source>
         <translation>누르기</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -691,8 +691,8 @@ for staking</source>
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Can vary +/- %1 ucct per input.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Can vary +/- %1 ucce per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -708,7 +708,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Transaction Details</source>
         <translation>전송 상세내역</translation>
@@ -718,8 +718,8 @@ for staking</source>
         <translation>누르기</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -847,12 +847,12 @@ for staking</source>
         <translation>스테이킹 통계</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -875,8 +875,8 @@ for staking</source>
         <translation>당신의 입출금 이력을 확인할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>스테이킹 된 CCT와 zCCT 양</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>스테이킹 된 CCE와 zCCE 양</translation>
     </message>
     <message>
         <source>All</source>
@@ -907,8 +907,8 @@ for staking</source>
         <translation>자신에게</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>CCT 혹은 zCCT를 얻는 법</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>CCE 혹은 zCCE를 얻는 법</translation>
     </message>
     <message>
         <source>You have no staking rewards</source>
@@ -1267,8 +1267,8 @@ for staking</source>
         <translation>새로운 마스터노드 컨트롤러 생성</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCT (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CONCRETE 마스터노드 생성을 위해서는 최소 10,000 CCT (CONCRETE 단위) 가 네트워크 상에 존재해야 합니다. (해당 코인들의 소유권은 그대로 유지되며 사라지지 않습니다) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; 언제든지 소유하고 있는 노드를 비활성화 시키거나 코인의 잠금상태를 해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCE (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CONCRETE 마스터노드 생성을 위해서는 최소 10,000 CCE (CONCRETE 단위) 가 네트워크 상에 존재해야 합니다. (해당 코인들의 소유권은 그대로 유지되며 사라지지 않습니다) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; 언제든지 소유하고 있는 노드를 비활성화 시키거나 코인의 잠금상태를 해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s Name</source>
@@ -1415,8 +1415,8 @@ for staking</source>
         <translation>masternode.conf 파일이 생성되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 CCT required.</source>
-        <translation>마스터노드 생성에 필요한 잔고가 부족합니다. 마스터노드 생성에는 10,000 CCT가 필요합니다.</translation>
+        <source>Not enough balance to create a masternode, 10,000 CCE required.</source>
+        <translation>마스터노드 생성에 필요한 잔고가 부족합니다. 마스터노드 생성에는 10,000 CCE가 필요합니다.</translation>
     </message>
     </context>
 <context>
@@ -1595,32 +1595,32 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>보상받은 CCT를 zCCT로 자동변환 활성화</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>보상받은 CCE를 zCCE로 자동변환 활성화</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>zCCT 자동생성 활성화</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>zCCE 자동생성 활성화</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint 주소 사용</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>CCT수신시 자동변환 zCCT 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>CCE수신시 자동변환 zCCE 비율 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>자동 변환되는 zCCT 비율</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>자동 변환되는 zCCE 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>이 디노미네이션의 CCT가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>이 디노미네이션의 CCE가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>선호하는 자동생성 zCCT 디노미네이션 </translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>선호하는 자동생성 zCCE 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1962,8 +1962,8 @@ Address: %4
         <translation>지금은 활성화된 마스터 노드가 없습니다.</translation>
     </message>
     <message>
-        <source>Convert back to CCT</source>
-        <translation>CCT 로 재변환</translation>
+        <source>Convert back to CCE</source>
+        <translation>CCE 로 재변환</translation>
     </message>
     <message>
         <source>Zerocoin</source>
@@ -2239,8 +2239,8 @@ Address: %4
         <translation>맞춤 백업 경로 :</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>맞춤 zCCT 백업 경로 :</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>맞춤 zCCE 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2500,8 +2500,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2588,12 +2588,12 @@ Address: %4
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT는 현재 점검중입니다.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE는 현재 점검중입니다.</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>zCCT 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>zCCE 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3426,12 +3426,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화를 통해 수신 됨</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT stake</translation>
+        <source>CCE Stake</source>
+        <translation>CCE stake</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT stake</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3450,24 +3450,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>CCT를 zCCT로 변환</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>CCE를 zCCE로 변환</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>zCCT 사용</translation>
+        <source>Spent zCCE</source>
+        <translation>zCCE 사용</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>zCCT를 CCT로 받음</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>zCCE를 CCE로 받음</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>zCCT 전송후 남은 zCCT로 잔돈 생성</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>zCCE 전송후 남은 zCCE로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>zCCT를 CCT로 변환</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>zCCE를 CCE로 변환</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3575,8 +3575,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 CCT로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 CCE로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -3610,10 +3610,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>사용할 zCCT 선택</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>사용할 zCCE 선택</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3624,8 +3624,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>누르기</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCct</translation>
+        <source>zCce</source>
+        <translation>zCce</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3699,16 +3699,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3743,12 +3743,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (CCT/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CCE/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (CCT/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CCE/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3851,12 +3851,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 CCT과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 CCE과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 CCT와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 CCE와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4131,8 +4131,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (CCT/kB) (기본값: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (CCE/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4228,11 +4228,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zCCT 비율  (1-100, default: %u)</translation>
+        <translation>자동생성 zCCE 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>CCT 및 zCCT 공급량 다시 색인</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>CCE 및 zCCE 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4307,8 +4307,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4711,8 +4711,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>zCCT 지갑 동기화중...</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>zCCE 지갑 동기화중...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4819,8 +4819,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>Value is below the smallest available denomination (= 1) of zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>Value is below the smallest available denomination (= 1) of zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4864,7 +4864,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zCCT 가 부족합니다.</translation>
+        <translation>지갑에 zCCE 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>

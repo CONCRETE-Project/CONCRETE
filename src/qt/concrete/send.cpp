@@ -16,9 +16,9 @@
 #include "addresstablemodel.h"
 #include "coincontrol.h"
 #include "script/standard.h"
-#include "zcct/deterministicmint.h"
+#include "zcce/deterministicmint.h"
 #include "openuridialog.h"
-#include "zcctcontroldialog.h"
+#include "zccecontroldialog.h"
 
 SendWidget::SendWidget(CONCRETEGUI* parent) :
     PWidget(parent),
@@ -98,7 +98,7 @@ SendWidget::SendWidget(CONCRETEGUI* parent) :
     coinIcon->show();
     coinIcon->raise();
 
-    setCssProperty(coinIcon, "coin-icon-cct");
+    setCssProperty(coinIcon, "coin-icon-cce");
 
     QSize BUTTON_SIZE = QSize(24, 24);
     coinIcon->setMinimumSize(BUTTON_SIZE);
@@ -115,8 +115,8 @@ SendWidget::SendWidget(CONCRETEGUI* parent) :
     setCustomFeeSelected(false);
 
     // Connect
-    connect(ui->pushLeft, &QPushButton::clicked, [this](){onCCTSelected(true);});
-    connect(ui->pushRight,  &QPushButton::clicked, [this](){onCCTSelected(false);});
+    connect(ui->pushLeft, &QPushButton::clicked, [this](){onCCESelected(true);});
+    connect(ui->pushRight,  &QPushButton::clicked, [this](){onCCESelected(false);});
     connect(ui->pushButtonSave, &QPushButton::clicked, this, &SendWidget::onSendClicked);
     connect(ui->pushButtonAddRecipient, &QPushButton::clicked, this, &SendWidget::onAddEntryClicked);
     connect(ui->pushButtonClear, &QPushButton::clicked, [this](){clearAll(true);});
@@ -125,7 +125,7 @@ SendWidget::SendWidget(CONCRETEGUI* parent) :
 void SendWidget::refreshView()
 {
     const bool isChecked = ui->pushLeft->isChecked();
-    ui->pushButtonSave->setText(isChecked ? tr("Send CCT") : tr("Send zCCT"));
+    ui->pushButtonSave->setText(isChecked ? tr("Send CCE") : tr("Send zCCE"));
     ui->pushButtonAddRecipient->setVisible(isChecked);
     refreshAmounts();
 }
@@ -141,10 +141,10 @@ void SendWidget::refreshAmounts()
             total += amount;
     }
 
-    bool isZcct = ui->pushRight->isChecked();
+    bool isZcce = ui->pushRight->isChecked();
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
 
-    ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZcct));
+    ui->labelAmountSend->setText(GUIUtil::formatBalance(total, nDisplayUnit, isZcce));
 
     CAmount totalAmount = 0;
     if (CoinControlDialog::coinControl->HasSelected()) {
@@ -153,7 +153,7 @@ void SendWidget::refreshAmounts()
         ui->labelTitleTotalRemaining->setText(tr("Total remaining from the selected UTXO"));
     } else {
         // Wallet's balance
-        totalAmount = (isZcct ?
+        totalAmount = (isZcce ?
                 walletModel->getZerocoinBalance() :
                 walletModel->getBalance(nullptr, fDelegationsChecked)) - total;
         ui->labelTitleTotalRemaining->setText(tr("Total remaining"));
@@ -162,7 +162,7 @@ void SendWidget::refreshAmounts()
             GUIUtil::formatBalance(
                     totalAmount,
                     nDisplayUnit,
-                    isZcct
+                    isZcce
                     )
     );
     // show or hide delegations checkbox if need be
@@ -319,17 +319,17 @@ void SendWidget::setFocusOnLastEntry()
 void SendWidget::showHideCheckBoxDelegations()
 {
     // Show checkbox only when there is any available owned delegation,
-    // coincontrol is not selected, and we are trying to spend CCT (not zCCT)
-    const bool isZcct = ui->pushRight->isChecked();
+    // coincontrol is not selected, and we are trying to spend CCE (not zCCE)
+    const bool isZcce = ui->pushRight->isChecked();
     const bool isCControl = CoinControlDialog::coinControl->HasSelected();
     const bool hasDel = cachedDelegatedBalance > 0;
 
-    const bool showCheckBox = !isZcct && !isCControl && hasDel;
+    const bool showCheckBox = !isZcce && !isCControl && hasDel;
     ui->checkBoxDelegations->setVisible(showCheckBox);
     if (showCheckBox)
         ui->checkBoxDelegations->setToolTip(
                 tr("Possibly spend coins delegated for cold-staking (currently available: %1").arg(
-                        GUIUtil::formatBalance(cachedDelegatedBalance, nDisplayUnit, isZcct))
+                        GUIUtil::formatBalance(cachedDelegatedBalance, nDisplayUnit, isZcce))
         );
 }
 
@@ -356,7 +356,7 @@ void SendWidget::onSendClicked()
         return;
     }
 
-    bool sendCct = ui->pushLeft->isChecked();
+    bool sendCce = ui->pushLeft->isChecked();
 
     WalletModel::UnlockContext ctx(walletModel->requestUnlock());
     if (!ctx.isValid()) {
@@ -365,7 +365,7 @@ void SendWidget::onSendClicked()
         return;
     }
 
-    if ((sendCct) ? send(recipients) : sendZcct(recipients)) {
+    if ((sendCce) ? send(recipients) : sendZcce(recipients)) {
         updateEntryLabels(recipients);
     }
     setFocusOnLastEntry();
@@ -431,13 +431,13 @@ bool SendWidget::send(QList<SendCoinsRecipient> recipients)
     return false;
 }
 
-bool SendWidget::sendZcct(QList<SendCoinsRecipient> recipients)
+bool SendWidget::sendZcce(QList<SendCoinsRecipient> recipients)
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return false;
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        Q_EMIT message(tr("Spend Zerocoin"), tr("zCCT is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        Q_EMIT message(tr("Spend Zerocoin"), tr("zCCE is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -448,11 +448,11 @@ bool SendWidget::sendZcct(QList<SendCoinsRecipient> recipients)
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zCCT selector if applicable
+    // use mints from zCCE selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
-    if (!ZCctControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZCctControlDialog::GetSelectedMints();
+    if (!ZCceControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZCceControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             CZerocoinMint mint;
@@ -491,24 +491,24 @@ bool SendWidget::sendZcct(QList<SendCoinsRecipient> recipients)
         changeAddress = walletModel->getAddressTableModel()->getAddressToShow().toStdString();
     }
 
-    if (walletModel->sendZcct(
+    if (walletModel->sendZcce(
             vMintsSelected,
             receipt,
             outputs,
             changeAddress
     )
             ) {
-        inform(tr("zCCT transaction sent!"));
-        ZCctControlDialog::setSelectedMints.clear();
+        inform(tr("zCCE transaction sent!"));
+        ZCceControlDialog::setSelectedMints.clear();
         clearAll(false);
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZCCT_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zCCT require a security level of 100 to successfully spend.");
+        if (receipt.GetStatus() == ZCCE_SPEND_V1_SEC_LEVEL) {
+            body = tr("Version 1 zCCE require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zCCT transaction
+            const int nMaxSpends = Params().GetConsensus().ZC_MaxSpendsPerTx; // Maximum possible spends for one zCCE transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -518,7 +518,7 @@ bool SendWidget::sendZcct(QList<SendCoinsRecipient> recipients)
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        Q_EMIT message("zCCT transaction failed", body, CClientUIInterface::MSG_ERROR);
+        Q_EMIT message("zCCE transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -629,7 +629,7 @@ void SendWidget::onChangeCustomFeeClicked()
 
 void SendWidget::onCoinControlClicked()
 {
-    if (isCCT) {
+    if (isCCE) {
         if (walletModel->getBalance() > 0) {
             if (!coinControlDialog) {
                 coinControlDialog = new CoinControlDialog();
@@ -641,17 +641,17 @@ void SendWidget::onCoinControlClicked()
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
             refreshAmounts();
         } else {
-            inform(tr("You don't have any CCT to select."));
+            inform(tr("You don't have any CCE to select."));
         }
     } else {
         if (walletModel->getZerocoinBalance() > 0) {
-            ZCctControlDialog *zCctControl = new ZCctControlDialog(this);
-            zCctControl->setModel(walletModel);
-            zCctControl->exec();
-            ui->btnCoinControl->setActive(!ZCctControlDialog::setSelectedMints.empty());
-            zCctControl->deleteLater();
+            ZCceControlDialog *zCceControl = new ZCceControlDialog(this);
+            zCceControl->setModel(walletModel);
+            zCceControl->exec();
+            ui->btnCoinControl->setActive(!ZCceControlDialog::setSelectedMints.empty());
+            zCceControl->deleteLater();
         } else {
-            inform(tr("You don't have any zCCT in your balance to select."));
+            inform(tr("You don't have any zCCE in your balance to select."));
         }
     }
 }
@@ -670,10 +670,10 @@ void SendWidget::onCheckBoxChanged()
     }
 }
 
-void SendWidget::onCCTSelected(bool _isCCT)
+void SendWidget::onCCESelected(bool _isCCE)
 {
-    isCCT = _isCCT;
-    setCssProperty(coinIcon, _isCCT ? "coin-icon-cct" : "coin-icon-zcct");
+    isCCE = _isCCE;
+    setCssProperty(coinIcon, _isCCE ? "coin-icon-cce" : "coin-icon-zcce");
     refreshView();
     updateStyle(coinIcon);
 }
@@ -770,8 +770,8 @@ void SendWidget::onContactMultiClicked()
             inform(tr("Invalid address"));
             return;
         }
-        CBitcoinAddress cctAdd = CBitcoinAddress(address.toStdString());
-        if (walletModel->isMine(cctAdd)) {
+        CBitcoinAddress cceAdd = CBitcoinAddress(address.toStdString());
+        if (walletModel->isMine(cceAdd)) {
             inform(tr("Cannot store your own address as contact"));
             return;
         }
@@ -791,7 +791,7 @@ void SendWidget::onContactMultiClicked()
             if (label == dialog->getLabel()) {
                 return;
             }
-            if (walletModel->updateAddressBookLabels(cctAdd.Get(), dialog->getLabel().toStdString(),
+            if (walletModel->updateAddressBookLabels(cceAdd.Get(), dialog->getLabel().toStdString(),
                     AddressBook::AddressBookPurpose::SEND)) {
                 inform(tr("New Contact Stored"));
             } else {

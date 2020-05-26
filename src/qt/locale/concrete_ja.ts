@@ -132,7 +132,7 @@
     <name>CoinControlDialog</name>
     </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Address</source>
         <translation>アドレス</translation>
@@ -346,7 +346,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     </context>
 <context>
     <name>concrete-core</name>

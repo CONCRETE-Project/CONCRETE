@@ -375,16 +375,16 @@ para 'Staking'</translation>
         <translation>Cancelar </translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas CCTs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas CCEs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS CCT&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS CCE&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -542,8 +542,8 @@ para 'Staking'</translation>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -722,8 +722,8 @@ para 'Staking'</translation>
         <translation>Este rótulo fica vermelho se qualquer recipiente receber uma quantia menor que %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Pode variar +/- %1 ucct por entrada.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Pode variar +/- %1 ucce por entrada.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -739,7 +739,7 @@ para 'Staking'</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Diálogo</translation>
@@ -753,8 +753,8 @@ para 'Staking'</translation>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -890,12 +890,12 @@ para 'Staking'</translation>
         <translation>Estatísticas de Staking</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -926,8 +926,8 @@ para 'Staking'</translation>
         <translation>Você pode ver o histórico da sua conta</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>Quantidade de CCT e zCCT em Staking.</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>Quantidade de CCE e zCCE em Staking.</translation>
     </message>
     <message>
         <source>All</source>
@@ -966,8 +966,8 @@ para 'Staking'</translation>
         <translation>Nenhuma transação ainda</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>Como obter o CCT ou zCCT</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>Como obter o CCE ou zCCE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1416,8 +1416,8 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Criar novo controlador de nó principal</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCT (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>Para criar um Masternode CONCRETE, você deve dedicar 10.000 CCT (a unidade do CONCRETE) à rede (no entanto, essas moedas ainda são suas e nunca deixarão sua posse). Você pode desativar o nó e desbloquear as moedas a qualquer momento.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCE (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Para criar um Masternode CONCRETE, você deve dedicar 10.000 CCE (a unidade do CONCRETE) à rede (no entanto, essas moedas ainda são suas e nunca deixarão sua posse). Você pode desativar o nó e desbloquear as moedas a qualquer momento.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1428,8 +1428,8 @@ Ele será iniciado automaticamente assim que a carteira tiver confirmações suf
         <translation>Definir o nome do Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>A transação de 10.000 CCT será feita com um novo endereço vazio em sua carteira. O endereço é rotulado com o nome do nó principal.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCE will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>A transação de 10.000 CCE será feita com um novo endereço vazio em sua carteira. O endereço é rotulado com o nome do nó principal.</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1663,8 +1663,8 @@ Você tem certeza?</translation>
         <translation>O arquivo masternode.conf não existe</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 CCT required.</source>
-        <translation>Não há saldo suficiente para criar um masternode, 10.000 CCT necessários.</translation>
+        <source>Not enough balance to create a masternode, 10,000 CCE required.</source>
+        <translation>Não há saldo suficiente para criar um masternode, 10.000 CCE necessários.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2494,8 +2494,8 @@ Endereço: %4
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3548,14 +3548,14 @@ Endereço: %4
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
         <source>PushButton</source>
         <translation>Aperte o Botão</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCCT</translation>
+        <source>zCce</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -3589,12 +3589,12 @@ Endereço: %4
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em CCT/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em CCE/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em CCT/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em CCE/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3613,8 +3613,8 @@ Endereço: %4
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3785,8 +3785,8 @@ Endereço: %4
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em CCT/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em CCE/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4095,8 +4095,8 @@ Endereço: %4
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>O valor está abaixo da menor denominação disponível (= 1) do zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>O valor está abaixo da menor denominação disponível (= 1) do zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

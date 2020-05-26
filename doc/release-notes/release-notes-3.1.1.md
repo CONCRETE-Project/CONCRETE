@@ -36,16 +36,16 @@ frequently tested on them.
 Notable Changes
 ==============
 
-zCCT Updates
+zCCE Updates
 --------------
 
-### Fix spending for v1 zCCT created before block 1050020
+### Fix spending for v1 zCCE created before block 1050020
 
-The transition to v2 zCCT and reset of the accumulators caused blocks 1050000 - 1050010 to be accumulated twice. This was causing a number v1 zCCT to not create valid witnesses, and thus were not spendable. This problem is fixed by double accumulating blocks 1050000-1050010 when creating the witness. Any user that had issues spending zCCT v1 will now be able to convert that into CCT and then zCCT v2 (if desired).
+The transition to v2 zCCE and reset of the accumulators caused blocks 1050000 - 1050010 to be accumulated twice. This was causing a number v1 zCCE to not create valid witnesses, and thus were not spendable. This problem is fixed by double accumulating blocks 1050000-1050010 when creating the witness. Any user that had issues spending zCCE v1 will now be able to convert that into CCE and then zCCE v2 (if desired).
 
 ### Adjustment to staking properties to reduce orphaned blocks
 
-zCCT stake set to update more frequently and lowering the stake hashdrift to 30 seconds to reduce the number of orphans being experienced by CONCRETE stakers.
+zCCE stake set to update more frequently and lowering the stake hashdrift to 30 seconds to reduce the number of orphans being experienced by CONCRETE stakers.
 
 Further work is being done to improve the efficiently of zPoS beyond this, and will be available in a subsequent release at a later date.
 
@@ -57,7 +57,7 @@ User Experience
 
 Fixes a display issue introduced with a previous change. This was a "display only" issue, all your coins were there all the time.
 
-### Show progress percent for zcct reindex operations
+### Show progress percent for zcce reindex operations
 
 When starting the wallet with `-reindexaccumulators` and/or `-reindexzerocoin`, these operations can take a considerable time to complete depending on system hardware. A progress percent on the splash screen is now shown for these processes to avoid confusion in thinking that the wallet has frozen.
 
@@ -102,7 +102,7 @@ Detailed release notes follow. This overview includes changes that affect behavi
 
 ### Core Features
  - #549 `8bf13a5ad` [Crypto] Switch to libsecp256k1 signature verification and update the lib (warrows)
- - #609 `6b73598b9` [MoveOnly] Remove zCCT code from main.cpp (presstab)
+ - #609 `6b73598b9` [MoveOnly] Remove zCCE code from main.cpp (presstab)
  - #610 `6c3bc8c76` [Main] Check whether tx is in chain in ContextualCheckZerocoinMint(). (presstab)
  - #624 `1a82aec96` [Core] Missing seesaw value for block 325000 (warrows)
  - #636 `d359c6136` [Main] Write to the zerocoinDB in batches (Fuzzbawls)
@@ -120,15 +120,15 @@ Detailed release notes follow. This overview includes changes that affect behavi
 ### GUI
  - #580 `c296b7572` Fixed Multisend dialog to show settings properly (SHTDJ)
  - #598 `f0d894253` [GUI] Fix wrongly displayed balance on Overview tab (Mrs-X)
- - #600 `217433561` [GUI] Only enable/disable PrivacyDialog zCCT elements if needed. (presstab)
- - #612 `6dd752cb5` [Qt] Show progress percent for zcct reindex operations (Fuzzbawls)
+ - #600 `217433561` [GUI] Only enable/disable PrivacyDialog zCCE elements if needed. (presstab)
+ - #612 `6dd752cb5` [Qt] Show progress percent for zcce reindex operations (Fuzzbawls)
  - #626 `9b6a42ba0` [Qt] Add Tor service icon to status bar (Fuzzbawls)
  - #629 `14e125795` [Qt] Remove useless help button from QT dialogs (windows) (warrows)
  - #646 `c66b7b632` [Qt] Periodic translation update (Fuzzbawls)
  
 ### Wallet
  - #597 `766d5196c` [Wallet] Write new transactions to wtxOrdered properly (Fuzzbawls)
- - #603 `779d8d597` Fix spending for v1 zCCT created before block 1050020. (presstab)
+ - #603 `779d8d597` Fix spending for v1 zCCE created before block 1050020. (presstab)
  - #617 `6b525f0df` [Wallet] Adjust staking properties to lower orphan rates. (presstab)
  - #625 `5f2e61d60` [Wallet] Add some LOCK to avoid crash (warrows)
  

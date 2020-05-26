@@ -88,7 +88,7 @@
     <name>CoinControlDialog</name>
     </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     </context>
 <context>
     <name>ColdStakingWidget</name>
@@ -286,7 +286,7 @@
     <name>WelcomeContentWidget</name>
     </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     </context>
 <context>
     <name>concrete-core</name>

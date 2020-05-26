@@ -192,14 +192,14 @@ BITCOIN_CORE_H = \
   wallet/wallet.h \
   wallet/wallet_ismine.h \
   wallet/walletdb.h \
-  zcctchain.h \
-  zcct/deterministicmint.h \
-  zcct/mintpool.h \
-  zcct/zerocoin.h \
-  zcct/zccttracker.h \
-  zcct/zcctwallet.h \
-  zcct/zcctmodule.h \
-  zcct/zpos.h \
+  zccechain.h \
+  zcce/deterministicmint.h \
+  zcce/mintpool.h \
+  zcce/zerocoin.h \
+  zcce/zccetracker.h \
+  zcce/zccewallet.h \
+  zcce/zccemodule.h \
+  zcce/zpos.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -248,7 +248,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zcctchain.cpp \
+  zccechain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -290,14 +290,14 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/wallet_ismine.cpp \
   wallet/wallet_zerocoin.cpp \
   wallet/walletdb.cpp \
-  zcct/deterministicmint.cpp \
-  zcct/zerocoin.cpp \
-  zcct/mintpool.cpp \
-  zcct/zcctwallet.cpp \
-  zcct/zccttracker.cpp \
+  zcce/deterministicmint.cpp \
+  zcce/zerocoin.cpp \
+  zcce/mintpool.cpp \
+  zcce/zccewallet.cpp \
+  zcce/zccetracker.cpp \
   stakeinput.cpp \
-  zcct/zcctmodule.cpp \
-  zcct/zpos.cpp \
+  zcce/zccemodule.cpp \
+  zcce/zpos.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -381,9 +381,9 @@ libbitcoin_common_a_SOURCES = \
   compressor.cpp \
   consensus/merkle.cpp \
   primitives/block.cpp \
-  zcct/deterministicmint.cpp \
+  zcce/deterministicmint.cpp \
   primitives/transaction.cpp \
-  zcct/zerocoin.cpp \
+  zcce/zerocoin.cpp \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
@@ -555,7 +555,7 @@ CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
-CLEANFILES += zcct/*.gcda zcct/*.gcno
+CLEANFILES += zcce/*.gcda zcce/*.gcno
 CLEANFILES += obj/build.h
 
 EXTRA_DIST =

@@ -1771,28 +1771,28 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size:20px;
 }
 
-*[cssClass="text-stake-cct"] {
+*[cssClass="text-stake-cce"] {
     color:#5c4b7d;
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #5c4b7d;
 }
 
-*[cssClass="text-stake-cct-disable"] {
+*[cssClass="text-stake-cce-disable"] {
     color:#d7d5da;
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #bbb8c0;
 }
 
-*[cssClass="text-stake-zcct"] {
+*[cssClass="text-stake-zcce"] {
     color:#b088ff;
     font-size:16px;
     padding:10px;
     border-bottom: 5px solid #b088ff;
 }
 
-*[cssClass="text-stake-zcct-disable"] {
+*[cssClass="text-stake-zcce-disable"] {
     color:#d7d5da;
     font-size:16px;
     padding:10px;
@@ -1804,24 +1804,24 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size:16px;
 }
 
-*[cssClass="text-chart-zcct"] {
+*[cssClass="text-chart-zcce"] {
     color:#b088ff;
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="text-chart-cct"] {
+*[cssClass="text-chart-cce"] {
     color:#5c4b7d;
     font-size:16px;
     padding-left:4px;
 }
 
-*[cssClass="square-chart-zcct"] {
+*[cssClass="square-chart-zcce"] {
     background-color:#b088ff;
     border:none;
 }
 
-*[cssClass="square-chart-cct"] {
+*[cssClass="square-chart-cce"] {
     background-color:#5c4b7d;
     border:none;
 }
@@ -2403,18 +2403,18 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 
-*[cssClass="coin-icon-cct"] {
-    qproperty-icon: url("://ic-coin-cct") off,
-    url("://ic-coin-cct") on ;
+*[cssClass="coin-icon-cce"] {
+    qproperty-icon: url("://ic-coin-cce") off,
+    url("://ic-coin-cce") on ;
     qproperty-iconSize: 24px 24px;
     background-color: #FFFFFF;
     border:  2px solid #FFFFFF;
     border-radius: 12px;
 }
 
-*[cssClass="coin-icon-zcct"] {
-    qproperty-icon: url("://ic-coin-zcct") off,
-    url("://ic-coin-zcct") on ;
+*[cssClass="coin-icon-zcce"] {
+    qproperty-icon: url("://ic-coin-zcce") off,
+    url("://ic-coin-zcce") on ;
     qproperty-iconSize: 24px 24px;
     background-position:center;
     background-repeat:no-repeat;

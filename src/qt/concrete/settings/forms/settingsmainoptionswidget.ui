@@ -226,7 +226,7 @@
          </layout>
         </item>
         <item>
-         <spacer name="verticalPercentagezCct">
+         <spacer name="verticalPercentagezCce">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>

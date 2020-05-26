@@ -543,7 +543,7 @@ void ColdStakingWidget::onCoinControlClicked()
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any CCT to select."));
+            inform(tr("You don't have any CCE to select."));
         }
     }
 }
@@ -785,7 +785,7 @@ void ColdStakingWidget::updateStakingTotalLabel()
 {
     const CAmount& total = csModel->getTotalAmount();
     ui->labelStakingTotal->setText(tr("Total Staking: %1").arg(
-            (total == 0) ? "0.00 CCT" : GUIUtil::formatBalance(total, nDisplayUnit))
+            (total == 0) ? "0.00 CCE" : GUIUtil::formatBalance(total, nDisplayUnit))
     );
 }
 

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef CONCRETE_ZCCTMODULE_H
-#define CONCRETE_ZCCTMODULE_H
+#ifndef CONCRETE_ZCCEMODULE_H
+#define CONCRETE_ZCCEMODULE_H
 
 #include "libzerocoin/bignum.h"
 #include "libzerocoin/Denominations.h"
@@ -17,7 +17,7 @@
 #include "uint256.h"
 #include <streams.h>
 #include <utilstrencodings.h>
-#include "zcct/zerocoin.h"
+#include "zcce/zerocoin.h"
 #include "chainparams.h"
 
 static int const PUBSPEND_SCHNORR = 4;
@@ -80,7 +80,7 @@ public:
 
 class CValidationState;
 
-namespace ZCCTModule {
+namespace ZCCEModule {
     CDataStream ScriptSigToSerializedSpend(const CScript& scriptSig);
     bool createInput(CTxIn &in, CZerocoinMint& mint, uint256 hashTxOut, const int spendVersion);
     PublicCoinSpend parseCoinSpend(const CTxIn &in);
@@ -99,4 +99,4 @@ namespace ZCCTModule {
 };
 
 
-#endif //CONCRETE_ZCCTMODULE_H
+#endif //CONCRETE_ZCCEMODULE_H

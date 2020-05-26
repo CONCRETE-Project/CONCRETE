@@ -2,18 +2,18 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CONCRETE_ZCCTTRACKER_H
-#define CONCRETE_ZCCTTRACKER_H
+#ifndef CONCRETE_ZCCETRACKER_H
+#define CONCRETE_ZCCETRACKER_H
 
 #include "zerocoin.h"
 #include "sync.h"
 #include <list>
 
 class CDeterministicMint;
-class CzCCTWallet;
+class CzCCEWallet;
 class CWallet;
 
-class CzCCTTracker
+class CzCCETracker
 {
 private:
     bool fInitialized;
@@ -23,9 +23,9 @@ private:
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzCCTTracker(CWallet* parent);
-    ~CzCCTTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzCCTWallet* zCCTWallet = NULL);
+    CzCCETracker(CWallet* parent);
+    ~CzCCETracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzCCEWallet* zCCEWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;
@@ -52,4 +52,4 @@ public:
     void Clear();
 };
 
-#endif //CONCRETE_ZCCTTRACKER_H
+#endif //CONCRETE_ZCCETRACKER_H

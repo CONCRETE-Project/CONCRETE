@@ -12,14 +12,14 @@
 #include <stdlib.h>
 #include <string>
 
-/** Amount in CCT (Can be negative) */
+/** Amount in CCE (Can be negative) */
 typedef int64_t CAmount;
 
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
 /**
- * Fee rate in CCT per kilobyte: CAmount / kB
+ * Fee rate in CCE per kilobyte: CAmount / kB
  */
 class CFeeRate
 {
