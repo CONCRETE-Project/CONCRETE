@@ -65,14 +65,14 @@ An extended description of this large work can be found in the PR [here](https:/
 
 ### Functional Changes
 
-Automatic zCCT backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the concrete.conf file or as startup flags):
-- `autozcctbackup`
-- `backupzcct`
-- `zcctbackuppath`
+Automatic zCCE backup has been disabled. Thus, the following configuration options have been removed  (either as entries in the concrete.conf file or as startup flags):
+- `autozccebackup`
+- `backupzcce`
+- `zccebackuppath`
 
 ### Stake-Split threshold
 The stake split threshold is no longer required to be integer. It can be a fractional amount. A threshold value of 0 disables the stake-split functionality.
-The default value for the stake-split threshold has been lowered from 2000 CCT, down  to 500 CCT.
+The default value for the stake-split threshold has been lowered from 2000 CCE, down  to 500 CCE.
 
 
 Dependencies
@@ -90,7 +90,7 @@ RPC Changes
 - "obfcompat" JSON field in `getmasternodecount` output is removed as it is/was redundant with the `enabled` field.
 
 
-- "moneysupply" and "zcctSupply" attributes in `getblock` output are removed.
+- "moneysupply" and "zcceSupply" attributes in `getblock` output are removed.
 
 
 - "isPublicSpend" boolean (optional) input parameter is removed from the following commands:
@@ -123,7 +123,7 @@ RPC Changes
      "mnsync": true|false,               (boolean) whether masternode data is synced
      "walletunlocked": true|false,       (boolean) whether the wallet is unlocked
      "stakeablecoins": n,                (numeric) number of stakeable UTXOs
-     "stakingbalance": d,                (numeric) CCT value of the stakeable coins (minus reserve balance, if any)
+     "stakingbalance": d,                (numeric) CCE value of the stakeable coins (minus reserve balance, if any)
      "stakesplitthreshold": d,           (numeric) value of the current threshold for stake split
      "lastattempt_age": n,               (numeric) seconds since last stake attempt
      "lastattempt_depth": n,             (numeric) depth of the block on top of which the last stake attempt was made

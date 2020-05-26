@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(CCT);
-    unitlist.append(mCCT);
-    unitlist.append(uCCT);
+    unitlist.append(CCE);
+    unitlist.append(mCCE);
+    unitlist.append(uCCE);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case CCT:
-    case mCCT:
-    case uCCT:
+    case CCE:
+    case mCCE:
+    case uCCE:
         return true;
     default:
         return false;
@@ -42,40 +42,40 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case CCT:
+    case CCE:
         return QString("concrete");
-    case mCCT:
+    case mCCE:
         return QString("mconcrete");
-    case uCCT:
+    case uCCE:
         return QString::fromUtf8("uconcrete");
     default:
         return QString("???");
     }
 }
 
-QString BitcoinUnits::name(int unit, bool isZcct)
+QString BitcoinUnits::name(int unit, bool isZcce)
 {
     QString z = "";
-    if(isZcct) z = "z";
+    if(isZcce) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCT:
-            return z + QString("CCT");
-        case mCCT:
-            return z + QString("mCCT");
-        case uCCT:
-            return z + QString::fromUtf8("μCCT");
+        case CCE:
+            return z + QString("CCE");
+        case mCCE:
+            return z + QString("mCCE");
+        case uCCE:
+            return z + QString::fromUtf8("μCCE");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCT:
-            return z + QString("tCCT");
-        case mCCT:
-            return z + QString("mtCCT");
-        case uCCT:
-            return z + QString::fromUtf8("μtCCT");
+        case CCE:
+            return z + QString("tCCE");
+        case mCCE:
+            return z + QString("mtCCE");
+        case uCCE:
+            return z + QString::fromUtf8("μtCCE");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCT:
-            return QString("CCT");
-        case mCCT:
-            return QString("Milli-CCT (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCT:
-            return QString("Micro-CCT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CCE:
+            return QString("CCE");
+        case mCCE:
+            return QString("Milli-CCE (1 / 1" THIN_SP_UTF8 "000)");
+        case uCCE:
+            return QString("Micro-CCE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCT:
-            return QString("TestCCTs");
-        case mCCT:
-            return QString("Milli-TestCCT (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCT:
-            return QString("Micro-TestCCT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CCE:
+            return QString("TestCCEs");
+        case mCCE:
+            return QString("Milli-TestCCE (1 / 1" THIN_SP_UTF8 "000)");
+        case uCCE:
+            return QString("Micro-TestCCE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case CCT:
+    case CCE:
         return 100000000;
-    case mCCT:
+    case mCCE:
         return 100000;
-    case uCCT:
+    case uCCE:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case CCT:
+    case CCE:
         return 8;
-    case mCCT:
+    case mCCE:
         return 5;
-    case uCCT:
+    case uCCE:
         return 2;
     default:
         return 0;
@@ -212,7 +212,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZCCT)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZCCE)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -229,12 +229,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZCCT);
+    return result + QString(" ") + name(unit, isZCCE);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZCCT)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZCCE)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZCCT));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZCCE));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

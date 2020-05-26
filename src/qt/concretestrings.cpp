@@ -60,14 +60,14 @@ QT_TRANSLATE_NOOP("concrete-core", ""
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Enable automatic wallet backups triggered after each zCCT minting (0-1, "
+"Enable automatic wallet backups triggered after each zCCE minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Enable or disable staking functionality for CCT inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for CCE inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Enable or disable staking functionality for zCCT inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zCCE inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("concrete-core", ""
@@ -104,10 +104,10 @@ QT_TRANSLATE_NOOP("concrete-core", ""
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Fees (in CCT/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in CCE/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Fees (in CCT/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in CCE/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -180,7 +180,7 @@ QT_TRANSLATE_NOOP("concrete-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("concrete-core", ""
-"Specify custom backup path to add a copy of any automatic zCCT backup. If "
+"Specify custom backup path to add a copy of any automatic zCCE backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -214,10 +214,10 @@ QT_TRANSLATE_NOOP("concrete-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 CCT."),
+"transaction that are not equal 10000 CCE."),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"CCT."),
+"CCE."),
 QT_TRANSLATE_NOOP("concrete-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -302,7 +302,7 @@ QT_TRANSLATE_NOOP("concrete-core", "Do not load the wallet and disable wallet RP
 QT_TRANSLATE_NOOP("concrete-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("concrete-core", "Done loading"),
 QT_TRANSLATE_NOOP("concrete-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("concrete-core", "Enable precomputation of zCCT spends and stakes (0-1, default %u)"),
+QT_TRANSLATE_NOOP("concrete-core", "Enable precomputation of zCCE spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("concrete-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("concrete-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("concrete-core", "Enable publish hash transaction in <address>"),
@@ -337,7 +337,7 @@ QT_TRANSLATE_NOOP("concrete-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("concrete-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("concrete-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("concrete-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("concrete-core", "Fee (in CCT/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("concrete-core", "Fee (in CCE/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("concrete-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", "How many blocks to check at startup (default: %u, 0 = all)"),
@@ -401,11 +401,11 @@ QT_TRANSLATE_NOOP("concrete-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("concrete-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("concrete-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("concrete-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("concrete-core", "Recalculating CCT supply..."),
-QT_TRANSLATE_NOOP("concrete-core", "Recalculating minted ZCCT..."),
-QT_TRANSLATE_NOOP("concrete-core", "Recalculating spent ZCCT..."),
+QT_TRANSLATE_NOOP("concrete-core", "Recalculating CCE supply..."),
+QT_TRANSLATE_NOOP("concrete-core", "Recalculating minted ZCCE..."),
+QT_TRANSLATE_NOOP("concrete-core", "Recalculating spent ZCCE..."),
 QT_TRANSLATE_NOOP("concrete-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("concrete-core", "Reindex the CCT and zCCT money supply statistics"),
+QT_TRANSLATE_NOOP("concrete-core", "Reindex the CCE and zCCE money supply statistics"),
 QT_TRANSLATE_NOOP("concrete-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("concrete-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("concrete-core", "Reindexing zerocoin failed"),
@@ -453,7 +453,7 @@ QT_TRANSLATE_NOOP("concrete-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("concrete-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("concrete-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("concrete-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("concrete-core", "Syncing zCCT wallet..."),
+QT_TRANSLATE_NOOP("concrete-core", "Syncing zCCE wallet..."),
 QT_TRANSLATE_NOOP("concrete-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("concrete-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("concrete-core", "This help message"),
@@ -485,7 +485,7 @@ QT_TRANSLATE_NOOP("concrete-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("concrete-core", "Use the test network"),
 QT_TRANSLATE_NOOP("concrete-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("concrete-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("concrete-core", "Value is below the smallest available denomination (= 1) of zCCT"),
+QT_TRANSLATE_NOOP("concrete-core", "Value is below the smallest available denomination (= 1) of zCCE"),
 QT_TRANSLATE_NOOP("concrete-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("concrete-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("concrete-core", "Wallet %s resides outside data directory %s"),

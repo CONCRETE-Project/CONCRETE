@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CONCRETE_ZCCTCHAIN_H
-#define CONCRETE_ZCCTCHAIN_H
+#ifndef CONCRETE_ZCCECHAIN_H
+#define CONCRETE_ZCCECHAIN_H
 
 #include "chain.h"
 #include "libzerocoin/Coin.h"
@@ -42,7 +42,7 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
 /** Global variable for the zerocoin supply */
 extern std::map<libzerocoin::CoinDenomination, int64_t> mapZerocoinSupply;
 int64_t GetZerocoinSupply();
-bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
-bool UpdateZCCTSupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
+bool UpdateZCCESupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
+bool UpdateZCCESupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
 
-#endif //CONCRETE_ZCCTCHAIN_H
+#endif //CONCRETE_ZCCECHAIN_H

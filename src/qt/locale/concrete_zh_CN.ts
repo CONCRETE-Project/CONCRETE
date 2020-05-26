@@ -376,16 +376,16 @@ for staking</source>
         <translation>删除</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取CCTs。</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取CCEs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>您确定加密您的钱包吗？</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的CCT&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>注意：请妥善保管好你的密码，因为在加密后，没有密码将无法打开钱包。这将会让您&lt;b&gt;损失钱包中所有的CCE&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -485,8 +485,8 @@ for staking</source>
         <translation>存款</translation>
     </message>
     <message>
-        <source>0,00 CCT</source>
-        <translation>0,00 CCT</translation>
+        <source>0,00 CCE</source>
+        <translation>0,00 CCE</translation>
     </message>
     <message>
         <source>address</source>
@@ -563,8 +563,8 @@ for staking</source>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -743,8 +743,8 @@ for staking</source>
         <translation>如果任何收件人收到的金额小于%1，此标签将变为红色。</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>每个输入可以浮动+/- %1 ucct。</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>每个输入可以浮动+/- %1 ucce。</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -760,7 +760,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Dialog</source>
         <translation>对话框</translation>
@@ -774,8 +774,8 @@ for staking</source>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -893,9 +893,9 @@ for staking</source>
         <translation>宪法</translation>
     </message>
     <message>
-        <source>You can delegate your CCTs and let a hot node (24/7 online node)
+        <source>You can delegate your CCEs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
-        <translation>您可以委派您的CCT并让热节点（24/7在线节点）
+        <translation>您可以委派您的CCE并让热节点（24/7在线节点）
 代表您进行放样并将密钥离线保存在安全的位置。</translation>
     </message>
     <message>
@@ -903,8 +903,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>添加地址</translation>
     </message>
     <message>
-        <source>Delegate or Accept CCT delegation</source>
-        <translation>授予权限或接受CCT权限</translation>
+        <source>Delegate or Accept CCE delegation</source>
+        <translation>授予权限或接受CCE权限</translation>
     </message>
     <message>
         <source>Delegate</source>
@@ -947,8 +947,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>条目无效</translation>
     </message>
     <message>
-        <source>Invalid entry, minimum delegable amount is 10 CCT</source>
-        <translation>输入无效，最小委托量为10 CCT</translation>
+        <source>Invalid entry, minimum delegable amount is 10 CCE</source>
+        <translation>输入无效，最小委托量为10 CCE</translation>
     </message>
     <message>
         <source>Owner address invalid</source>
@@ -987,8 +987,8 @@ Do you wish to proceed?</source>
         <translation>委托硬币</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>您没有任何CCT可选择。</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>您没有任何CCE可选择。</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1119,12 +1119,12 @@ address</source>
         <translation>加注数据</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1155,8 +1155,8 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>已加注的CCT 和 zCCT 金额</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>已加注的CCE 和 zCCE 金额</translation>
     </message>
     <message>
         <source>All</source>
@@ -1211,8 +1211,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>如何获取CCT 或 zCCT</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>如何获取CCE 或 zCCE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1665,8 +1665,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>创建新的主节点控制器</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCT (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建一个CONCRETE 主节点，你必须奉献给网络10.000 CCT (CONCRETE的单位)(但是，这些币仍属于你，永远都是属于你的财产)。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCE (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;创建一个CONCRETE 主节点，你必须奉献给网络10.000 CCE (CONCRETE的单位)(但是，这些币仍属于你，永远都是属于你的财产)。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1677,8 +1677,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>设置主节点名称</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 CCT的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCE will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 CCE的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1910,8 +1910,8 @@ Are you sure?</source>
         <translation>主节点配置文件不存在</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 CCT required.</source>
-        <translation>没有足够的余额创建主节点，需要10,000 CCT。</translation>
+        <source>Not enough balance to create a masternode, 10,000 CCE required.</source>
+        <translation>没有足够的余额创建主节点，需要10,000 CCE。</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2158,36 +2158,36 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>启动自动铸造CCT到zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>启动自动铸造CCE到zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>启动自动铸造zCCT</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>启动自动铸造zCCE</translation>
     </message>
     <message>
-        <source>Enable automatic zCCT minting from specific addresses</source>
-        <translation>启用从特定地址自动生成zCCT</translation>
+        <source>Enable automatic zCCE minting from specific addresses</source>
+        <translation>启用从特定地址自动生成zCCE</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>通过零币协议自动转换为zCCT的传入CCT的百分比(最小:10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>通过零币协议自动转换为zCCE的传入CCE的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>自动铸造的zCCT百分比</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>自动铸造的zCCE百分比</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>等待自动转换为零币，直到足够的CCT为这种面额可用</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>等待自动转换为零币，直到足够的CCE为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>首选自动铸造zCCT面额</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>首选自动铸造zCCE面额</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2565,14 +2565,14 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zCCT anonymizes your CCT by removing any
+        <source>Minting zCCE anonymizes your CCE by removing any
 transaction history, making transactions untraceable </source>
-        <translation>铸造zCCT会通过删除任何
-交易历史匿名化您的CCT，使交易无法被跟踪</translation>
+        <translation>铸造zCCE会通过删除任何
+交易历史匿名化您的CCE，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zCCT or convert back to CCT</source>
-        <translation>铸造新的zCCT或转换回CCT</translation>
+        <source>Mint new zCCE or convert back to CCE</source>
+        <translation>铸造新的zCCE或转换回CCE</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2583,32 +2583,32 @@ transaction history, making transactions untraceable </source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zCCT</source>
-        <translation>铸造zCCT</translation>
+        <source>Mint zCCE</source>
+        <translation>铸造zCCE</translation>
     </message>
     <message>
-        <source>Enter amount of CCT to mint into zCCT</source>
-        <translation>输入一定量的CCT铸造成zCCT</translation>
+        <source>Enter amount of CCE to mint into zCCE</source>
+        <translation>输入一定量的CCE铸造成zCCE</translation>
     </message>
     <message>
-        <source>Convert back to CCT</source>
-        <translation>转换回CCT</translation>
+        <source>Convert back to CCE</source>
+        <translation>转换回CCE</translation>
     </message>
     <message>
-        <source>Enter amount of zCCT to convert back into CCT</source>
-        <translation>输入一定量的zCCT转换回CCT</translation>
+        <source>Enter amount of zCCE to convert back into CCE</source>
+        <translation>输入一定量的zCCE转换回CCE</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance</source>
-        <translation>zCCT目前正在维护中</translation>
+        <source>zCCE is currently undergoing maintenance</source>
+        <translation>zCCE目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zCCT</source>
-        <translation>你需要解锁钱包才能%1 zCCT</translation>
+        <source>You need to unlock the wallet to be able to %1 zCCE</source>
+        <translation>你需要解锁钱包才能%1 zCCE</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2623,16 +2623,16 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zCCT minted successfully</source>
-        <translation>zCCT铸造成功</translation>
+        <source>zCCE minted successfully</source>
+        <translation>zCCE铸造成功</translation>
     </message>
     <message>
-        <source>zCCT converted back to CCT</source>
-        <translation>zCCT 转换回CCT</translation>
+        <source>zCCE converted back to CCE</source>
+        <translation>zCCE 转换回CCE</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>您没有任何CCT可选择。</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>您没有任何CCE可选择。</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -3018,8 +3018,8 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>自定义zCCT备份路径:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>自定义zCCE备份路径:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3268,8 +3268,8 @@ transaction history, making transactions untraceable </source>
         <translation>接收</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive CCT.</source>
-        <translation>扫描二维码或复制地址接收CCT</translation>
+        <source>Scan the QR code or copy the address to receive CCE.</source>
+        <translation>扫描二维码或复制地址接收CCE</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3370,8 +3370,8 @@ transaction history, making transactions untraceable </source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3559,8 +3559,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (CCT) or private coins (zCCT)</source>
-        <translation>您可以转换公共币(CCT)或私人币(zCCT)</translation>
+        <source>You can transfer public coins (CCE) or private coins (zCCE)</source>
+        <translation>您可以转换公共币(CCE)或私人币(zCCE)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3595,12 +3595,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费总金额</translation>
     </message>
     <message>
-        <source>Send CCT</source>
-        <translation>花费CCT</translation>
+        <source>Send CCE</source>
+        <translation>花费CCE</translation>
     </message>
     <message>
-        <source>Send zCCT</source>
-        <translation>花费zCCT</translation>
+        <source>Send zCCE</source>
+        <translation>花费zCCE</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3655,8 +3655,8 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT目前正在维护中</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE目前正在维护中</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3675,12 +3675,12 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zCCT transaction sent!</source>
-        <translation>zCCT交易已发送！</translation>
+        <source>zCCE transaction sent!</source>
+        <translation>zCCE交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>版本1 zCCT要求安全级别为100才能成功使用。</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>版本1 zCCE要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3719,12 +3719,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>定制费用%1</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>您没有任何CCT可供选择。</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>您没有任何CCE可供选择。</translation>
     </message>
     <message>
-        <source>You don't have any zCCT in your balance to select.</source>
-        <translation>你的余额中没有zCCT可供选择。</translation>
+        <source>You don't have any zCCE in your balance to select.</source>
+        <translation>你的余额中没有zCCE可供选择。</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3993,7 +3993,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation>添加钥匙到钱包出错</translation>
     </message>
     <message>
-        <source>Successfully added cctate key to the wallet</source>
+        <source>Successfully added cceate key to the wallet</source>
         <translation>成功添加私钥到钱包</translation>
     </message>
 </context>
@@ -4128,30 +4128,30 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>1）什么是CONCRETE?</translation>
     </message>
     <message>
-        <source>2) Why are my CCT unspendable?</source>
-        <translation>2) 我的CCT为什么不能用？</translation>
+        <source>2) Why are my CCE unspendable?</source>
+        <translation>2) 我的CCE为什么不能用？</translation>
     </message>
     <message>
-        <source>3) CONCRETE privacy? What is Zerocoin (zCCT)?</source>
-        <translation>3）CONCRETE 隐私？什么是零币(zCCT)？</translation>
+        <source>3) CONCRETE privacy? What is Zerocoin (zCCE)?</source>
+        <translation>3）CONCRETE 隐私？什么是零币(zCCE)？</translation>
     </message>
     <message>
-        <source>4) Why are my zCCT unspendable?</source>
-        <translation>4) 我的zCCT为什么不能用？</translation>
+        <source>4) Why are my zCCE unspendable?</source>
+        <translation>4) 我的zCCE为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zCCT automatically?</source>
+    into zCCE automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
-zCCT了?</translation>
+zCCE了?</translation>
     </message>
     <message>
-        <source>6) How do I receive CCT/zCCT?</source>
-        <translation>6）如何接收CCT/zCCT?</translation>
+        <source>6) How do I receive CCE/zCCE?</source>
+        <translation>6）如何接收CCE/zCCE?</translation>
     </message>
     <message>
-        <source>7) How do I stake CCT/zCCT?</source>
-        <translation>7）如何加注CCT/zCCT?</translation>
+        <source>7) How do I stake CCE/zCCE?</source>
+        <translation>7）如何加注CCE/zCCE?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4180,7 +4180,7 @@ zCCT了?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  CONCRETE incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zCCT) and Zerocoin staking.
+                           to implement ZeroCoin(zCCE) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            CONCRETE utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of CONCRETE to participate in earning block rewards
@@ -4194,7 +4194,7 @@ CONCRETE是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
 零的交易费用。CONCRETE是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zCCT)和零币加注。
+实现零币(zCCE)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
 CONCRETE使用了一个股权证明(PoS)一致系统算法，
 允许所有CONCRETE的所有者参与赚取区块奖励
@@ -4206,8 +4206,8 @@ CONCRETE使用了一个股权证明(PoS)一致系统算法，
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my CCT unspendable?</source>
-        <translation>我的CCT为什么不能用？</translation>
+        <source>Why are my CCE unspendable?</source>
+        <translation>我的CCE为什么不能用？</translation>
     </message>
     <message>
         <source>
@@ -4234,28 +4234,28 @@ CONCRETE使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>CONCRETE privacy? What is Zerocoin (zCCT)?</source>
-        <translation>CONCRETE 隐私？什么是零币(zCCT)？</translation>
+        <source>CONCRETE privacy? What is Zerocoin (zCCE)?</source>
+        <translation>CONCRETE 隐私？什么是零币(zCCE)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zCCT is an optional privacy-centric method of coin mixing on the
+                           zCCE is an optional privacy-centric method of coin mixing on the
                            CONCRETE blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt;
-                           "CONCRETE Zerocoin (zCCT) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt;
+                           "CONCRETE Zerocoin (zCCE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zCCT是一种可选的以隐私为中心的隐私币
+zCCE是一种可选的以隐私为中心的隐私币
 它是CONCRETE区块链的一员，基本上在任何块资源管理器
-所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt;
+所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-CONCRETE零币(zCCT)技术文件
+CONCRETE零币(zCCE)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4264,20 +4264,20 @@ CONCRETE零币(zCCT)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zCCT unspendable?</source>
-        <translation>我的CCT为什么不能用？</translation>
+        <source>Why are my zCCE unspendable?</source>
+        <translation>我的CCE为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zCCT will require 20 confirmations as well as 1
+                           After minting, zCCE will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-铸币后，zCCT将需要20个确认和1个确认
+铸币后，zCCE将需要20个确认和1个确认
 在网络上增加相同面额的铸币
 才够资格消费。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -4287,32 +4287,32 @@ CONCRETE零币(zCCT)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zCCT automatically?</source>
-        <translation>为什么我的钱包会自动将余额转换成zCCT ?</translation>
+        <source>Why did my wallet convert the balance into zCCE automatically?</source>
+        <translation>为什么我的钱包会自动将余额转换成zCCE ?</translation>
     </message>
     <message>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive CCT/zCCT?</source>
-        <translation>我怎么接收CCT/zCCT?</translation>
+        <source>How do I receive CCE/zCCE?</source>
+        <translation>我怎么接收CCE/zCCE?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zCCT can be spent and sent to any CONCRETE address. The receiver will
-                           receive standard CONCRETE but the origin of the CONCRETE is anonymized by the zCCT Protocol.
+                           zCCE can be spent and sent to any CONCRETE address. The receiver will
+                           receive standard CONCRETE but the origin of the CONCRETE is anonymized by the zCCE Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zCCT you will need to mint your balance in the “Privacy” tab.
+                           If you want more zCCE you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-可以使用zCCT并将其发送到任何CONCRETE地址。接收机将
-接收标准的CONCRETE，但是根据zCCT协议，CONCRETE的来源是匿名的。
+可以使用zCCE并将其发送到任何CONCRETE地址。接收机将
+接收标准的CONCRETE，但是根据zCCE协议，CONCRETE的来源是匿名的。
 &lt;/p&gt;&lt;p align="justify"&gt;
-如果你想要更多的zCCT，你将需要在“隐私”标签上铸造你的余额。
+如果你想要更多的zCCE，你将需要在“隐私”标签上铸造你的余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4320,8 +4320,8 @@ CONCRETE零币(zCCT)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake CCT/zCCT?</source>
-        <translation>我怎么加注CCT/zCCT?</translation>
+        <source>How do I stake CCE/zCCE?</source>
+        <translation>我怎么加注CCE/zCCE?</translation>
     </message>
     <message>
         <source>
@@ -4340,12 +4340,12 @@ CONCRETE零币(zCCT)技术文件
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (concrete-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zCCT:
+                           To Stake zCCE:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zCCT balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zCCE balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4368,11 +4368,11 @@ CONCRETE零币(zCCT)技术文件
 您可以通过将鼠标移到钱包界面左上角的行中的package图标上来查看在钱包中进行标记的状态。被点亮，并将状态“Staking启用”，以表明它是加注状态。使用命令行接口(concrete-cli);命令getstakingstatus将确认加注是活跃状态。
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-加注zCCT:&lt;/p&gt;&lt;p align="justify"&gt;
+加注zCCE:&lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 确保你的钱包是完全同步的，且使用最新版本
 &lt;li&gt;
-您新创建的或现有的zCCT余额必须至少有200个确认。
+您新创建的或现有的zCCE余额必须至少有200个确认。
 &lt;li&gt;
 我们的钱包必须在线，并为匿名和加注的目的被解锁。
 加注现在应该是启用状态了。
@@ -4418,7 +4418,7 @@ CONCRETE零币(zCCT)技术文件
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node CONCRETE Core wallet with a
-                           requirement of 10,000 CCT secured collateral to provide extra services
+                           requirement of 10,000 CCE secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4450,7 +4450,7 @@ CONCRETE零币(zCCT)技术文件
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 CCT per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CCE per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4460,7 +4460,7 @@ CONCRETE零币(zCCT)技术文件
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 主节点是运行完整节点CONCRETE核心钱包的计算机
-需要10,000个CCT作抵押以提供额外服务
+需要10,000个CCE作抵押以提供额外服务
 到网络，会收到一部分的区块奖励作为定期
 回报
 这些服务包括:
@@ -4492,7 +4492,7 @@ CONCRETE零币(zCCT)技术文件
 要求：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;每个主节点实例有10,000 CCT&lt;/li&gt;
+&lt;li&gt;每个主节点实例有10,000 CCE&lt;/li&gt;
 &lt;li&gt;必须存储在核心钱包&lt;/li&gt;
 &lt;li&gt;需要专用IP地址&lt;/li&gt;
 主节点钱包保持在线&lt;li&gt;
@@ -4510,8 +4510,8 @@ CONCRETE零币(zCCT)技术文件
         <translation>什么是主节点控制器？</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CCT collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是在控制器-远程主节点设置期间10,000 CCT附属品可以驻留的地方。这是一个可以激活远程主节点钱包的钱包/s，远程主节点保持在线的时候，可以让你的抵押品硬币离线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CCE collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是在控制器-远程主节点设置期间10,000 CCE附属品可以驻留的地方。这是一个可以激活远程主节点钱包的钱包/s，远程主节点保持在线的时候，可以让你的抵押品硬币离线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -5394,12 +5394,12 @@ Are you sure?
         <translation>来自</translation>
     </message>
     <message>
-        <source>480.0685 CCT</source>
-        <translation>480.0685 CCT</translation>
+        <source>480.0685 CCE</source>
+        <translation>480.0685 CCE</translation>
     </message>
     <message>
-        <source>1,000 zCCT</source>
-        <translation>1,000 zCCT</translation>
+        <source>1,000 zCCE</source>
+        <translation>1,000 zCCE</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5410,24 +5410,24 @@ Are you sure?
         <translation>进行当中：</translation>
     </message>
     <message>
-        <source>6.943 CCT</source>
-        <translation>6.943 CCT</translation>
+        <source>6.943 CCE</source>
+        <translation>6.943 CCE</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>不成熟</translation>
     </message>
     <message>
-        <source>10 CCT</source>
-        <translation>10 CCT</translation>
+        <source>10 CCE</source>
+        <translation>10 CCE</translation>
     </message>
     <message>
-        <source>60 zCCT</source>
-        <translation>60 CCT</translation>
+        <source>60 zCCE</source>
+        <translation>60 CCE</translation>
     </message>
     <message>
-        <source>10 zCCT</source>
-        <translation>10 CCT</translation>
+        <source>10 zCCE</source>
+        <translation>10 CCE</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5743,20 +5743,20 @@ Are you sure?
         <translation>模糊接收</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT加注</translation>
+        <source>CCE Stake</source>
+        <translation>CCE加注</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT 加注</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE 加注</translation>
     </message>
     <message>
-        <source>CCT Cold Stake</source>
-        <translation>CCT冷饮</translation>
+        <source>CCE Cold Stake</source>
+        <translation>CCE冷饮</translation>
     </message>
     <message>
-        <source>CCT Stake in behalf of</source>
-        <translation>CCT权益代表</translation>
+        <source>CCE Stake in behalf of</source>
+        <translation>CCE权益代表</translation>
     </message>
     <message>
         <source>Stake delegation</source>
@@ -5779,24 +5779,24 @@ Are you sure?
         <translation>模糊创建命名</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>转换CCT为zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>转换CCE为zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>已经花费zCCT</translation>
+        <source>Spent zCCE</source>
+        <translation>已经花费zCCE</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>从zCCT接收CCT</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>从zCCE接收CCE</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>铸币的变化，从zCCT花费zCCT</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>铸币的变化，从zCCE花费zCCE</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>转换CCT为zCCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>转换CCE为zCCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5890,8 +5890,8 @@ Are you sure?
         <translation>总金额</translation>
     </message>
     <message>
-        <source>2 CCT</source>
-        <translation>2 CCT</translation>
+        <source>2 CCE</source>
+        <translation>2 CCE</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5914,8 +5914,8 @@ Are you sure?
         <translation>费用：</translation>
     </message>
     <message>
-        <source>0.0001 CCT</source>
-        <translation>0.0001 CCT</translation>
+        <source>0.0001 CCE</source>
+        <translation>0.0001 CCE</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -6001,8 +6001,8 @@ Are you sure?
         <translation>18/05/18</translation>
     </message>
     <message>
-        <source>+0.000585 CCT</source>
-        <translation>+0.000585 CCT</translation>
+        <source>+0.000585 CCE</source>
+        <translation>+0.000585 CCE</translation>
     </message>
 </context>
 <context>
@@ -6012,8 +6012,8 @@ Are you sure?
         <translation>发送币</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 CCT。</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftX目前还不支持发送这么高的值。当前的交易限制为%1 CCE。</translation>
     </message>
 </context>
 <context>
@@ -6117,10 +6117,10 @@ CONCRETE核心钱包</translation>
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>选择zCCT 花费</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>选择zCCE 花费</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6131,8 +6131,8 @@ CONCRETE核心钱包</translation>
         <translation>按钮</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCct</translation>
+        <source>zCce</source>
+        <translation>zCce</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -6155,8 +6155,8 @@ CONCRETE核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zCCT Denominations to Spend</source>
-        <translation>选择zCCT 面额花费</translation>
+        <source>Select zCCE Denominations to Spend</source>
+        <translation>选择zCCE 面额花费</translation>
     </message>
 </context>
 <context>
@@ -6218,20 +6218,20 @@ CONCRETE核心钱包</translation>
         <translation>启用从特定地址自动生成零币(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>启用每次zCCT生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>启用每次zCCE生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
         <translation>启用冷堆叠（0-1，默认值：%u）。 如果累计= 0，则禁用</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>启用或禁用CCT输入标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>启用或禁用CCE输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>启用或禁用zCCT输入的标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>启用或禁用zCCE输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6266,12 +6266,12 @@ CONCRETE核心钱包</translation>
         <translation>当最佳区块更改时执行命令(cmd中的%s被块散列替换)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>小于此值的费用(以CCT/Kb为单位)视为零中继费用(默认值:%s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>小于此值的费用(以CCE/Kb为单位)视为零中继费用(默认值:%s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>小于此值的费用(以CCT/Kb为单位)被认为是交易创建的零费用(默认值:%s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>小于此值的费用(以CCE/Kb为单位)被认为是交易创建的零费用(默认值:%s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6394,12 +6394,12 @@ CONCRETE核心钱包</translation>
         <translation>无法为这笔交易找到足够的模糊基金。</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>无法找到不等于10000 CCT的模糊非计价基金来进行这笔交易。</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>无法找到不等于10000 CCE的模糊非计价基金来进行这笔交易。</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>无法为这次交易找到不等于10000 CCT的足够资金。</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>无法为这次交易找到不等于10000 CCE的足够资金。</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6610,8 +6610,8 @@ CONCRETE核心钱包</translation>
         <translation>启用自动零币铸造(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zCCT spends and stakes (0-1, default %u)</source>
-        <translation>启用预先计算zCCT的花费和加注(0-1，默认%u)</translation>
+        <source>Enable precomputation of zCCE spends and stakes (0-1, default %u)</source>
+        <translation>启用预先计算zCCE的花费和加注(0-1，默认%u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6698,8 +6698,8 @@ CONCRETE核心钱包</translation>
         <translation>读取区块失败</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>将费用(以CCT/kB为单位)添加到您发送的交易中(默认:%s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>将费用(以CCE/kB为单位)添加到您发送的交易中(默认:%s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6798,20 +6798,20 @@ CONCRETE核心钱包</translation>
         <translation>自动铸造零币的百分比(1-100，默认:%u)</translation>
     </message>
     <message>
-        <source>Recalculating CCT supply...</source>
-        <translation>重新计算CCT供应量……</translation>
+        <source>Recalculating CCE supply...</source>
+        <translation>重新计算CCE供应量……</translation>
     </message>
     <message>
-        <source>Recalculating minted ZCCT...</source>
-        <translation>重新计算铸造ZCCT……</translation>
+        <source>Recalculating minted ZCCE...</source>
+        <translation>重新计算铸造ZCCE……</translation>
     </message>
     <message>
-        <source>Recalculating spent ZCCT...</source>
-        <translation>重新计算ZCCT……</translation>
+        <source>Recalculating spent ZCCE...</source>
+        <translation>重新计算ZCCE……</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>重新索引CCT和zCCT货币供应统计数据</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>重新索引CCE和zCCE货币供应统计数据</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6890,8 +6890,8 @@ CONCRETE核心钱包</translation>
         <translation>自动铸造零币的首选面额(1/5/10/50/100/500/1000/5000)，0为无偏好。默认值: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>指定自定义备份路径，以添加任何自动zCCT备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>指定自定义备份路径，以添加任何自动zCCE备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7326,8 +7326,8 @@ CONCRETE核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>正在同步zCCT钱包……</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>正在同步zCCE钱包……</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7442,8 +7442,8 @@ CONCRETE核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>值小于zCCT的最小可用面额(= 1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>值小于zCCE的最小可用面额(= 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

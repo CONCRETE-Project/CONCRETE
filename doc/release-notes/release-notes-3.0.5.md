@@ -13,7 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
-CONCRETE Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zCCT protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zCCT transactions will be enabled. **When zCCT is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your CCT balance to zCCT, then you will need to add `enablezeromint=0` to your `concrete.conf` file. For information about where to find your concrete.conf you can visit this link from [CONCRETE Support](https://concrete.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
+CONCRETE Core v3.0.5 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zCCE protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI. Users are required to update before block `908000` which is when the accumulators will be refactored. Shortly after that block, zCCE transactions will be enabled. **When zCCE is enabled, autominting will also be enabled.** If you would like to disable automatic conversion of 10% of your CCE balance to zCCE, then you will need to add `enablezeromint=0` to your `concrete.conf` file. For information about where to find your concrete.conf you can visit this link from [CONCRETE Support](https://concrete.freshdesk.com/support/solutions/articles/30000004664-where-are-my-wallet-dat-blockchain-and-configuration-conf-files-located-).
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 
@@ -48,23 +48,23 @@ Notable Changes
 
 Accumulator Code Refactor
 ---------------------
-The zCCT accumulator code has undergone a major refactor. Accumulators are one of the most essential components of the zerocoin protocol, and also one of the most computationally expensive parts of the protocol. This refactoring speeds up syncing and spending of zCCT by over 5x. The new code also allows for spending of zCCT with only 2 required mints occurring on the network after your mint has been added, whereas before 3 were required. This refactor allows for lighter resource load and a smoother user experience.
+The zCCE accumulator code has undergone a major refactor. Accumulators are one of the most essential components of the zerocoin protocol, and also one of the most computationally expensive parts of the protocol. This refactoring speeds up syncing and spending of zCCE by over 5x. The new code also allows for spending of zCCE with only 2 required mints occurring on the network after your mint has been added, whereas before 3 were required. This refactor allows for lighter resource load and a smoother user experience.
 
 libzerocoin Exploit Fix
 ---------------------
-zCCT relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The CONCRETE developers were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
+zCCE relies on a 3rd party library called libzerocoin. All currencies that utilize the zerocoin protocol use libzerocoin, and many of those currencies have been exposed to an exploit which allowed for the creation of multiple zero-knowledge spending proofs for one single zerocoin mint. The CONCRETE developers were able properly identify the exploit, track down any fraudulent spending proofs, link the fraudulent spending proofs with their one valid proof that they were mutated from, and remove any mints from the accumulators that were derived from the invalid spends. 
 
-zCCT Maintenance Mode Spork
+zCCE Maintenance Mode Spork
 ---------------------
-Handling the above noted libzerocoin exploit required the CONCRETE team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zCCT transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the CONCRETE team and especially users of CONCRETE. The CONCRETE developers have added a new spork which allows for zCCT transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zCCT is in maintenance mode.
+Handling the above noted libzerocoin exploit required the CONCRETE team to immediately release a patched wallet to as many users as possible which rejected bad spends and also disabled all zCCE transactions in general. The process of releasing a patched wallet in such a small time frame is frustrating and difficult for all members of the CONCRETE team and especially users of CONCRETE. The CONCRETE developers have added a new spork which allows for zCCE transacting to be turned on/off without having to release a patched wallet. This will allow much smoother operation if any problems occur in the future, and should also allow exchanges and 3rd party services to continue to operate even if zCCE is in maintenance mode.
 
 Money Supply Indexing
 ---------------------
-The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zCCT supply and the CCT supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
+The exploit in libzerocoin threw off some of the wallet's internal money supply calculations for both the zCCE supply and the CCE supply. User's wallet's will automatically recalculate the supply on block `908001`. User's also have the ability to recalculate supply using the startup flag `reindexmoneysupply`.
 
-More Extensive Tracking of zCCT Supply Through RPC
+More Extensive Tracking of zCCE Supply Through RPC
 ---------------------
-More information has been added to the `getinfo` and `getblock` RPC calls, which now display the total zCCT supply as well as the balance for each zCCT accumulator.
+More information has been added to the `getinfo` and `getblock` RPC calls, which now display the total zCCE supply as well as the balance for each zCCE accumulator.
 
 Multisig GUI
 ---------------------
@@ -85,7 +85,7 @@ git merge commit are mentioned.
 
 ### Wallet
 - #308 `bd8a982` [Minting] Clear mempool after invalid block from miner (presstab)
-- #316 `ed192cf` [Minting] Better filtering of zCCT serials in miner. (presstab)
+- #316 `ed192cf` [Minting] Better filtering of zCCE serials in miner. (presstab)
 
 ### GUI
 - #278 `46f4960` [QT] Multisignature GUI (rejectedpromise)

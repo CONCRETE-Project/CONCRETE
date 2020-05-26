@@ -9,7 +9,7 @@
 #include "main.h"
 #include "txdb.h"
 
-class CLegacyZCctStake : public CStakeInput
+class CLegacyZCceStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -17,11 +17,11 @@ private:
     uint256 hashSerial;
 
 public:
-    CLegacyZCctStake() {}
+    CLegacyZCceStake() {}
 
-    explicit CLegacyZCctStake(const libzerocoin::CoinSpend& spend);
+    explicit CLegacyZCceStake(const libzerocoin::CoinSpend& spend);
     bool InitFromTxIn(const CTxIn& txin) override;
-    bool IsZCCT() const override { return true; }
+    bool IsZCCE() const override { return true; }
     uint32_t GetChecksum() const { return nChecksum; }
     CBlockIndex* GetIndexFrom() override;
     CAmount GetValue() const override;

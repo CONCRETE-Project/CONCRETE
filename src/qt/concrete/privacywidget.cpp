@@ -70,24 +70,24 @@ PrivacyWidget::PrivacyWidget(CONCRETEGUI* parent) :
     // Buttons
     setCssBtnPrimary(ui->pushButtonSave);
 
-    // Only Convert to CCT enabled.
+    // Only Convert to CCE enabled.
     ui->containerViewPrivacyChecks->setVisible(false);
     onMintSelected(false);
 
-    ui->btnTotalzCCT->setTitleClassAndText("btn-title-grey", tr("Total 0 zCCT"));
-    ui->btnTotalzCCT->setSubTitleClassAndText("text-subtitle", tr("Show denominations of zCCT owned."));
-    ui->btnTotalzCCT->setRightIconClass("ic-arrow");
+    ui->btnTotalzCCE->setTitleClassAndText("btn-title-grey", tr("Total 0 zCCE"));
+    ui->btnTotalzCCE->setSubTitleClassAndText("text-subtitle", tr("Show denominations of zCCE owned."));
+    ui->btnTotalzCCE->setRightIconClass("ic-arrow");
 
     ui->btnCoinControl->setTitleClassAndText("btn-title-grey", tr("Coin Control"));
-    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", tr("Select CCT outputs to mint into zCCT."));
+    ui->btnCoinControl->setSubTitleClassAndText("text-subtitle", tr("Select CCE outputs to mint into zCCE."));
 
     ui->btnRescanMints->setTitleClassAndText("btn-title-grey", tr("Rescan Mints"));
     ui->btnRescanMints->setSubTitleClassAndText("text-subtitle", tr("Find mints in the blockchain."));
 
-    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", tr("Reset Spent zCCT"));
+    ui->btnResetZerocoin->setTitleClassAndText("btn-title-grey", tr("Reset Spent zCCE"));
     ui->btnResetZerocoin->setSubTitleClassAndText("text-subtitle", tr("Reset zerocoin database."));
 
-    connect(ui->btnTotalzCCT, &OptionButton::clicked, this, &PrivacyWidget::onTotalZcctClicked);
+    connect(ui->btnTotalzCCE, &OptionButton::clicked, this, &PrivacyWidget::onTotalZcceClicked);
     connect(ui->btnCoinControl, &OptionButton::clicked, this, &PrivacyWidget::onCoinControlClicked);
     connect(ui->btnRescanMints, &OptionButton::clicked, this, &PrivacyWidget::onRescanMintsClicked);
     connect(ui->btnResetZerocoin, &OptionButton::clicked, this, &PrivacyWidget::onResetZeroClicked);
@@ -151,13 +151,13 @@ void PrivacyWidget::onMintSelected(bool isMint)
 {
     QString btnText;
     if (isMint) {
-        btnText = tr("Mint zCCT");
+        btnText = tr("Mint zCCE");
         ui->btnCoinControl->setVisible(true);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of CCT to mint into zCCT"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of CCE to mint into zCCE"));
     } else {
-        btnText = tr("Convert back to CCT");
+        btnText = tr("Convert back to CCE");
         ui->btnCoinControl->setVisible(false);
-        ui->labelSubtitleAmount->setText(tr("Enter amount of zCCT to convert back into CCT"));
+        ui->labelSubtitleAmount->setText(tr("Enter amount of zCCE to convert back into CCE"));
     }
     ui->pushButtonSave->setText(btnText);
 }
@@ -178,15 +178,15 @@ void PrivacyWidget::showList()
     ui->listView->setVisible(true);
 }
 
-void PrivacyWidget::onTotalZcctClicked()
+void PrivacyWidget::onTotalZcceClicked()
 {
     bool isVisible = ui->layoutDenom->isVisible();
     if (!isVisible) {
         ui->layoutDenom->setVisible(true);
-        ui->btnTotalzCCT->setRightIconClass("btn-dropdown", true);
+        ui->btnTotalzCCE->setRightIconClass("btn-dropdown", true);
     } else {
         ui->layoutDenom->setVisible(false);
-        ui->btnTotalzCCT->setRightIconClass("ic-arrow", true);
+        ui->btnTotalzCCE->setRightIconClass("ic-arrow", true);
     }
 }
 
@@ -196,7 +196,7 @@ void PrivacyWidget::onSendClicked()
         return;
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        warn(tr("Zerocoin"), tr("zCCT is currently undergoing maintenance"));
+        warn(tr("Zerocoin"), tr("zCCE is currently undergoing maintenance"));
         return;
     }
 
@@ -205,7 +205,7 @@ void PrivacyWidget::onSendClicked()
 
     WalletModel::UnlockContext ctx(walletModel->requestUnlock());
     if (!ctx.isValid()) {
-        inform(tr("You need to unlock the wallet to be able to %1 zCCT").arg(isConvert ? tr("convert") : tr("mint")));
+        inform(tr("You need to unlock the wallet to be able to %1 zCCE").arg(isConvert ? tr("convert") : tr("mint")));
         return;
     }
 
@@ -237,7 +237,7 @@ void PrivacyWidget::mint(CAmount value)
         inform(tr(strError.data()));
     } else {
         // Mint succeed
-        inform(tr("zCCT minted successfully"));
+        inform(tr("zCCE minted successfully"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -248,7 +248,7 @@ void PrivacyWidget::spend(CAmount value)
     CZerocoinSpendReceipt receipt;
     std::vector<CZerocoinMint> selectedMints;
 
-    if (!walletModel->convertBackZcct(
+    if (!walletModel->convertBackZcce(
             value,
             selectedMints,
             receipt
@@ -256,7 +256,7 @@ void PrivacyWidget::spend(CAmount value)
         inform(receipt.GetStatusMessage().data());
     } else {
         // Spend succeed
-        inform(tr("zCCT converted back to CCT"));
+        inform(tr("zCCE converted back to CCE"));
         // clear
         ui->lineEditAmount->clear();
     }
@@ -276,7 +276,7 @@ void PrivacyWidget::onCoinControlClicked()
             coinControlDialog->exec();
             ui->btnCoinControl->setActive(CoinControlDialog::coinControl->HasSelected());
         } else {
-            inform(tr("You don't have any CCT to select."));
+            inform(tr("You don't have any CCE to select."));
         }
     }
 }
@@ -293,7 +293,7 @@ void PrivacyWidget::onRescanMintsClicked()
 
 void PrivacyWidget::onResetZeroClicked()
 {
-    if (ask(tr("Reset Spent zCCT"),
+    if (ask(tr("Reset Spent zCCE"),
         tr("Your zerocoin spends are going to be scanned from the blockchain from scratch"))
     ) {
         std::string strResetMintResult = walletModel->resetSpentZerocoin();
@@ -355,7 +355,7 @@ void PrivacyWidget::updateDenomsSupply()
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zCCT </b>";
+                        QString::number(nSumPerCoin) + " zCCE </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -389,7 +389,7 @@ void PrivacyWidget::updateDenomsSupply()
     }
 
     CAmount matureZerocoinBalance = walletModel->getZerocoinBalance() - walletModel->getUnconfirmedZerocoinBalance() - walletModel->getImmatureZerocoinBalance();
-    ui->btnTotalzCCT->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
+    ui->btnTotalzCCE->setTitleText(tr("Total %1").arg(GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true)));
 }
 
 void PrivacyWidget::changeTheme(bool isLightTheme, QString& theme)

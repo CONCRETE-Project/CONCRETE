@@ -12,7 +12,7 @@
 #include "main.h"
 #include "net.h"
 #include "primitives/transaction.h"
-#include "zcct/deterministicmint.h"
+#include "zcce/deterministicmint.h"
 #include "rpc/server.h"
 #include "script/script.h"
 #include "script/script_error.h"
@@ -21,7 +21,7 @@
 #include "swifttx.h"
 #include "uint256.h"
 #include "utilmoneystr.h"
-#include "zcctchain.h"
+#include "zccechain.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
 #endif
@@ -134,7 +134,7 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"cctaddress\"        (string) concrete address\n"
+            "           \"cceaddress\"        (string) concrete address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -931,7 +931,7 @@ UniValue createrawzerocoinspend(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw std::runtime_error(
             "createrawzerocoinspend mint_input ( \"address\" )\n"
-            "\nCreates raw zCCT public spend.\n" +
+            "\nCreates raw zCCE public spend.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"

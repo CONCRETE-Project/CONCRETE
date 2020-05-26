@@ -342,16 +342,16 @@
         <translation>PONIŠTI</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše CCT od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše CCE od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete &lt;b&gt;IZGUBITI ĆE TE SAV VAŠ CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -485,8 +485,8 @@
         <translation>PritisniTipku</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -626,7 +626,7 @@
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Transaction Details</source>
         <translation>Detalji o transakciji</translation>
@@ -777,12 +777,12 @@
         <translation>TekstualnaOznaka</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -829,8 +829,8 @@
         <translation>Još nema transakcija</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>Kako dobiti CCT ili zCCT</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>Kako dobiti CCE ili zCCE</translation>
     </message>
     <message>
         <source>Loading chart..</source>
@@ -1638,8 +1638,8 @@
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2367,32 +2367,32 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>480.0685 CCT</source>
-        <translation>480.0685 CCT</translation>
+        <source>480.0685 CCE</source>
+        <translation>480.0685 CCE</translation>
     </message>
     <message>
-        <source>1,000 zCCT</source>
-        <translation>1,000 zCCT</translation>
+        <source>1,000 zCCE</source>
+        <translation>1,000 zCCE</translation>
     </message>
     <message>
         <source>Available</source>
         <translation>Dostupno</translation>
     </message>
     <message>
-        <source>6.943 CCT</source>
-        <translation>6.943 CCT</translation>
+        <source>6.943 CCE</source>
+        <translation>6.943 CCE</translation>
     </message>
     <message>
-        <source>10 CCT</source>
-        <translation>10 CCT</translation>
+        <source>10 CCE</source>
+        <translation>10 CCE</translation>
     </message>
     <message>
-        <source>60 zCCT</source>
-        <translation>60 zCCT</translation>
+        <source>60 zCCE</source>
+        <translation>60 zCCE</translation>
     </message>
     <message>
-        <source>10 zCCT</source>
-        <translation>10 zCCT</translation>
+        <source>10 zCCE</source>
+        <translation>10 zCCE</translation>
     </message>
     <message>
         <source>Error generating address</source>
@@ -2499,8 +2499,8 @@
         <translation>Naknada:</translation>
     </message>
     <message>
-        <source>0.0001 CCT</source>
-        <translation>0.0001 CCT</translation>
+        <source>0.0001 CCE</source>
+        <translation>0.0001 CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2522,8 +2522,8 @@
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>+0.000585 CCT</source>
-        <translation>+0.000585 CCT</translation>
+        <source>+0.000585 CCE</source>
+        <translation>+0.000585 CCE</translation>
     </message>
 </context>
 <context>
@@ -2560,7 +2560,7 @@
     </message>
     </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
         <source>PushButton</source>
         <translation>PritisniTipku</translation>
@@ -2597,8 +2597,8 @@
         <translation>Nedovoljno sredstava.</translation>
     </message>
     <message>
-        <source>Recalculating CCT supply...</source>
-        <translation>Preračunavanje ponude CCT-a...</translation>
+        <source>Recalculating CCE supply...</source>
+        <translation>Preračunavanje ponude CCE-a...</translation>
     </message>
     <message>
         <source>Loading addresses...</source>

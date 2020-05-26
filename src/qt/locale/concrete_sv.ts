@@ -374,16 +374,16 @@ for staking</source>
         <translation>cancel</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina CCTs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina CCEs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Varning: om du krypterar din plånbok och tappar bort din lösenfras kommer du &lt;b&gt; FÖRLORA ALLA DINA CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -545,8 +545,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -725,8 +725,8 @@ for staking</source>
         <translation>Den här etiketten blir röd, ifall någon mottagare får en mängd som är mindre än %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Kan variera med +/- %1 ucct per inmatning.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Kan variera med +/- %1 ucce per inmatning.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -742,7 +742,7 @@ for staking</source>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialog</translation>
@@ -756,8 +756,8 @@ for staking</source>
         <translation>Tryck på knappen</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -901,12 +901,12 @@ for staking</source>
         <translation>Staking statistik</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -937,8 +937,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>Mängden CCT och zCCT som präglats.</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>Mängden CCE och zCCE som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -977,8 +977,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>Hur man får CCT eller zCCT.</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>Hur man får CCE eller zCCE.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1423,8 +1423,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Skapa ny masternode kontrollör</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCT (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>För att skapa en CONCRETE Masternode måste du avsätta 10.000 CCT (enheten till CONCRETE) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCE (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>För att skapa en CONCRETE Masternode måste du avsätta 10.000 CCE (enheten till CONCRETE) till nätverket (dessa mynt är dock fortfarande dina och kommer aldrig att lämna ditt innehav). Du kan stänga av noden och låsa upp mynt när som helst.</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1435,8 +1435,8 @@ Den startar automatiskt så snart plånboken har tillräckligt många bekräftel
         <translation>Ställ in Masternode namn</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>En transaktion på 10 000 CCT kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCE will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>En transaktion på 10 000 CCE kommer göras till en ny tom adress i din plånbok. Adressen är märkt under huvudnodens namn.</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1701,8 +1701,8 @@ Are you sure?</source>
         <translation>Masternode conf file existerar inte</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 CCT required.</source>
-        <translation>Inte nog på saldot för att skapa en Masternode, 10000 CCT behövs.</translation>
+        <source>Not enough balance to create a masternode, 10,000 CCE required.</source>
+        <translation>Inte nog på saldot för att skapa en Masternode, 10000 CCE behövs.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -1929,36 +1929,36 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Tillåt automatisk prägling med CCT enheter till zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Tillåt automatisk prägling med CCE enheter till zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Tillåt zCCT Autoprägling</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Tillåt zCCE Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zCCT minting from specific addresses</source>
-        <translation>Aktivera automatisk zCCT prägling från specifika adresser</translation>
+        <source>Enable automatic zCCE minting from specific addresses</source>
+        <translation>Aktivera automatisk zCCE prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande CCT som automatiskt konverteras till zCCT via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande CCE som automatiskt konverteras till zCCE via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Procent av autopräglade zCCT</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Procent av autopräglade zCCE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många CCT för denna valör är tillgängliga</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många CCE för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Preferens på zCCT valör i autoprägling</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Preferens på zCCE valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2336,14 +2336,14 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zCCT anonymizes your CCT by removing any
+        <source>Minting zCCE anonymizes your CCE by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zCCT anonymiserar dina CCT genom att ta bort
+        <translation>Prägling av zCCE anonymiserar dina CCE genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zCCT or convert back to CCT</source>
-        <translation>Prägla nya zCCT eller konvertera tillbaka till CCT</translation>
+        <source>Mint new zCCE or convert back to CCE</source>
+        <translation>Prägla nya zCCE eller konvertera tillbaka till CCE</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2354,28 +2354,28 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zCCT</source>
-        <translation>Prägla zCCT</translation>
+        <source>Mint zCCE</source>
+        <translation>Prägla zCCE</translation>
     </message>
     <message>
-        <source>Enter amount of CCT to mint into zCCT</source>
-        <translation>Ange CCT beloppet att prägla till zCCT</translation>
+        <source>Enter amount of CCE to mint into zCCE</source>
+        <translation>Ange CCE beloppet att prägla till zCCE</translation>
     </message>
     <message>
-        <source>Convert back to CCT</source>
-        <translation>Konvertera tillbaka till CCT</translation>
+        <source>Convert back to CCE</source>
+        <translation>Konvertera tillbaka till CCE</translation>
     </message>
     <message>
-        <source>Enter amount of zCCT to convert back into CCT</source>
-        <translation>Ange mängden zCCT som ska konverteras tillbaka till CCT</translation>
+        <source>Enter amount of zCCE to convert back into CCE</source>
+        <translation>Ange mängden zCCE som ska konverteras tillbaka till CCE</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance</source>
-        <translation>zCCT genomgår underhåll</translation>
+        <source>zCCE is currently undergoing maintenance</source>
+        <translation>zCCE genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2727,8 +2727,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>Vanlig zCCT Backup Sökväg:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>Vanlig zCCE Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3007,8 +3007,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3103,12 +3103,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT genomgår för tillfället underhåll.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zCCT kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zCCE kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3999,12 +3999,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Mottaget via Fördunkling</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT staking</translation>
+        <source>CCE Stake</source>
+        <translation>CCE staking</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT Staking</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4023,24 +4023,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>Konvertera CCT till zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>Konvertera CCE till zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>Spendera zCCT</translation>
+        <source>Spent zCCE</source>
+        <translation>Spendera zCCE</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>Mottog CCT från zCCT</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>Mottog CCE från zCCE</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>Myntad Växel som zCCT från zCCT Spendering</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>Myntad Växel som zCCE från zCCE Spendering</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>Konverterad zCCT till CCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>Konverterad zCCE till CCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4156,8 +4156,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 CCT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 CCE.</translation>
     </message>
 </context>
 <context>
@@ -4219,10 +4219,10 @@ Var vänlig kontrollera adressen och försök igen.</translation>
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>Välj zCCT att Spendera</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>Välj zCCE att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4304,16 +4304,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zCCT minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje zCCE minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för CCT inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för CCE inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zCCT inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för zCCE inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4348,12 +4348,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Exekvera kommando när den bästa block ändras (%s i cmd är utbytt mot block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Avgifter (i CCT/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Avgifter (i CCE/Kb) mindre än detta anses vara noll avgift i vidarebefodring (standard: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Avgifter (i CCT/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Avgifter (i CCE/Kb) mindre än detta anses vara noll avgift i transaktionsskapelse (standard: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4460,12 +4460,12 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4744,8 +4744,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Misslyckades läsa block</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Avgift (i CCT/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Avgift (i CCE/kB) för att lägga till transaktioner you skicka (standard: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4844,8 +4844,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>Indexera CCT och zCCT pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>Indexera CCE och zCCE pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4924,8 +4924,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zCCT backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zCCE backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5332,8 +5332,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>Synkroniserar zCCT plånbok...</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>Synkroniserar zCCE plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5444,8 +5444,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

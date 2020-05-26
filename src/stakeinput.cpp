@@ -7,13 +7,13 @@
 #include "chain.h"
 #include "main.h"
 #include "txdb.h"
-#include "zcct/deterministicmint.h"
+#include "zcce/deterministicmint.h"
 #include "wallet/wallet.h"
 
-bool CCctStake::InitFromTxIn(const CTxIn& txin)
+bool CCceStake::InitFromTxIn(const CTxIn& txin)
 {
     if (txin.IsZerocoinSpend())
-        return error("%s: unable to initialize CCctStake from zerocoin spend");
+        return error("%s: unable to initialize CCceStake from zerocoin spend");
 
     // Find the previous transaction in database
     uint256 hashBlock;
@@ -35,14 +35,14 @@ bool CCctStake::InitFromTxIn(const CTxIn& txin)
     return true;
 }
 
-bool CCctStake::SetPrevout(CTransaction txPrev, unsigned int n)
+bool CCceStake::SetPrevout(CTransaction txPrev, unsigned int n)
 {
     this->txFrom = txPrev;
     this->nPosition = n;
     return true;
 }
 
-bool CCctStake::GetTxFrom(CTransaction& tx) const
+bool CCceStake::GetTxFrom(CTransaction& tx) const
 {
     if (txFrom.IsNull())
         return false;
@@ -50,7 +50,7 @@ bool CCctStake::GetTxFrom(CTransaction& tx) const
     return true;
 }
 
-bool CCctStake::GetTxOutFrom(CTxOut& out) const
+bool CCceStake::GetTxOutFrom(CTxOut& out) const
 {
     if (txFrom.IsNull() || nPosition >= txFrom.vout.size())
         return false;
@@ -58,18 +58,18 @@ bool CCctStake::GetTxOutFrom(CTxOut& out) const
     return true;
 }
 
-bool CCctStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CCceStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     txIn = CTxIn(txFrom.GetHash(), nPosition);
     return true;
 }
 
-CAmount CCctStake::GetValue() const
+CAmount CCceStake::GetValue() const
 {
     return txFrom.vout[nPosition].nValue;
 }
 
-bool CCctStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
+bool CCceStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
     std::vector<valtype> vSolutions;
     txnouttype whichType;
@@ -119,16 +119,16 @@ bool CCctStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmoun
     return true;
 }
 
-CDataStream CCctStake::GetUniqueness() const
+CDataStream CCceStake::GetUniqueness() const
 {
-    //The unique identifier for a CCT stake is the outpoint
+    //The unique identifier for a CCE stake is the outpoint
     CDataStream ss(SER_NETWORK, 0);
     ss << nPosition << txFrom.GetHash();
     return ss;
 }
 
 //The block that the UTXO was added to the chain
-CBlockIndex* CCctStake::GetIndexFrom()
+CBlockIndex* CCceStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -149,7 +149,7 @@ CBlockIndex* CCctStake::GetIndexFrom()
 }
 
 // Verify stake contextual checks
-bool CCctStake::ContextCheck(int nHeight, uint32_t nTime)
+bool CCceStake::ContextCheck(int nHeight, uint32_t nTime)
 {
     const Consensus::Params& consensus = Params().GetConsensus();
     // Get Stake input block time/height

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zcct/zcctmodule.h"
-#include "zcctchain.h"
+#include "zcce/zccemodule.h"
+#include "zccechain.h"
 #include "libzerocoin/Commitment.h"
 #include "libzerocoin/Coin.h"
 #include "hash.h"
@@ -124,7 +124,7 @@ const uint256 PublicCoinSpend::signatureHash() const
     return h.GetHash();
 }
 
-namespace ZCCTModule {
+namespace ZCCEModule {
 
     // Return stream of CoinSpend from tx input scriptsig
     CDataStream ScriptSigToSerializedSpend(const CScript& scriptSig)
@@ -158,12 +158,12 @@ namespace ZCCTModule {
         if (!fUseV1Params) {
             CKey key;
             if (!mint.GetKeyPair(key))
-                return error("%s: failed to set zCCT privkey mint.", __func__);
+                return error("%s: failed to set zCCE privkey mint.", __func__);
             spend.setPubKey(key.GetPubKey(), true);
 
             std::vector<unsigned char> vchSig;
             if (!key.Sign(spend.signatureHash(), vchSig))
-                return error("%s: ZCCTModule failed to sign signatureHash.", __func__);
+                return error("%s: ZCCEModule failed to sign signatureHash.", __func__);
             spend.setVchSig(vchSig);
 
         }
@@ -228,9 +228,9 @@ namespace ZCCTModule {
             return state.DoS(100, error("%s: public zerocoin spend prev output not found, prevTx %s, index %d",
                                         __func__, txIn.prevout.hash.GetHex(), txIn.prevout.n));
         }
-        if (!ZCCTModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
+        if (!ZCCEModule::parseCoinSpend(txIn, tx, prevOut, publicSpend)) {
             return state.Invalid(error("%s: invalid public coin spend parse %s\n", __func__,
-                                       tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcct");
+                                       tx.GetHash().GetHex()), REJECT_INVALID, "bad-txns-invalid-zcce");
         }
         return true;
     }

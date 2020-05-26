@@ -376,16 +376,16 @@ pour le staking</translation>
         <translation>ANNULER</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CCTs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos CCEs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -485,8 +485,8 @@ pour le staking</translation>
         <translation>Épargne</translation>
     </message>
     <message>
-        <source>0,00 CCT</source>
-        <translation>0,00 CCT</translation>
+        <source>0,00 CCE</source>
+        <translation>0,00 CCE</translation>
     </message>
     <message>
         <source>address</source>
@@ -563,8 +563,8 @@ pour le staking</translation>
         <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>0.00 CCT</source>
-        <translation>0.00 CCT</translation>
+        <source>0.00 CCE</source>
+        <translation>0.00 CCE</translation>
     </message>
     <message>
         <source>0</source>
@@ -743,8 +743,8 @@ pour le staking</translation>
         <translation>Ce label devient rouge si l'un des destinataires reçoit un montant inférieur à %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Peut varier de +/- %1 ucct par entrée.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Peut varier de +/- %1 ucce par entrée.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -760,7 +760,7 @@ pour le staking</translation>
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>Dialog</source>
         <translation>Dialogue</translation>
@@ -774,8 +774,8 @@ pour le staking</translation>
         <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>CCT:</source>
-        <translation>CCT:</translation>
+        <source>CCE:</source>
+        <translation>CCE:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -893,17 +893,17 @@ pour le staking</translation>
         <translation>Procuration</translation>
     </message>
     <message>
-        <source>You can delegate your CCTs and let a hot node (24/7 online node)
+        <source>You can delegate your CCEs and let a hot node (24/7 online node)
 stake in your behalf, keeping the keys in a secure place offline.</source>
-        <translation>Vous pouvez faire une procuration de vos CCTs et laissez un noeud à chaud (en ligne 24h/7) faire du staking en votre nom, en gardant les clés dans un endroit sécurisé et hors ligne.</translation>
+        <translation>Vous pouvez faire une procuration de vos CCEs et laissez un noeud à chaud (en ligne 24h/7) faire du staking en votre nom, en gardant les clés dans un endroit sécurisé et hors ligne.</translation>
     </message>
     <message>
         <source>Add owner address</source>
         <translation>Ajouter l'adresse propriétaire</translation>
     </message>
     <message>
-        <source>Delegate or Accept CCT delegation</source>
-        <translation>Faire une procuration our accepter une procuration CCT.</translation>
+        <source>Delegate or Accept CCE delegation</source>
+        <translation>Faire une procuration our accepter une procuration CCE.</translation>
     </message>
     <message>
         <source>Delegate</source>
@@ -934,8 +934,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Impossible de créer la transaction.</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>Vous n'avez aucun CCT à sélectionner</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>Vous n'avez aucun CCE à sélectionner</translation>
     </message>
     <message>
         <source>URI copied to clipboard</source>
@@ -1020,12 +1020,12 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Statistiques de staking</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1056,8 +1056,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Vous pouvez voir l'historique de votre compte</translation>
     </message>
     <message>
-        <source>Amount of CCT and zCCT staked.</source>
-        <translation>Le montant de CCT et de zCCT en staking</translation>
+        <source>Amount of CCE and zCCE staked.</source>
+        <translation>Le montant de CCE et de zCCE en staking</translation>
     </message>
     <message>
         <source>All</source>
@@ -1096,8 +1096,8 @@ stake in your behalf, keeping the keys in a secure place offline.</source>
         <translation>Pas encore de transaction</translation>
     </message>
     <message>
-        <source>How to get CCT or zCCT</source>
-        <translation>Comment obtenir des CCT ou zCCT</translation>
+        <source>How to get CCE or zCCE</source>
+        <translation>Comment obtenir des CCE ou zCCE</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1546,8 +1546,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Créer un nouveau contrôleur de Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCT (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour créer un Masternode CONCRETE vous devez dédier 10.000 CCT (l'unité de CONCRETE) au réseau (notez que ces monnaies restent les votres et ne quitteront jamais votre portefeuille)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Vous pouvez désactiver votre noeud et libérer vos monnaies en tous temps. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a CONCRETE Masternode you must dedicate 10.000 CCE (the unit of CONCRETE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pour créer un Masternode CONCRETE vous devez dédier 10.000 CCE (l'unité de CONCRETE) au réseau (notez que ces monnaies restent les votres et ne quitteront jamais votre portefeuille)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Vous pouvez désactiver votre noeud et libérer vos monnaies en tous temps. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Make sure you have this amount of coins.</source>
@@ -1558,8 +1558,8 @@ Il commencera automatiquement dès que le portefeuille aura assez de confirmatio
         <translation>Définir le nom du Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCT will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Une transaction de 10 000 CCT sera effectuée &lt;/p&gt;&lt;p&gt; vers une nouvelle adresse de votre partefeuille.&lt;/p&gt;&lt;p&gt; L'adresse est étiquettée avec le nom de masternode. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CCE will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Une transaction de 10 000 CCE sera effectuée &lt;/p&gt;&lt;p&gt; vers une nouvelle adresse de votre partefeuille.&lt;/p&gt;&lt;p&gt; L'adresse est étiquettée avec le nom de masternode. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Master Node’s IP and port</source>
@@ -1788,8 +1788,8 @@ Confirmez-vous?</translation>
         <translation>Le fichier masternode.conf est absent</translation>
     </message>
     <message>
-        <source>Not enough balance to create a masternode, 10,000 CCT required.</source>
-        <translation>Fonds insuffisant pour créer un masternode, 10 000 CCT sont requis.</translation>
+        <source>Not enough balance to create a masternode, 10,000 CCE required.</source>
+        <translation>Fonds insuffisant pour créer un masternode, 10 000 CCE sont requis.</translation>
     </message>
     <message>
         <source>Error creating masternode</source>
@@ -2024,36 +2024,36 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Activé l'auto-monnayage de CCT unités en zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Activé l'auto-monnayage de CCE unités en zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Activer l'Auto-monnayage zCCT </translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Activer l'Auto-monnayage zCCE </translation>
     </message>
     <message>
-        <source>Enable automatic zCCT minting from specific addresses</source>
-        <translation>Activer la frappe zCCT automatique à partir d'adresses spécifiques</translation>
+        <source>Enable automatic zCCE minting from specific addresses</source>
+        <translation>Activer la frappe zCCE automatique à partir d'adresses spécifiques</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Activer les Adresses Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des CCT entrants qui seront automatiquement convertis en zCCT via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des CCE entrants qui seront automatiquement convertis en zCCE via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Pourcentage de zCCT auto-monnayé</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Pourcentage de zCCE auto-monnayé</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de CCT disponibles pour la dénomination demandée</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de CCE disponibles pour la dénomination demandée</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Dénomination préférée pour l'auto-monnayage zCCT</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Dénomination préférée pour l'auto-monnayage zCCE</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2431,14 +2431,14 @@ Adresse : %4
         <translation>Monnayage</translation>
     </message>
     <message>
-        <source>Minting zCCT anonymizes your CCT by removing any
+        <source>Minting zCCE anonymizes your CCE by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Frapper des zCCT anonymise vos CCT en supprimant tout
+        <translation>Frapper des zCCE anonymise vos CCE en supprimant tout
 l'historique de transaction, rendant les transactions intraçables</translation>
     </message>
     <message>
-        <source>Mint new zCCT or convert back to CCT</source>
-        <translation>Frapper de nouveaux zCCT ou reconvertir en CCT</translation>
+        <source>Mint new zCCE or convert back to CCE</source>
+        <translation>Frapper de nouveaux zCCE ou reconvertir en CCE</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2449,32 +2449,32 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Pas encore de transaction</translation>
     </message>
     <message>
-        <source>Mint zCCT</source>
-        <translation>Frapper des zCCT</translation>
+        <source>Mint zCCE</source>
+        <translation>Frapper des zCCE</translation>
     </message>
     <message>
-        <source>Enter amount of CCT to mint into zCCT</source>
-        <translation>Entrer le montant de CCT à monnayer en zCCT</translation>
+        <source>Enter amount of CCE to mint into zCCE</source>
+        <translation>Entrer le montant de CCE à monnayer en zCCE</translation>
     </message>
     <message>
-        <source>Convert back to CCT</source>
-        <translation>Reconvertir en CCT</translation>
+        <source>Convert back to CCE</source>
+        <translation>Reconvertir en CCE</translation>
     </message>
     <message>
-        <source>Enter amount of zCCT to convert back into CCT</source>
-        <translation>Entrer le montant de zCCT à reconvertir en CCT</translation>
+        <source>Enter amount of zCCE to convert back into CCE</source>
+        <translation>Entrer le montant de zCCE à reconvertir en CCE</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance</source>
-        <translation>zCCT est actuellement en maintenance</translation>
+        <source>zCCE is currently undergoing maintenance</source>
+        <translation>zCCE est actuellement en maintenance</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zCCT</source>
-        <translation>Vous devez dévérouiller le portefeuille pour pouvoir %1 zCCT</translation>
+        <source>You need to unlock the wallet to be able to %1 zCCE</source>
+        <translation>Vous devez dévérouiller le portefeuille pour pouvoir %1 zCCE</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2489,16 +2489,16 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Valeur incorrecte</translation>
     </message>
     <message>
-        <source>zCCT minted successfully</source>
-        <translation>zCCT frappées avec succès</translation>
+        <source>zCCE minted successfully</source>
+        <translation>zCCE frappées avec succès</translation>
     </message>
     <message>
-        <source>zCCT converted back to CCT</source>
-        <translation>zCCT reconverti en CCT</translation>
+        <source>zCCE converted back to CCE</source>
+        <translation>zCCE reconverti en CCE</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>Vous n'avez aucun CCT à sélectionner</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>Vous n'avez aucun CCE à sélectionner</translation>
     </message>
     <message>
         <source>Rescan Mints</source>
@@ -2884,8 +2884,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zCCT personnalisé:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde zCCE personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3134,8 +3134,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Recevoir</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive CCT.</source>
-        <translation>Balayez le QR code ou copiez l'adresse pour recevoir les CCT.</translation>
+        <source>Scan the QR code or copy the address to receive CCE.</source>
+        <translation>Balayez le QR code ou copiez l'adresse pour recevoir les CCE.</translation>
     </message>
     <message>
         <source>No address </source>
@@ -3236,8 +3236,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>CCT</source>
-        <translation>CCT</translation>
+        <source>CCE</source>
+        <translation>CCE</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -3408,8 +3408,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Envoyer</translation>
     </message>
     <message>
-        <source>You can transfer public coins (CCT) or private coins (zCCT)</source>
-        <translation>Vous pouvez transférer des pièces publiques (CCT) ou des pièces privées (zCCT)</translation>
+        <source>You can transfer public coins (CCE) or private coins (zCCE)</source>
+        <translation>Vous pouvez transférer des pièces publiques (CCE) ou des pièces privées (zCCE)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3444,12 +3444,12 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Total à envoyer</translation>
     </message>
     <message>
-        <source>Send CCT</source>
-        <translation>Envoyer CCT</translation>
+        <source>Send CCE</source>
+        <translation>Envoyer CCE</translation>
     </message>
     <message>
-        <source>Send zCCT</source>
-        <translation>Envoyer zCCT</translation>
+        <source>Send zCCE</source>
+        <translation>Envoyer zCCE</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3496,8 +3496,8 @@ l'historique de transaction, rendant les transactions intraçables</translation>
         <translation>Dépenser les Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT est actuellement en cours de maintenance.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3516,12 +3516,12 @@ l'historique de transaction, rendant les transactions intraçables</translation>
  %2</translation>
     </message>
     <message>
-        <source>zCCT transaction sent!</source>
-        <translation>Transaction zCCT envoyée!</translation>
+        <source>zCCE transaction sent!</source>
+        <translation>Transaction zCCE envoyée!</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>La version 1 de zCCT requiert un niveau de sécurité de 100 pour les dépenser.
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>La version 1 de zCCE requiert un niveau de sécurité de 100 pour les dépenser.
 </translation>
     </message>
     <message>
@@ -3561,12 +3561,12 @@ Monnayez des dénominations plus élevées (moins d'intrants sont nécessaires),
         <translation>Frais personnalisé %1</translation>
     </message>
     <message>
-        <source>You don't have any CCT to select.</source>
-        <translation>Vous n'avez aucun CCT à sélectionner</translation>
+        <source>You don't have any CCE to select.</source>
+        <translation>Vous n'avez aucun CCE à sélectionner</translation>
     </message>
     <message>
-        <source>You don't have any zCCT in your balance to select.</source>
-        <translation>Vous n'avez aucun zCCT à sélectionner.</translation>
+        <source>You don't have any zCCE in your balance to select.</source>
+        <translation>Vous n'avez aucun zCCE à sélectionner.</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -3829,7 +3829,7 @@ Cette option créé un fichier wallet.dat qui peut être employé pour restaurer
         <translation>Erreur d'ajout de clé dans le portefeuille</translation>
     </message>
     <message>
-        <source>Successfully added cctate key to the wallet</source>
+        <source>Successfully added cceate key to the wallet</source>
         <translation>Clé privée ajoutée avec succès dans le portefeuille</translation>
     </message>
 </context>
@@ -3964,30 +3964,30 @@ Vérifiez que vous avez installé un logiciel éditeur de texte.</translation>
         <translation>1) Qu'est ce que CONCRETE?</translation>
     </message>
     <message>
-        <source>2) Why are my CCT unspendable?</source>
-        <translation>2) Pourquoi mes CCT ne peuvent pas être dépensés?</translation>
+        <source>2) Why are my CCE unspendable?</source>
+        <translation>2) Pourquoi mes CCE ne peuvent pas être dépensés?</translation>
     </message>
     <message>
-        <source>3) CONCRETE privacy? What is Zerocoin (zCCT)?</source>
-        <translation>3) Confidentialité et CONCRETE? Qu'est ce que Zerocoin (zCCT)?</translation>
+        <source>3) CONCRETE privacy? What is Zerocoin (zCCE)?</source>
+        <translation>3) Confidentialité et CONCRETE? Qu'est ce que Zerocoin (zCCE)?</translation>
     </message>
     <message>
-        <source>4) Why are my zCCT unspendable?</source>
-        <translation>4) Pourquoi mes zCCT ne peuvent pas être dépensés?</translation>
+        <source>4) Why are my zCCE unspendable?</source>
+        <translation>4) Pourquoi mes zCCE ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zCCT automatically?</source>
+    into zCCE automatically?</source>
         <translation>5) Pourquoi mon portefeuille convertit-il automatiquement
-mon solde en zCCT?</translation>
+mon solde en zCCE?</translation>
     </message>
     <message>
-        <source>6) How do I receive CCT/zCCT?</source>
-        <translation>6) Comment recevoir des CCT/zCCT?</translation>
+        <source>6) How do I receive CCE/zCCE?</source>
+        <translation>6) Comment recevoir des CCE/zCCE?</translation>
     </message>
     <message>
-        <source>7) How do I stake CCT/zCCT?</source>
-        <translation>7) Comment staker des CCT/zCCT?</translation>
+        <source>7) How do I stake CCE/zCCE?</source>
+        <translation>7) Comment staker des CCE/zCCE?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4016,7 +4016,7 @@ mon solde en zCCT?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  CONCRETE incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zCCT) and Zerocoin staking.
+                           to implement ZeroCoin(zCCE) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            CONCRETE utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of CONCRETE to participate in earning block rewards
@@ -4029,7 +4029,7 @@ mon solde en zCCT?</translation>
 CONCRETE est une forme de monnaie digitale en ligne qui utilise la technologie de la blockchain
 et qui peut être facilement transférée globalement, instantanément, avec des frais
 quasi nuls. CONCRETE intègre les meilleures solutions de sécurité et de confidentialité
-du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zCCT) ainsi que le staking de Zerocoin.
+du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zCCE) ainsi que le staking de Zerocoin.
 &lt;/p&gt;&lt;p align="justify"&gt;
 CONCRETE utilise un système de consensus de type Proof of Stake (PoS),
 permettant à tous les détenteurs de CONCRETE de participer au réseau et de gagner des récompenses
@@ -4042,8 +4042,8 @@ lorsqu'ils sécurisent le réseau au moyen de leur portefeuille full node, ainsi
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my CCT unspendable?</source>
-        <translation>Pourquoi mes CCT ne peuvent pas être dépensés?</translation>
+        <source>Why are my CCE unspendable?</source>
+        <translation>Pourquoi mes CCE ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>
@@ -4070,24 +4070,24 @@ pour voir votre solde de monnaie dépensable sur le réseau.
         <translation>3</translation>
     </message>
     <message>
-        <source>CONCRETE privacy? What is Zerocoin (zCCT)?</source>
-        <translation>Confidentialité et CONCRETE? Qu'est ce que Zerocoin (zCCT)?</translation>
+        <source>CONCRETE privacy? What is Zerocoin (zCCE)?</source>
+        <translation>Confidentialité et CONCRETE? Qu'est ce que Zerocoin (zCCE)?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zCCT is an optional privacy-centric method of coin mixing on the
+                           zCCE is an optional privacy-centric method of coin mixing on the
                            CONCRETE blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt;
-                           "CONCRETE Zerocoin (zCCT) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt;
+                           "CONCRETE Zerocoin (zCCE) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zCCT est une méthode optionnelle de fongibilité des pièces sur la blockchain CONCRETE, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
-&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt;
- "CONCRETE Zerocoin (zCCT) Technical Paper".&lt;/a&gt;
+zCCE est une méthode optionnelle de fongibilité des pièces sur la blockchain CONCRETE, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
+&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt;
+ "CONCRETE Zerocoin (zCCE) Technical Paper".&lt;/a&gt;
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4096,19 +4096,19 @@ zCCT est une méthode optionnelle de fongibilité des pièces sur la blockchain 
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zCCT unspendable?</source>
-        <translation>Pourquoi mes zCCT ne peuvent pas être dépensés?</translation>
+        <source>Why are my zCCE unspendable?</source>
+        <translation>Pourquoi mes zCCE ne peuvent pas être dépensés?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zCCT will require 20 confirmations as well as 1
+                           After minting, zCCE will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Après le monnayage, zCCT va nécessiter 20 confirmations ainsi que 1
+Après le monnayage, zCCE va nécessiter 20 confirmations ainsi que 1
 monnayage supplémentaire sur le réseau de la même dénomination
 afin d'être dépensable.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4119,41 +4119,41 @@ afin d'être dépensable.
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zCCT automatically?</source>
+        <source>Why did my wallet convert the balance into zCCE automatically?</source>
         <translation>Pourquoi mon portefeuille convertit-il automatiquement
-mon solde en zCCT?</translation>
+mon solde en zCCE?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           By default the CONCRETE wallet will convert 10% of your entire CCT
-                           balance to zCCT to assist the network. If you do not wish to
-                           stake zCCT or take advantage of the privacy benefit it brings,
+                           By default the CONCRETE wallet will convert 10% of your entire CCE
+                           balance to zCCE to assist the network. If you do not wish to
+                           stake zCCE or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your CONCRETE wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zCCT Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable zCCE Automint”.
                            If you are not making use of the CONCRETE-QT or GUI you can simply open
                            your concrete.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           You can read more about zCCT in the
-                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt; "CONCRETE Zerocoin (zCCT) Technical Paper"&lt;/a&gt;.
-                           If you would like to keep and stake your zCCT, please read the "How do I stake"
+                           You can read more about zCCE in the
+                           &lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt; "CONCRETE Zerocoin (zCCE) Technical Paper"&lt;/a&gt;.
+                           If you would like to keep and stake your zCCE, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Par défaut le portefeuille CONCRETE convertit % de voter total de CCT
-en zCCT afin de soutenir le réseau. Si vous ne souhaitez pas
-conserver des zCCT ou profiter de ses propriétés en matière de confidentialité,
+Par défaut le portefeuille CONCRETE convertit % de voter total de CCE
+en zCCE afin de soutenir le réseau. Si vous ne souhaitez pas
+conserver des zCCE ou profiter de ses propriétés en matière de confidentialité,
 vous pouvez désactiver cette fonctionnalité dans votre portefeuille CONCRETE en
-allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zCCT”.
+allant dans Paramètres-&gt;Options et décocher “Activer l'atuto-monnayage zCCE”.
 Si vous n'utilisez pas CONCRETE-QT ou le GUI vous pouvez simplement ouvrir
 votre fichier concrete.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans guillements
 et redémarrer votre portefeuille.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-Vous pouvez en savoir plus sur zCCT dans
-&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcct/'&gt; le document "CONCRETE Zerocoin (zCCT) Technical Paper"&lt;/a&gt;.
-Si vous voulez conserver et mettre en jeu vos zCCT, veuillez lire la section "Comment staker"
+Vous pouvez en savoir plus sur zCCE dans
+&lt;a style='color: #b088ff' href='https://CONCRETE.org/zcce/'&gt; le document "CONCRETE Zerocoin (zCCE) Technical Paper"&lt;/a&gt;.
+Si vous voulez conserver et mettre en jeu vos zCCE, veuillez lire la section "Comment staker"
 de la FAQ ci-dessous.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4163,23 +4163,23 @@ de la FAQ ci-dessous.
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive CCT/zCCT?</source>
-        <translation>Comment recevoir des CCT/zCCT?</translation>
+        <source>How do I receive CCE/zCCE?</source>
+        <translation>Comment recevoir des CCE/zCCE?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zCCT can be spent and sent to any CONCRETE address. The receiver will
-                           receive standard CONCRETE but the origin of the CONCRETE is anonymized by the zCCT Protocol.
+                           zCCE can be spent and sent to any CONCRETE address. The receiver will
+                           receive standard CONCRETE but the origin of the CONCRETE is anonymized by the zCCE Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zCCT you will need to mint your balance in the “Privacy” tab.
+                           If you want more zCCE you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zCCT peut être dépensé et envoyé à n'importe quelle adresse CONCRETE. Le destinataire va recevoir des CONCRETE standards mais l'origine de ceux-ci sera anonymisé par le protocol zCCT.
+zCCE peut être dépensé et envoyé à n'importe quelle adresse CONCRETE. Le destinataire va recevoir des CONCRETE standards mais l'origine de ceux-ci sera anonymisé par le protocol zCCE.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Si vous désirez obtenir plus de zCCT vous devez créer cette monnaie à partir de l'onglet "Confidentialité".
+Si vous désirez obtenir plus de zCCE vous devez créer cette monnaie à partir de l'onglet "Confidentialité".
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4188,8 +4188,8 @@ Si vous désirez obtenir plus de zCCT vous devez créer cette monnaie à partir 
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake CCT/zCCT?</source>
-        <translation>Comment staker des CCT/zCCT?</translation>
+        <source>How do I stake CCE/zCCE?</source>
+        <translation>Comment staker des CCE/zCCE?</translation>
     </message>
     <message>
         <source>
@@ -4208,12 +4208,12 @@ Si vous désirez obtenir plus de zCCT vous devez créer cette monnaie à partir 
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (concrete-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zCCT:
+                           To Stake zCCE:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zCCT balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing zCCE balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4222,12 +4222,12 @@ Si vous désirez obtenir plus de zCCT vous devez créer cette monnaie à partir 
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Pour faire du Stake avec vos CCT:
+Pour faire du Stake avec vos CCE:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 Assurez-vous que votre portefeuillle est complètement synchronisé et que vous utilisez la dernière version du portefeuille.
 &lt;li&gt;
-Votre solde de CCT doit avoir reçu un minimum de 101 confirmations.
+Votre solde de CCE doit avoir reçu un minimum de 101 confirmations.
 &lt;li&gt;
 Votre portefeuille doit rester en ligne et dévérouillé pour l'anonymisation et le staking.
 &lt;li&gt;
@@ -4236,12 +4236,12 @@ Une fois ces étapes accomplies le staking devrait être activé.
  Vous pouvez voir le statut du staking dans le portefeuille en survolant l'icône du package dans la rangée en haut à gauche de l'interface du portefeuille. Le package sera allumé et indiquera "Staking Enabled" pour confirmer qu'il est effectivement activé. Dnas le cas de l'utilisation de l'interface en ligne de commande (concrete-cli); La commande &lt;i&gt;getstakingstatus&lt;/i&gt; confirmera que le staking est actif.
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-Pour faire du Stake avec vos zCCT:
+Pour faire du Stake avec vos zCCE:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 Assurez-vous que votre portefeuillle est complètement synchronisé et que vous utilisez la dernière version du portefeuille.
 &lt;li&gt;
-Votre solde de zCCT doit avoir reçu un minimum de 200 confirmations.
+Votre solde de zCCE doit avoir reçu un minimum de 200 confirmations.
 &lt;li&gt;
 Votre portefeuille doit rester en ligne et dévérouillé pour l'anonymisation et le staking.
 Le staking devrait maintenant être actif.
@@ -4291,7 +4291,7 @@ notre site support Freshdesk&lt;/a&gt;.
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            A masternode is a computer running a full node CONCRETE Core wallet with a
-                           requirement of 10,000 CCT secured collateral to provide extra services
+                           requirement of 10,000 CCE secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -4323,7 +4323,7 @@ notre site support Freshdesk&lt;/a&gt;.
                            Requirements:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 CCT per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;10,000 CCE per single Masternode instance&lt;/li&gt;
                            &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
                            &lt;li&gt;Need dedicated IP address&lt;/li&gt;
                            &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
@@ -4333,7 +4333,7 @@ notre site support Freshdesk&lt;/a&gt;.
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 Un masternode est un ordinateur qui exécute un noeud complet du portefeuille CONCRETE Core avec une
-exigence de 10 000 CCT déposé en garantie pour fournir au réseau des services aditionnels et recevoir, en retour et régulièrement, une partie des récompense de blocs.
+exigence de 10 000 CCE déposé en garantie pour fournir au réseau des services aditionnels et recevoir, en retour et régulièrement, une partie des récompense de blocs.
 Ces services comprennent:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
@@ -4359,7 +4359,7 @@ Avantages du Masternode:
 Exigences:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;10 000 CCT pour chaque instance de masternode&lt;/li&gt;
+&lt;li&gt;10 000 CCE pour chaque instance de masternode&lt;/li&gt;
 &lt;li&gt;Montant conservé dans un portefeuille core&lt;/li&gt;
 &lt;li&gt;Nécessite une IP fixe dédiée&lt;/li&gt;
 &lt;li&gt;Le portefeuille masternode doit rester en ligne&lt;/li&gt;
@@ -4376,8 +4376,8 @@ Exigences:
         <translation>Qu'est ce qu'un contrôleur de masternode?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CCT collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Un contrôleur de masternode est un portefeuille dans lequel le dépôt de garantie de 10 000 CCT réside pendant la configuration d'un masternode contrôleur-distant. C'est un portefeuille qui peut activer le portefeuille masternode distant et vous permet de conserver le dépôt de garantie hors ligne tandis que le masternode restera en ligne.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 10,000 CCE collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet/s and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; Un contrôleur de masternode est un portefeuille dans lequel le dépôt de garantie de 10 000 CCE réside pendant la configuration d'un masternode contrôleur-distant. C'est un portefeuille qui peut activer le portefeuille masternode distant et vous permet de conserver le dépôt de garantie hors ligne tandis que le masternode restera en ligne.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Frequently Asked Questions</source>
@@ -5234,12 +5234,12 @@ Confirmez-vous ?
         <translation>Formulaire</translation>
     </message>
     <message>
-        <source>480.0685 CCT</source>
-        <translation>480.0685CCT</translation>
+        <source>480.0685 CCE</source>
+        <translation>480.0685CCE</translation>
     </message>
     <message>
-        <source>1,000 zCCT</source>
-        <translation>1 000 zCCT</translation>
+        <source>1,000 zCCE</source>
+        <translation>1 000 zCCE</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5250,24 +5250,24 @@ Confirmez-vous ?
         <translation>En attente</translation>
     </message>
     <message>
-        <source>6.943 CCT</source>
-        <translation>6.943 CCT</translation>
+        <source>6.943 CCE</source>
+        <translation>6.943 CCE</translation>
     </message>
     <message>
         <source>Immature</source>
         <translation>Immature</translation>
     </message>
     <message>
-        <source>10 CCT</source>
-        <translation>10 CCT</translation>
+        <source>10 CCE</source>
+        <translation>10 CCE</translation>
     </message>
     <message>
-        <source>60 zCCT</source>
-        <translation>60 zCCT</translation>
+        <source>60 zCCE</source>
+        <translation>60 zCCE</translation>
     </message>
     <message>
-        <source>10 zCCT</source>
-        <translation>10 zCCT</translation>
+        <source>10 zCCE</source>
+        <translation>10 zCCE</translation>
     </message>
     <message>
         <source>Wallet Unlocked for staking</source>
@@ -5583,12 +5583,12 @@ Confirmez-vous ?
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT Stake</translation>
+        <source>CCE Stake</source>
+        <translation>CCE Stake</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT Stake</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -5607,24 +5607,24 @@ Confirmez-vous ?
         <translation>Le cryptage créé des unités</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>CCT converti en zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>CCE converti en zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>zCCT dépensés</translation>
+        <source>Spent zCCE</source>
+        <translation>zCCE dépensés</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>CCT reçu depuis zCCT</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>CCE reçu depuis zCCE</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense zCCT frappée comme zCCT </translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense zCCE frappée comme zCCE </translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>zCCT converti en CCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>zCCE converti en CCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -5718,8 +5718,8 @@ Confirmez-vous ?
         <translation>Montant total</translation>
     </message>
     <message>
-        <source>2 CCT</source>
-        <translation>2 CCT</translation>
+        <source>2 CCE</source>
+        <translation>2 CCE</translation>
     </message>
     <message>
         <source>Coin inputs:</source>
@@ -5742,8 +5742,8 @@ Confirmez-vous ?
         <translation>Commission :</translation>
     </message>
     <message>
-        <source>0.0001 CCT</source>
-        <translation>0.0001 CCT</translation>
+        <source>0.0001 CCE</source>
+        <translation>0.0001 CCE</translation>
     </message>
     <message>
         <source>Change address:</source>
@@ -5829,8 +5829,8 @@ Confirmez-vous ?
         <translation>18/05/2018</translation>
     </message>
     <message>
-        <source>+0.000585 CCT</source>
-        <translation>+0.000585 CCT</translation>
+        <source>+0.000585 CCE</source>
+        <translation>+0.000585 CCE</translation>
     </message>
 </context>
 <context>
@@ -5840,8 +5840,8 @@ Confirmez-vous ?
         <translation>Envoyer des pièces</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 CCT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 CCE.</translation>
     </message>
 </context>
 <context>
@@ -5933,10 +5933,10 @@ Portefeuille CONCRETE Core</translation>
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>Choisir les zCCT à dépenser</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>Choisir les zCCE à dépenser</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -5947,8 +5947,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Bouton poussoir</translation>
     </message>
     <message>
-        <source>zCct</source>
-        <translation>zCCT</translation>
+        <source>zCce</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>0.00 </source>
@@ -5971,8 +5971,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Tout Sélectionner/Désélectionner</translation>
     </message>
     <message>
-        <source>Select zCCT Denominations to Spend</source>
-        <translation>Sélectionnez les dénominations zCCT à dépenser</translation>
+        <source>Select zCCE Denominations to Spend</source>
+        <translation>Sélectionnez les dénominations zCCE à dépenser</translation>
     </message>
 </context>
 <context>
@@ -6034,16 +6034,16 @@ Portefeuille CONCRETE Core</translation>
         <translation>Activer la frappe automatique de monnaie à partir d’adresses spécifiques (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Activer les sauvegardes automatiques de portefeuille déclenchées après chaque frappe zCCT (0-1, par défaut: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Activer les sauvegardes automatiques de portefeuille déclenchées après chaque frappe zCCE (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées CCT (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées CCE (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zCCT (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zCCE (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6078,12 +6078,12 @@ Portefeuille CONCRETE Core</translation>
         <translation>Exécuter la commande lorsque le meilleur bloc change  (%s dans cmd est remplacé par le hash du bloc)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Les frais (en CCT / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Les frais (en CCE / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Les frais (en CCT / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Les frais (en CCE / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -6206,12 +6206,12 @@ Portefeuille CONCRETE Core</translation>
         <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -6418,8 +6418,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Activer la frappe automatique Zerocoin (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zCCT spends and stakes (0-1, default %u)</source>
-        <translation>Autoriser le pré-calcul des ZCCT dépensés et stakés (0-1, défaut %u)</translation>
+        <source>Enable precomputation of zCCE spends and stakes (0-1, default %u)</source>
+        <translation>Autoriser le pré-calcul des ZCCE dépensés et stakés (0-1, défaut %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6506,8 +6506,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Impossible de lire le bloc</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Frais (en CCT/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Frais (en CCE/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -6606,20 +6606,20 @@ Portefeuille CONCRETE Core</translation>
         <translation>Pourcentage de Zerocoin Auto-monnayé (1-100, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Recalculating CCT supply...</source>
-        <translation>Recalcule de CCT émis</translation>
+        <source>Recalculating CCE supply...</source>
+        <translation>Recalcule de CCE émis</translation>
     </message>
     <message>
-        <source>Recalculating minted ZCCT...</source>
-        <translation>Recalcule des ZCCT générés</translation>
+        <source>Recalculating minted ZCCE...</source>
+        <translation>Recalcule des ZCCE générés</translation>
     </message>
     <message>
-        <source>Recalculating spent ZCCT...</source>
-        <translation>Recalcule des ZCCT dépensés</translation>
+        <source>Recalculating spent ZCCE...</source>
+        <translation>Recalcule des ZCCE dépensés</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>Recalculer les statistiques sur l'approvisionnement en CCT et zCCT</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>Recalculer les statistiques sur l'approvisionnement en CCE et zCCE</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6699,12 +6699,12 @@ Portefeuille CONCRETE Core</translation>
         <translation>Dénomination préférée pour les Zerocoin Auto-monnayés (1/5/10/50/100/500/1000/5000), 0 pour aucune préférence. par défaut: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCCT. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente. Si le chemin de la sauvegarde est défini, il y aura 4 versions de sauvegardes</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCCE. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente. Si le chemin de la sauvegarde est défini, il y aura 4 versions de sauvegardes</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCCT. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zCCE. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
     </message>
     <message>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
@@ -7131,8 +7131,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>Synchronisation du portefeuille zCCT ...</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>Synchronisation du portefeuille zCCE ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7243,8 +7243,8 @@ Portefeuille CONCRETE Core</translation>
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

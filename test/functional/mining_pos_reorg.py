@@ -51,13 +51,13 @@ class ReorgStakeTest(ConcreteTestFramework):
         wi = self.nodes[nodeid].getwalletinfo()
         return wi['balance'] + wi['immature_balance']
 
-    def check_money_supply(self, expected_cct, expected_zcct):
+    def check_money_supply(self, expected_cce, expected_zcce):
         g_info = [self.nodes[i].getinfo() for i in range(self.num_nodes)]
-        # verify that nodes have the expected CCT and zCCT supply
+        # verify that nodes have the expected CCE and zCCE supply
         for node in g_info:
-            assert_equal(node['moneysupply'], DecimalAmt(expected_cct))
-            for denom in node['zCCTsupply']:
-                assert_equal(node['zCCTsupply'][denom], DecimalAmt(expected_zcct[denom]))
+            assert_equal(node['moneysupply'], DecimalAmt(expected_cce))
+            for denom in node['zCCEsupply']:
+                assert_equal(node['zCCEsupply'][denom], DecimalAmt(expected_zcce[denom]))
 
 
     def run_test(self):
@@ -68,10 +68,10 @@ class ReorgStakeTest(ConcreteTestFramework):
                     return True, x
             return False, None
 
-        # Check CCT and zCCT supply at the beginning
+        # Check CCE and zCCE supply at the beginning
         # ------------------------------------------
-        # zCCT supply: 2 coins for each denomination
-        expected_zcct_supply = {
+        # zCCE supply: 2 coins for each denomination
+        expected_zcce_supply = {
             "1": 2,
             "5": 10,
             "10": 20,
@@ -82,9 +82,9 @@ class ReorgStakeTest(ConcreteTestFramework):
             "5000": 10000,
             "total": 13332,
         }
-        # CCT supply: block rewards minus burned fees for minting
+        # CCE supply: block rewards minus burned fees for minting
         expected_money_supply = 250.0 * 330 - 16 * 0.01
-        self.check_money_supply(expected_money_supply, expected_zcct_supply)
+        self.check_money_supply(expected_money_supply, expected_zcce_supply)
 
         # Stake with node 0 and node 1 up to public spend activation (400)
         # 70 blocks: 5 blocks each (x7)
@@ -168,9 +168,9 @@ class ReorgStakeTest(ConcreteTestFramework):
         self.log.info("Balance for node 2 checks out.")
 
         # Double spending txes not possible
-        assert_raises_rpc_error(-26, "bad-txns-invalid-zcct",
+        assert_raises_rpc_error(-26, "bad-txns-invalid-zcce",
                                 self.nodes[0].sendrawtransaction, tx_B0)
-        assert_raises_rpc_error(-26, "bad-txns-invalid-zcct",
+        assert_raises_rpc_error(-26, "bad-txns-invalid-zcce",
                                 self.nodes[0].sendrawtransaction, tx_B1)
 
         # verify that the stakeinput can't be spent
@@ -230,15 +230,15 @@ class ReorgStakeTest(ConcreteTestFramework):
         res, utxo = findUtxoInList(stakeinput["txid"], stakeinput["vout"], self.nodes[0].listunspent())
         assert (not res or not utxo["spendable"])
 
-        # Verify that CCT and zCCT supplies were properly updated after the spends and reorgs
-        self.log.info("Check CCT and zCCT supply...")
+        # Verify that CCE and zCCE supplies were properly updated after the spends and reorgs
+        self.log.info("Check CCE and zCCE supply...")
         expected_money_supply += 250.0 * (self.nodes[1].getblockcount() - 330)
         spent_coin_0 = mints[0]["denomination"]
         spent_coin_1 = mints[1]["denomination"]
-        expected_zcct_supply[str(spent_coin_0)] -= spent_coin_0
-        expected_zcct_supply[str(spent_coin_1)] -= spent_coin_1
-        expected_zcct_supply["total"] -= (spent_coin_0 + spent_coin_1)
-        self.check_money_supply(expected_money_supply, expected_zcct_supply)
+        expected_zcce_supply[str(spent_coin_0)] -= spent_coin_0
+        expected_zcce_supply[str(spent_coin_1)] -= spent_coin_1
+        expected_zcce_supply["total"] -= (spent_coin_0 + spent_coin_1)
+        self.check_money_supply(expected_money_supply, expected_zcce_supply)
         self.log.info("Supply checks out.")
 
 

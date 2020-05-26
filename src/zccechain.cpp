@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zcctchain.h"
+#include "zccechain.h"
 
 #include "guiinterface.h"
 #include "invalid.h"
 #include "main.h"
 #include "txdb.h"
 #include "wallet/wallet.h"
-#include "zcct/zcctmodule.h"
+#include "zcce/zccemodule.h"
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
 #define SCRIPT_OFFSET 6
@@ -282,7 +282,7 @@ std::string ReindexZerocoinDB()
             return _("Reindexing zerocoin failed");
         }
         // update supply
-        UpdateZCCTSupplyConnect(block, pindex, true);
+        UpdateZCCESupplyConnect(block, pindex, true);
 
         for (const CTransaction& tx : block.vtx) {
             for (unsigned int i = 0; i < tx.vin.size(); i++) {
@@ -301,7 +301,7 @@ std::string ReindexZerocoinDB()
                                 libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
                                 PublicCoinSpend publicSpend(params);
                                 CValidationState state;
-                                if (!ZCCTModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
+                                if (!ZCCEModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
                                     return _("Failed to parse public spend");
                                 }
                                 vSpendInfo.push_back(std::make_pair(publicSpend, txid));
@@ -356,7 +356,7 @@ bool RemoveSerialFromDB(const CBigNum& bnSerial)
 
 libzerocoin::CoinSpend TxInToZerocoinSpend(const CTxIn& txin)
 {
-    CDataStream serializedCoinSpend = ZCCTModule::ScriptSigToSerializedSpend(txin.scriptSig);
+    CDataStream serializedCoinSpend = ZCCEModule::ScriptSigToSerializedSpend(txin.scriptSig);
     return libzerocoin::CoinSpend(serializedCoinSpend);
 }
 
@@ -419,7 +419,7 @@ int64_t GetZerocoinSupply()
     return nTotal;
 }
 
-bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
+bool UpdateZCCESupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
 {
     AssertLockHeld(cs_main);
 
@@ -427,7 +427,7 @@ bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     if (pindex->nHeight < consensus.height_start_ZC)
         return true;
 
-    //Add mints to zCCT supply (mints are forever disabled after last checkpoint)
+    //Add mints to zCCE supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;
@@ -456,7 +456,7 @@ bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
         }
     }
 
-    //Remove spends from zCCT supply
+    //Remove spends from zCCE supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)--;
@@ -466,7 +466,7 @@ bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     }
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zCCT supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zCCE supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) += GetWrapppedSerialInflation(denom);
@@ -478,7 +478,7 @@ bool UpdateZCCTSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     return true;
 }
 
-bool UpdateZCCTSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZCCESupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
 {
     AssertLockHeld(cs_main);
 
@@ -487,19 +487,19 @@ bool UpdateZCCTSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
         return true;
 
     // Undo Update Wrapped Serials amount
-    // A one-time event where only the zCCT supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zCCE supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
     }
 
-    // Re-add spends to zCCT supply
+    // Re-add spends to zCCE supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)++;
     }
 
-    // Remove mints from zCCT supply (mints are forever disabled after last checkpoint)
+    // Remove mints from zCCE supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;

@@ -52,18 +52,18 @@ DashboardWidget::DashboardWidget(CONCRETEGUI* parent) :
 
     // Staking Information
     setCssSubtitleScreen(ui->labelMessage);
-    setCssProperty(ui->labelSquareCct, "square-chart-cct");
-    setCssProperty(ui->labelSquarezCct, "square-chart-zcct");
-    setCssProperty(ui->labelCct, "text-chart-cct");
-    setCssProperty(ui->labelZcct, "text-chart-zcct");
+    setCssProperty(ui->labelSquareCce, "square-chart-cce");
+    setCssProperty(ui->labelSquarezCce, "square-chart-zcce");
+    setCssProperty(ui->labelCce, "text-chart-cce");
+    setCssProperty(ui->labelZcce, "text-chart-zcce");
 
     // Staking Amount
     QFont fontBold;
     fontBold.setWeight(QFont::Bold);
 
     setCssProperty(ui->labelChart, "legend-chart");
-    setCssProperty(ui->labelAmountCct, "text-stake-cct-disable");
-    setCssProperty(ui->labelAmountZcct, "text-stake-zcct-disable");
+    setCssProperty(ui->labelAmountCce, "text-stake-cce-disable");
+    setCssProperty(ui->labelAmountZcce, "text-stake-zcce-disable");
 
     setCssProperty({ui->pushButtonAll,  ui->pushButtonMonth, ui->pushButtonYear}, "btn-check-time");
     setCssProperty({ui->comboBoxMonths,  ui->comboBoxYears}, "btn-combo-chart-selected");
@@ -215,7 +215,7 @@ void DashboardWidget::loadWalletModel()
         connect(walletModel->getOptionsModel(), &OptionsModel::hideChartsChanged, this, &DashboardWidget::onHideChartsChanged);
 #endif
     }
-    // update the display unit, to not use the default ("CCT")
+    // update the display unit, to not use the default ("CCE")
     updateDisplayUnit();
 }
 
@@ -493,7 +493,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair CCT, zCCT
+// pair CCE, zCCE
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -504,7 +504,7 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
         QModelIndex modelIndex = stakesFilter->index(i, TransactionTableModel::ToAddress);
         qint64 amount = llabs(modelIndex.data(TransactionTableModel::AmountRole).toLongLong());
         QDate date = modelIndex.data(TransactionTableModel::DateRole).toDateTime().date();
-        bool isCct = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZCCT;
+        bool isCce = modelIndex.data(TransactionTableModel::TypeRole).toInt() != TransactionRecord::StakeZCCE;
 
         int time = 0;
         switch (chartShow) {
@@ -525,16 +525,16 @@ const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
                 return amountBy;
         }
         if (amountBy.contains(time)) {
-            if (isCct) {
+            if (isCce) {
                 amountBy[time].first += amount;
             } else
                 amountBy[time].second += amount;
         } else {
-            if (isCct) {
+            if (isCce) {
                 amountBy[time] = std::make_pair(amount, 0);
             } else {
                 amountBy[time] = std::make_pair(0, amount);
-                hasZcctStakes = true;
+                hasZcceStakes = true;
             }
         }
     }
@@ -549,7 +549,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair CCT, zCCT
+    chartData->amountsByCache = getAmountBy(); // pair CCE, zCCE
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -562,22 +562,22 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
 
     for (int j = range.first; j < range.second; j++) {
         int num = (isOrderedByMonth && j > daysInMonth) ? (j % daysInMonth) : j;
-        qreal cct = 0;
-        qreal zcct = 0;
+        qreal cce = 0;
+        qreal zcce = 0;
         if (chartData->amountsByCache.contains(num)) {
             std::pair <qint64, qint64> pair = chartData->amountsByCache[num];
-            cct = (pair.first != 0) ? pair.first / 100000000 : 0;
-            zcct = (pair.second != 0) ? pair.second / 100000000 : 0;
-            chartData->totalCct += pair.first;
-            chartData->totalZcct += pair.second;
+            cce = (pair.first != 0) ? pair.first / 100000000 : 0;
+            zcce = (pair.second != 0) ? pair.second / 100000000 : 0;
+            chartData->totalCce += pair.first;
+            chartData->totalZcce += pair.second;
         }
 
         chartData->xLabels << ((withMonthNames) ? monthsNames[num - 1] : QString::number(num));
 
-        chartData->valuesCct.append(cct);
-        chartData->valueszCct.append(zcct);
+        chartData->valuesCce.append(cce);
+        chartData->valueszCce.append(zcce);
 
-        int max = std::max(cct, zcct);
+        int max = std::max(cce, zcce);
         if (max > chartData->maxValue) {
             chartData->maxValue = max;
         }
@@ -634,8 +634,8 @@ void DashboardWidget::onChartRefreshed()
         axisX->clear();
     }
     // init sets
-    set0 = new QBarSet("CCT");
-    set1 = new QBarSet("zCCT");
+    set0 = new QBarSet("CCE");
+    set1 = new QBarSet("zCCE");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
 
@@ -646,24 +646,24 @@ void DashboardWidget::onChartRefreshed()
     series->attachAxis(axisX);
     series->attachAxis(axisY);
 
-    set0->append(chartData->valuesCct);
-    set1->append(chartData->valueszCct);
+    set0->append(chartData->valuesCce);
+    set1->append(chartData->valueszCce);
 
     // Total
     nDisplayUnit = walletModel->getOptionsModel()->getDisplayUnit();
-    if (chartData->totalCct > 0 || chartData->totalZcct > 0) {
-        setCssProperty(ui->labelAmountCct, "text-stake-cct");
-        setCssProperty(ui->labelAmountZcct, "text-stake-zcct");
+    if (chartData->totalCce > 0 || chartData->totalZcce > 0) {
+        setCssProperty(ui->labelAmountCce, "text-stake-cce");
+        setCssProperty(ui->labelAmountZcce, "text-stake-zcce");
     } else {
-        setCssProperty(ui->labelAmountCct, "text-stake-cct-disable");
-        setCssProperty(ui->labelAmountZcct, "text-stake-zcct-disable");
+        setCssProperty(ui->labelAmountCce, "text-stake-cce-disable");
+        setCssProperty(ui->labelAmountZcce, "text-stake-zcce-disable");
     }
-    forceUpdateStyle({ui->labelAmountCct, ui->labelAmountZcct});
-    ui->labelAmountCct->setText(GUIUtil::formatBalance(chartData->totalCct, nDisplayUnit));
-    ui->labelAmountZcct->setText(GUIUtil::formatBalance(chartData->totalZcct, nDisplayUnit, true));
+    forceUpdateStyle({ui->labelAmountCce, ui->labelAmountZcce});
+    ui->labelAmountCce->setText(GUIUtil::formatBalance(chartData->totalCce, nDisplayUnit));
+    ui->labelAmountZcce->setText(GUIUtil::formatBalance(chartData->totalZcce, nDisplayUnit, true));
 
     series->append(set0);
-    if (hasZcctStakes)
+    if (hasZcceStakes)
         series->append(set1);
 
     // bar width

@@ -174,7 +174,7 @@ public:
     static bool HasZcTxesIfNeeded(const TransactionRecord& record) {
         return (record.type == TransactionRecord::ZerocoinMint ||
                 record.type == TransactionRecord::ZerocoinSpend ||
-                record.type == TransactionRecord::ZerocoinSpend_Change_zCct ||
+                record.type == TransactionRecord::ZerocoinSpend_Change_zCce ||
                 record.type == TransactionRecord::ZerocoinSpend_FromMe);
     }
 
@@ -453,13 +453,13 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::SendToSelf:
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
-        return tr("CCT Stake");
-    case TransactionRecord::StakeZCCT:
-        return tr("zCCT Stake");
+        return tr("CCE Stake");
+    case TransactionRecord::StakeZCCE:
+        return tr("zCCE Stake");
     case TransactionRecord::StakeDelegated:
-        return tr("CCT Cold Stake");
+        return tr("CCE Cold Stake");
     case TransactionRecord::StakeHot:
-        return tr("CCT Stake on behalf of");
+        return tr("CCE Stake on behalf of");
     case TransactionRecord::P2CSDelegationSent:
     case TransactionRecord::P2CSDelegationSentOwner:
     case TransactionRecord::P2CSDelegation:
@@ -470,15 +470,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Generated:
         return tr("Mined");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted CCT to zCCT");
+        return tr("Converted CCE to zCCE");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zCCT");
+        return tr("Spent zCCE");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received CCT from zCCT");
-    case TransactionRecord::ZerocoinSpend_Change_zCct:
-        return tr("Minted Change as zCCT from zCCT Spend");
+        return tr("Received CCE from zCCE");
+    case TransactionRecord::ZerocoinSpend_Change_zCce:
+        return tr("Minted Change as zCCE from zCCE Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zCCT to CCT");
+        return tr("Converted zCCE to CCE");
     default:
         return QString();
     }
@@ -489,7 +489,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZCCT:
+    case TransactionRecord::StakeZCCE:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithAddress:
@@ -528,8 +528,8 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zCct:
-    case TransactionRecord::StakeZCCT:
+    case TransactionRecord::ZerocoinSpend_Change_zCce:
+    case TransactionRecord::StakeZCCE:
         return tr("Anonymous");
     case TransactionRecord::P2CSDelegation:
     case TransactionRecord::P2CSDelegationSent:
@@ -689,7 +689,7 @@ QVariant TransactionTableModel::data(const QModelIndex& index, int role) const
     case Qt::ForegroundRole:
         // Minted
         if (rec->type == TransactionRecord::Generated || rec->type == TransactionRecord::StakeMint ||
-                rec->type == TransactionRecord::StakeZCCT || rec->type == TransactionRecord::MNReward) {
+                rec->type == TransactionRecord::StakeZCCE || rec->type == TransactionRecord::MNReward) {
             if (rec->status.status == TransactionStatus::Conflicted || rec->status.status == TransactionStatus::NotAccepted)
                 return COLOR_ORPHAN;
             else

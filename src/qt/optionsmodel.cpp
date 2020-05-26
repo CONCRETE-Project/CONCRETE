@@ -177,7 +177,7 @@ void OptionsModel::setWindowDefaultOptions(QSettings& settings, bool reset)
 void OptionsModel::setDisplayDefaultOptions(QSettings& settings, bool reset)
 {
     if (!settings.contains("nDisplayUnit") || reset)
-        settings.setValue("nDisplayUnit", BitcoinUnits::CCT);
+        settings.setValue("nDisplayUnit", BitcoinUnits::CCE);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
     if (!settings.contains("digits") || reset)
         settings.setValue("digits", "2");
@@ -190,8 +190,8 @@ void OptionsModel::setDisplayDefaultOptions(QSettings& settings, bool reset)
     if (!SoftSetArg("-lang", settings.value("language").toString().toStdString()))
         addOverriddenOption("-lang");
 
-    if (settings.contains("nAnonymizeCctAmount") || reset)
-        SoftSetArg("-anonymizecctamount", settings.value("nAnonymizeCctAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeCceAmount") || reset)
+        SoftSetArg("-anonymizecceamount", settings.value("nAnonymizeCceAmount").toString().toStdString());
 
     if (!settings.contains("strThirdPartyTxUrls") || reset)
         settings.setValue("strThirdPartyTxUrls", "");

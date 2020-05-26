@@ -2,37 +2,37 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZCCTCONTROLDIALOG_H
-#define ZCCTCONTROLDIALOG_H
+#ifndef ZCCECONTROLDIALOG_H
+#define ZCCECONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
-#include "zcct/zerocoin.h"
+#include "zcce/zerocoin.h"
 
 class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZCctControlDialog;
+class ZCceControlDialog;
 }
 
-class CZCctControlWidgetItem : public QTreeWidgetItem
+class CZCceControlWidgetItem : public QTreeWidgetItem
 {
 public:
-    explicit CZCctControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
-    explicit CZCctControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
-    explicit CZCctControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZCceControlWidgetItem(QTreeWidget *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
+    explicit CZCceControlWidgetItem(int type = Type) : QTreeWidgetItem(type) {}
+    explicit CZCceControlWidgetItem(QTreeWidgetItem *parent, int type = Type) : QTreeWidgetItem(parent, type) {}
 
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZCctControlDialog : public QDialog
+class ZCceControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZCctControlDialog(QWidget *parent);
-    ~ZCctControlDialog();
+    explicit ZCceControlDialog(QWidget *parent);
+    ~ZCceControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -41,7 +41,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZCctControlDialog *ui;
+    Ui::ZCceControlDialog *ui;
     WalletModel* model;
 
     void updateList();
@@ -55,11 +55,11 @@ private:
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
-    friend class CZCctControlWidgetItem;
+    friend class CZCceControlWidgetItem;
 
 private Q_SLOTS:
     void updateSelection(QTreeWidgetItem* item, int column);
     void ButtonAllClicked();
 };
 
-#endif // ZCCTCONTROLDIALOG_H
+#endif // ZCCECONTROLDIALOG_H

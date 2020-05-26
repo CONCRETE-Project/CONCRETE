@@ -44,7 +44,7 @@ TopBar::TopBar(CONCRETEGUI* _mainWindow, QWidget *parent) :
     ui->containerTop->setProperty("cssClass", "container-top");
 #endif
 
-    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitleAvailablezCct, ui->labelTitle3, ui->labelTitle4, ui->labelTitlePendingzCct, ui->labelTitleImmaturezCct};
+    std::initializer_list<QWidget*> lblTitles = {ui->labelTitle1, ui->labelTitleAvailablezCce, ui->labelTitle3, ui->labelTitle4, ui->labelTitlePendingzCce, ui->labelTitleImmaturezCce};
     setCssProperty(lblTitles, "text-title-topbar");
     QFont font;
     font.setWeight(QFont::Light);
@@ -52,9 +52,9 @@ TopBar::TopBar(CONCRETEGUI* _mainWindow, QWidget *parent) :
 
     // Amount information top
     ui->widgetTopAmount->setVisible(false);
-    setCssProperty({ui->labelAmountTopCct, ui->labelAmountTopzCct}, "amount-small-topbar");
-    setCssProperty({ui->labelAmountCct, ui->labelAvailablezCct}, "amount-topbar");
-    setCssProperty({ui->labelPendingCct, ui->labelPendingzCct, ui->labelImmatureCct, ui->labelImmaturezCct}, "amount-small-topbar");
+    setCssProperty({ui->labelAmountTopCce, ui->labelAmountTopzCce}, "amount-small-topbar");
+    setCssProperty({ui->labelAmountCce, ui->labelAvailablezCce}, "amount-topbar");
+    setCssProperty({ui->labelPendingCce, ui->labelPendingzCce, ui->labelImmatureCce, ui->labelImmaturezCce}, "amount-small-topbar");
 
     // Progress Sync
     progressBar = new QProgressBar(ui->layoutSync);
@@ -633,38 +633,38 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     }
     ui->labelTitle1->setText(nLockedBalance > 0 ? tr("Available (Locked included)") : tr("Available"));
 
-    // CCT Total
-    CAmount cctAvailableBalance = balance;
-    // zCCT Balance
+    // CCE Total
+    CAmount cceAvailableBalance = balance;
+    // zCCE Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set
-    QString totalCct = GUIUtil::formatBalance(cctAvailableBalance, nDisplayUnit);
-    QString totalzCct = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
+    QString totalCce = GUIUtil::formatBalance(cceAvailableBalance, nDisplayUnit);
+    QString totalzCce = GUIUtil::formatBalance(matureZerocoinBalance, nDisplayUnit, true);
 
-    // CCT
+    // CCE
     // Top
-    ui->labelAmountTopCct->setText(totalCct);
+    ui->labelAmountTopCce->setText(totalCce);
     // Expanded
-    ui->labelAmountCct->setText(totalCct);
-    ui->labelPendingCct->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
-    ui->labelImmatureCct->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
+    ui->labelAmountCce->setText(totalCce);
+    ui->labelPendingCce->setText(GUIUtil::formatBalance(unconfirmedBalance, nDisplayUnit));
+    ui->labelImmatureCce->setText(GUIUtil::formatBalance(immatureBalance, nDisplayUnit));
 
-    // Update display state and/or values for zCCT balances as necessary
+    // Update display state and/or values for zCCE balances as necessary
     bool fHaveZerocoins = zerocoinBalance > 0;
 
-    // Set visibility of zCCT label titles/values
+    // Set visibility of zCCE label titles/values
     ui->typeSpacerTop->setVisible(fHaveZerocoins);
     ui->typeSpacerExpanded->setVisible(fHaveZerocoins);
-    ui->labelAmountTopzCct->setVisible(fHaveZerocoins);
+    ui->labelAmountTopzCce->setVisible(fHaveZerocoins);
     ui->zerocoinBalances->setVisible(fHaveZerocoins);
 
     // Top
-    ui->labelAmountTopzCct->setText(totalzCct);
+    ui->labelAmountTopzCce->setText(totalzCce);
     // Expanded
-    ui->labelAvailablezCct->setText(totalzCct);
-    ui->labelPendingzCct->setText(GUIUtil::formatBalance(unconfirmedZerocoinBalance, nDisplayUnit, true));
-    ui->labelImmaturezCct->setText(GUIUtil::formatBalance(immatureZerocoinBalance, nDisplayUnit, true));
+    ui->labelAvailablezCce->setText(totalzCce);
+    ui->labelPendingzCce->setText(GUIUtil::formatBalance(unconfirmedZerocoinBalance, nDisplayUnit, true));
+    ui->labelImmaturezCce->setText(GUIUtil::formatBalance(immatureZerocoinBalance, nDisplayUnit, true));
 }
 
 void TopBar::resizeEvent(QResizeEvent *event)

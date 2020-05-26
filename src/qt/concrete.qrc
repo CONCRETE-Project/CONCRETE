@@ -90,8 +90,8 @@
         <file alias="ic-clear-purple">concrete/res/img/ic-clear-purple.svg</file>
         <file alias="ic-close-white">concrete/res/img/ic-close-white.svg</file>
         <file alias="ic-close">concrete/res/img/ic-close.svg</file>
-        <file alias="ic-coin-cct">concrete/res/img/ic-coin-cct.svg</file>
-        <file alias="ic-coin-zcct">concrete/res/img/ic-coin-zcct.svg</file>
+        <file alias="ic-coin-cce">concrete/res/img/ic-coin-cce.svg</file>
+        <file alias="ic-coin-zcce">concrete/res/img/ic-coin-zcce.svg</file>
         <file alias="ic-combo-box">concrete/res/img/ic-combo-box.svg</file>
         <file alias="ic-connect">concrete/res/img/ic-connect.svg</file>
         <file alias="ic-copy-liliac">concrete/res/img/ic-copy-liliac.svg</file>

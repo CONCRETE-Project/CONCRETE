@@ -131,8 +131,8 @@
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZcctOptionsWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZcctOptionsLayout">
+        <widget class="QWidget" name="verticalZcceOptionsWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZcceOptionsLayout">
           <property name="margin">
            <number>0</number>
           </property>
@@ -141,20 +141,20 @@
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintEnable">
               <property name="toolTip">
-               <string>Enable automatic minting of CCT units to zCCT</string>
+               <string>Enable automatic minting of CCE units to zCCE</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Enable zCCT Automint</string>
+               <string>Enable zCCE Automint</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintAddresses">
               <property name="toolTip">
-               <string>Enable automatic zCCT minting from specific addresses</string>
+               <string>Enable automatic zCCE minting from specific addresses</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
@@ -171,10 +171,10 @@
             <item>
              <widget class="QLabel" name="percentage_label">
               <property name="toolTip">
-               <string>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</string>
+               <string>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</string>
               </property>
               <property name="text">
-               <string>Percentage of autominted zCCT</string>
+               <string>Percentage of autominted zCCE</string>
               </property>
              </widget>
             </item>
@@ -204,10 +204,10 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</string>
               </property>
               <property name="text">
-               <string>Preferred Automint zCCT Denomination</string>
+               <string>Preferred Automint zCCE Denomination</string>
               </property>
              </widget>
             </item>
@@ -220,7 +220,7 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</string>
               </property>
               <property name="maxVisibleItems">
                <number>9</number>
@@ -561,8 +561,8 @@ https://www.transifex.com/concrete-project/concrete-project-translations</string
         </layout>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZcctDisplayWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZcctDisplayLayout">
+        <widget class="QWidget" name="verticalZcceDisplayWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZcceDisplayLayout">
           <property name="margin">
            <number>0</number>
           </property>

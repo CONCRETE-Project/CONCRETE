@@ -342,13 +342,13 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
-            "dumpprivkey \"cctaddress\"\n"
-            "\nReveals the private key corresponding to 'cctaddress'.\n"
+            "dumpprivkey \"cceaddress\"\n"
+            "\nReveals the private key corresponding to 'cceaddress'.\n"
             "Then the importprivkey can be used with this output\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"cctaddress\"   (string, required) The concrete address for the private key\n"
+            "1. \"cceaddress\"   (string, required) The concrete address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -487,12 +487,12 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "bip38encrypt \"cctaddress\" \"passphrase\"\n"
-            "\nEncrypts a private key corresponding to 'cctaddress'.\n" +
+            "bip38encrypt \"cceaddress\" \"passphrase\"\n"
+            "\nEncrypts a private key corresponding to 'cceaddress'.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"cctaddress\"   (string, required) The concrete address for the private key (you must hold the key already)\n"
+            "1. \"cceaddress\"   (string, required) The concrete address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"
@@ -533,7 +533,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw std::runtime_error(
-            "bip38decrypt \"cctaddress\" \"passphrase\"\n"
+            "bip38decrypt \"cceaddress\" \"passphrase\"\n"
             "\nDecrypts and then imports password protected private key.\n" +
             HelpRequiringPassphrase() + "\n"
 

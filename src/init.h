@@ -11,14 +11,14 @@
 
 class CScheduler;
 class CWallet;
-class CzCCTWallet;
+class CzCCEWallet;
 
 namespace boost
 {
 class thread_group;
 } // namespace boost
 
-extern CzCCTWallet* zwalletMain;
+extern CzCCEWallet* zwalletMain;
 
 void StartShutdown();
 bool ShutdownRequested();

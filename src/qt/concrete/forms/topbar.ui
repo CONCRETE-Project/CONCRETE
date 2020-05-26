@@ -108,7 +108,7 @@
              <number>0</number>
             </property>
             <item alignment="Qt::AlignTop">
-             <widget class="QLabel" name="labelAmountTopCct">
+             <widget class="QLabel" name="labelAmountTopCce">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -119,7 +119,7 @@
                <string notr="true">padding:0px;margin:0px;</string>
               </property>
               <property name="text">
-               <string notr="true">480.0685 CCT</string>
+               <string notr="true">480.0685 CCE</string>
               </property>
              </widget>
             </item>
@@ -180,7 +180,7 @@ border:none;</string>
              </spacer>
             </item>
             <item alignment="Qt::AlignTop">
-             <widget class="QLabel" name="labelAmountTopzCct">
+             <widget class="QLabel" name="labelAmountTopzCce">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -188,7 +188,7 @@ border:none;</string>
                </size>
               </property>
               <property name="text">
-               <string notr="true">1,000 zCCT</string>
+               <string notr="true">1,000 zCCE</string>
               </property>
              </widget>
             </item>
@@ -406,9 +406,9 @@ border:none;</string>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelAmountCct">
+                <widget class="QLabel" name="labelAmountCce">
                  <property name="text">
-                  <string notr="true">480.0685 CCT</string>
+                  <string notr="true">480.0685 CCE</string>
                  </property>
                 </widget>
                </item>
@@ -429,9 +429,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelPendingCct">
+                  <widget class="QLabel" name="labelPendingCce">
                    <property name="text">
-                    <string notr="true">6.943 CCT</string>
+                    <string notr="true">6.943 CCE</string>
                    </property>
                   </widget>
                  </item>
@@ -463,9 +463,9 @@ border:none;</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QLabel" name="labelImmatureCct">
+                  <widget class="QLabel" name="labelImmatureCce">
                    <property name="text">
-                    <string notr="true">10 CCT</string>
+                    <string notr="true">10 CCE</string>
                    </property>
                   </widget>
                  </item>
@@ -520,16 +520,16 @@ border:none;</string>
               <item>
                <layout class="QVBoxLayout" name="verticalLayout">
                 <item>
-                 <widget class="QLabel" name="labelTitleAvailablezCct">
+                 <widget class="QLabel" name="labelTitleAvailablezCce">
                   <property name="text">
                    <string>Available</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="labelAvailablezCct">
+                 <widget class="QLabel" name="labelAvailablezCce">
                   <property name="text">
-                   <string notr="true">1,000 zCCT</string>
+                   <string notr="true">1,000 zCCE</string>
                   </property>
                  </widget>
                 </item>
@@ -543,16 +543,16 @@ border:none;</string>
                 <item>
                  <layout class="QVBoxLayout" name="verticalLayout_5">
                   <item>
-                   <widget class="QLabel" name="labelTitlePendingzCct">
+                   <widget class="QLabel" name="labelTitlePendingzCce">
                     <property name="text">
                      <string>Pending</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLabel" name="labelPendingzCct">
+                   <widget class="QLabel" name="labelPendingzCce">
                     <property name="text">
-                     <string notr="true">60 zCCT</string>
+                     <string notr="true">60 zCCE</string>
                     </property>
                    </widget>
                   </item>
@@ -577,16 +577,16 @@ border:none;</string>
                 <item>
                  <layout class="QVBoxLayout" name="verticalLayout_6">
                   <item>
-                   <widget class="QLabel" name="labelTitleImmaturezCct">
+                   <widget class="QLabel" name="labelTitleImmaturezCce">
                     <property name="text">
                      <string>Immature</string>
                     </property>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QLabel" name="labelImmaturezCct">
+                   <widget class="QLabel" name="labelImmaturezCce">
                     <property name="text">
-                     <string notr="true">10 zCCT</string>
+                     <string notr="true">10 zCCE</string>
                     </property>
                    </widget>
                   </item>

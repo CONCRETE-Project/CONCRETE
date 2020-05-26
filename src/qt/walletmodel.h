@@ -178,7 +178,7 @@ public:
     void decryptKey(const std::vector<unsigned char>& crypted, const std::string& slt, const std::string& pwd, CKey& key);
     void emitBalanceChanged(); // Force update of UI-elements even when no values have changed
 
-    // return minted zCCT
+    // return minted zCCE
     bool getMint(const uint256& hashSerial, CZerocoinMint& mint);
 
     // Check address for validity
@@ -204,10 +204,10 @@ public:
 
     // Send coins to a list of recipients
     SendCoinsReturn sendCoins(WalletModelTransaction& transaction);
-    // Mint zCCT
+    // Mint zCCE
     bool mintCoins(CAmount value, CCoinControl* coinControl, std::string &strError);
 
-    bool createZcctSpend(
+    bool createZcceSpend(
             CWalletTx &wtxNew,
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
@@ -215,14 +215,14 @@ public:
             std::string changeAddress = ""
     );
 
-    bool sendZcct(
+    bool sendZcce(
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt,
             std::list<std::pair<CBitcoinAddress*, CAmount>> outputs,
             std::string changeAddress = ""
     );
 
-    bool convertBackZcct(
+    bool convertBackZcce(
             CAmount value,
             std::vector<CZerocoinMint> &vMintsSelected,
             CZerocoinSpendReceipt &receipt

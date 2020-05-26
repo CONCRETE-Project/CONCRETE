@@ -67,12 +67,12 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
 #endif
 
-    /* remove Wallet tab and zCct options in case of -disablewallet */
+    /* remove Wallet tab and zCce options in case of -disablewallet */
     if (!enableWallet) {
         ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWallet));
 
-        ui->verticalZcctOptionsWidget->hide();
-        ui->verticalZcctDisplayWidget->hide();
+        ui->verticalZcceOptionsWidget->hide();
+        ui->verticalZcceDisplayWidget->hide();
     }
 
     /* Display elements init */

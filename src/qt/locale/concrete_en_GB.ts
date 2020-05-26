@@ -196,16 +196,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</source>
-        <translation>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCTs from being stolen by malware infecting your computer.</translation>
+        <source>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</source>
+        <translation>CONCRETE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCEs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -507,8 +507,8 @@
         <translation>This label turns red if any recipient receives an amount smaller than %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ucct per input.</source>
-        <translation>Can vary +/- %1 ucct per input.</translation>
+        <source>Can vary +/- %1 ucce per input.</source>
+        <translation>Can vary +/- %1 ucce per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -524,7 +524,7 @@
     </message>
 </context>
 <context>
-    <name>CoinControlCctWidget</name>
+    <name>CoinControlCceWidget</name>
     <message>
         <source>TextLabel</source>
         <translation>TextLabel</translation>
@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zCCT</source>
-        <translation>zCCT</translation>
+        <source>zCCE</source>
+        <translation>zCCE</translation>
     </message>
     <message>
         <source>All</source>
@@ -1094,28 +1094,28 @@ https://www.transifex.com/concrete-project/concrete-project-translations</transl
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of CCT units to zCCT</source>
-        <translation>Enable automatic minting of CCT units to zCCT</translation>
+        <source>Enable automatic minting of CCE units to zCCE</source>
+        <translation>Enable automatic minting of CCE units to zCCE</translation>
     </message>
     <message>
-        <source>Enable zCCT Automint</source>
-        <translation>Enable zCCT Automint</translation>
+        <source>Enable zCCE Automint</source>
+        <translation>Enable zCCE Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming CCT which get automatically converted to zCCT via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming CCE which get automatically converted to zCCE via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zCCT</source>
-        <translation>Percentage of autominted zCCT</translation>
+        <source>Percentage of autominted zCCE</source>
+        <translation>Percentage of autominted zCCE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough CCT for this denomination is available</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</source>
+        <translation>Wait with automatic conversion to Zerocoin until enough CCE for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zCCT Denomination</source>
-        <translation>Preferred Automint zCCT Denomination</translation>
+        <source>Preferred Automint zCCE Denomination</source>
+        <translation>Preferred Automint zCCE Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1718,8 +1718,8 @@ Address: %4
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zCCT Backup Path:</source>
-        <translation>Custom zCCT Backup Path:</translation>
+        <source>Custom zCCE Backup Path:</source>
+        <translation>Custom zCCE Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2010,12 +2010,12 @@ Address: %4
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>zCCT is currently undergoing maintenance.</source>
-        <translation>zCCT is currently undergoing maintenance.</translation>
+        <source>zCCE is currently undergoing maintenance.</source>
+        <translation>zCCE is currently undergoing maintenance.</translation>
     </message>
     <message>
-        <source>Version 1 zCCT require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zCCT require a security level of 100 to successfully spend.</translation>
+        <source>Version 1 zCCE require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zCCE require a security level of 100 to successfully spend.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2798,12 +2798,12 @@ Please check the address and try again.</translation>
         <translation>Received via Obfuscation</translation>
     </message>
     <message>
-        <source>CCT Stake</source>
-        <translation>CCT Stake</translation>
+        <source>CCE Stake</source>
+        <translation>CCE Stake</translation>
     </message>
     <message>
-        <source>zCCT Stake</source>
-        <translation>zCCT Stake</translation>
+        <source>zCCE Stake</source>
+        <translation>zCCE Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2822,24 +2822,24 @@ Please check the address and try again.</translation>
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted CCT to zCCT</source>
-        <translation>Converted CCT to zCCT</translation>
+        <source>Converted CCE to zCCE</source>
+        <translation>Converted CCE to zCCE</translation>
     </message>
     <message>
-        <source>Spent zCCT</source>
-        <translation>Spent zCCT</translation>
+        <source>Spent zCCE</source>
+        <translation>Spent zCCE</translation>
     </message>
     <message>
-        <source>Received CCT from zCCT</source>
-        <translation>Received CCT from zCCT</translation>
+        <source>Received CCE from zCCE</source>
+        <translation>Received CCE from zCCE</translation>
     </message>
     <message>
-        <source>Minted Change as zCCT from zCCT Spend</source>
-        <translation>Minted Change as zCCT from zCCT Spend</translation>
+        <source>Minted Change as zCCE from zCCE Spend</source>
+        <translation>Minted Change as zCCE from zCCE Spend</translation>
     </message>
     <message>
-        <source>Converted zCCT to CCT</source>
-        <translation>Converted zCCT to CCT</translation>
+        <source>Converted zCCE to CCE</source>
+        <translation>Converted zCCE to CCE</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2935,8 +2935,8 @@ Please check the address and try again.</translation>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCT.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</source>
+        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CCE.</translation>
     </message>
 </context>
 <context>
@@ -2958,10 +2958,10 @@ Please check the address and try again.</translation>
     </message>
 </context>
 <context>
-    <name>ZCctControlDialog</name>
+    <name>ZCceControlDialog</name>
     <message>
-        <source>Select zCCT to Spend</source>
-        <translation>Select zCCT to Spend</translation>
+        <source>Select zCCE to Spend</source>
+        <translation>Select zCCE to Spend</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3039,16 +3039,16 @@ Please check the address and try again.</translation>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zCCT minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zCCE minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for CCT inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for CCE inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zCCT inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zCCE inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3083,12 +3083,12 @@ Please check the address and try again.</translation>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in CCT/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in CCE/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in CCT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in CCE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3195,12 +3195,12 @@ Please check the address and try again.</translation>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CCE.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 CCT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 CCE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3479,8 +3479,8 @@ Please check the address and try again.</translation>
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in CCT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in CCT/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in CCE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in CCE/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -3579,8 +3579,8 @@ Please check the address and try again.</translation>
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the CCT and zCCT money supply statistics</source>
-        <translation>Reindex the CCT and zCCT money supply statistics</translation>
+        <source>Reindex the CCE and zCCE money supply statistics</source>
+        <translation>Reindex the CCE and zCCE money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3655,8 +3655,8 @@ Please check the address and try again.</translation>
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zCCT backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zCCE backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4059,8 +4059,8 @@ Please check the address and try again.</translation>
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zCCT wallet...</source>
-        <translation>Syncing zCCT wallet...</translation>
+        <source>Syncing zCCE wallet...</source>
+        <translation>Syncing zCCE wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4171,8 +4171,8 @@ Please check the address and try again.</translation>
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zCCT</source>
-        <translation>Value is below the smallest available denomination (= 1) of zCCT</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCCE</source>
+        <translation>Value is below the smallest available denomination (= 1) of zCCE</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
