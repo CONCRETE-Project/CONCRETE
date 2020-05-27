@@ -1718,7 +1718,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 *[cssClass="img-splash-logo"] {
     qproperty-icon: url("://img-logo-concrete");
-    qproperty-iconSize: 300px 100px;
+    qproperty-iconSize: 150px 150px;
     border:0;
     background-color:transparent;
 }
