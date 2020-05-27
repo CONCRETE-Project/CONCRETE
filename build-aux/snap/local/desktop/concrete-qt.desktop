@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=CONCRETE Core
+Comment=CONCRETE Core QT main network
+GenericName=CONCRETE Digital Currency QT client main network
+Exec=concrete-core.qt %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/concrete.png
+MimeType=x-scheme-handler/concrete;
+Categories=X-Office;X-Finance;
+Keywords=internet;concrete;zcct;cct;core;wallet;qt;main;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Version=1.0
