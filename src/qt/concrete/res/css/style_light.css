@@ -62,7 +62,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 QPushButton[cssClass="img-nav-logo"] {
     qproperty-icon: url("://img-nav-logo");
-    qproperty-iconSize: 49px 60px;
+    qproperty-iconSize: 70px 70px;
 }
 
 *[cssClass="btn-nav-receive"] {
@@ -1717,7 +1717,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="img-splash-logo"] {
-    qproperty-icon: url("://img-logo-concrete");
+    qproperty-icon: url("://img-logo-concrete-png");
     qproperty-iconSize: 150px 150px;
     border:0;
     background-color:transparent;
