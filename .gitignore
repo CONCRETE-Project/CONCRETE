@@ -134,6 +134,3 @@ cmake-build-debug
 moc_*
 *.tmp
 ui_*
-build*
-concreted.*
-concreted-new-gui.*

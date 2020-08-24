@@ -1,0 +1,3 @@
+usr/local/bin/concreted usr/bin
+usr/local/bin/concrete-cli usr/bin
+debian/examples/concrete.conf etc/concrete
